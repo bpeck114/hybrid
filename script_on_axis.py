@@ -1,4 +1,4 @@
-# FILE hybrid.py
+# FILE script_on_axis.py
 # For running hybrid simulations
 
 # Importing necessary packages
@@ -6,7 +6,7 @@ import numpy as np
 import subprocess
 import time
 
-# Set parameters for actuator study
+# Set parameters for hybrid study
 output_file = "on_axis_study"
 angle_degrees = 30
 height = np.array([0, 5, 10, 15, 20, 25, 30]) #km
