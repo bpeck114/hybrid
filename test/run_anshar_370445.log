@@ -1,0 +1,252 @@
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+~/work/hybrid/maos -o test -c A_hybrid.conf 
+Output folder is 'test'.
+SRC: /usr/local/src/maos v2.8.1 071e2afe 2023-06-02 20:48:10 -0700
+BUILT: /usr/local/test_maos by GCC (8) on 2023/08/18 16:11:06 CPU(double) +CUDA(single) +optimization.
+Launched at 2024/05/30 09:07:43 in anshar with PID 370445.
+The web based job monitor can be accessed at http://localhost:10300
+Main config file is /home/bpeck/work/hybrid/A_hybrid.conf
+addpath bin
+addpath atm
+loaded 139 (139 new) records from '/home/bpeck/work/hybrid/./keck_sim.conf'
+loaded  19 ( 19 new) records from '/home/bpeck/work/hybrid/./keck_dm_single.conf'
+loaded   7 (  5 new) records from '/home/bpeck/work/hybrid/./atm_mk13n50p_ground_detail.conf'
+loaded  69 ( 69 new) records from '/usr/local/src/maos/config/maos/powfs_common.conf'
+loaded  44 ( 38 new) records from '/home/bpeck/work/hybrid/./powfs_none.conf'
+loaded  45 (  0 new) records from '/home/bpeck/work/hybrid/./keck_shwfs_lgs.conf'
+loaded  46 (  0 new) records from '/home/bpeck/work/hybrid/./keck_shwfs_lgs_R20.conf'
+loaded  45 (  0 new) records from '/home/bpeck/work/hybrid/./keck_shwfs_ttf_strap.conf'
+loaded  44 (  0 new) records from '/home/bpeck/work/hybrid/./keck_shwfs_twfs_lbwfs.conf'
+loaded   0 (  0 new) records from '/home/bpeck/work/hybrid/./keck_wfs_hybrid_strap_lbwfs.conf'
+loaded  71 ( 71 new) records from '/usr/local/src/maos/config/maos/recon.conf'
+loaded  88 ( 88 new) records from '/usr/local/src/maos/config/maos/dbg.conf'
+loaded   4 (  4 new) records from '/usr/local/src/maos/config/maos/fit_oa.conf'
+loaded  29 (  9 new) records from '/home/bpeck/work/hybrid/A_hybrid.conf'
+loaded   0 (  0 new) records from 'command line'
+loaded  24 ( 24 new) records from '/home/bpeck/work/hybrid/./keck_llt_CL.conf'
+loaded  24 ( 23 new) records from '/home/bpeck/work/hybrid/./keck_llt_CL.conf'
+Adjust LGS range by telescope altitude 4145m.
+Zenith angle is 30 degree.
+    Scaling turbulence height and LGS hs by sec(za).
+    Scaling r0 by cos(za)^(3/5).
+    Scaling wind speed and LGS signal level by cos(za).
+powfs 0: Adjusting dx from 0.0078125 to 0.00781944. 
+powfs 1: Adjusting dx from 0.0078125 to 0.00781944. 
+Warning(parms.c:1896): There are multiple LGS type. parms->ilgspowfs points to the first one
+powfs 3: Adjusting dx from 0.03125 to 0.0305. 
+powfs 3 is TWFS for powfs 0
+Warning(parms.c:2246): Layer 1 at 17.3205m is very close to layer 0 at 0m (OK).
+Warning(parms.c:2246): Layer 2 at 34.641m is very close to layer 1 at 17.3205m (OK).
+Warning(parms.c:2246): Layer 3 at 51.9615m is very close to layer 2 at 34.641m (OK).
+Warning(parms.c:2290): Two high order POWFS with different hs found: 99136.8 and 20005.2. Please double check the results.
+dm 0: stroke=30 um is provided in micron.
+dm 0: assume ia stroke=2 um is provided in micron.
+Focus blending is not implemented yet for integrated tomography
+parms->sim.mffocus is reset to 0
+There are 1 valid simulation seeds:  1
+Output PSF for 1 directions
+Used 462 of 489 supplied keys
+Warning(readcfg.c:191): key "dm.dratio" is not recognized, value is [1]
+Warning(readcfg.c:191): key "ncpa.calib" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.hs" is not recognized, value is []
+Warning(readcfg.c:191): key "ncpa.preload" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.rmsci" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.thetax" is not recognized, value is []
+Warning(readcfg.c:191): key "ncpa.thetay" is not recognized, value is []
+Warning(readcfg.c:191): key "ncpa.ttr" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.wt" is not recognized, value is []
+Warning(readcfg.c:191): key "powfs0_llt.dhs" is not recognized, value is 10000
+Warning(readcfg.c:191): key "powfs0_llt.fcfsm" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs0_llt.na_fit_dh" is not recognized, value is 500
+Warning(readcfg.c:191): key "powfs0_llt.na_fit_maxit" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs0_llt.na_fit_svdthres" is not recognized, value is 1e-3
+Warning(readcfg.c:191): key "powfs0_llt.na_interp" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs0_llt.na_smooth" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs0_llt.na_thres" is not recognized, value is 100
+Warning(readcfg.c:191): key "powfs0_llt.nhs" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs1_llt.dhs" is not recognized, value is 10000
+Warning(readcfg.c:191): key "powfs1_llt.fcfsm" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs1_llt.na_fit_dh" is not recognized, value is 500
+Warning(readcfg.c:191): key "powfs1_llt.na_fit_maxit" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs1_llt.na_fit_svdthres" is not recognized, value is 1e-3
+Warning(readcfg.c:191): key "powfs1_llt.na_interp" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs1_llt.na_smooth" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs1_llt.na_thres" is not recognized, value is 100
+Warning(readcfg.c:191): key "powfs1_llt.nhs" is not recognized, value is 1
+[00;00mAperture[00;00m is 11 m with sampling 1/32 m
+[00;00mTurbulence at 30 degree zenith angle:[00;00m r0=0.128424m, L0=30m, 14 layers.
+    Greenwood freq is 25.1Hz, anisoplanatic angle is 1.58 as
+    Sampled 8192x8192 at 1/128m. wind dir is randomized.
+    layer 0: ht=      0 m, wt= 0.302, ws=  4.8 m/s
+    layer 1: ht=     17 m, wt= 0.154, ws=  5.0 m/s
+    layer 2: ht=     35 m, wt= 0.041, ws=  5.4 m/s
+    layer 3: ht=     52 m, wt= 0.002, ws=  6.6 m/s
+    layer 4: ht=    139 m, wt= 0.021, ws=  6.1 m/s
+    layer 5: ht=    231 m, wt= 0.010, ws=  6.1 m/s
+    layer 6: ht=    323 m, wt= 0.008, ws=  6.1 m/s
+    layer 7: ht=    416 m, wt= 0.005, ws=  6.1 m/s
+    layer 8: ht=    508 m, wt= 0.001, ws=  6.1 m/s
+    layer 9: ht=    932 m, wt= 0.107, ws=  5.6 m/s
+    layer 10: ht=   5022 m, wt= 0.144, ws= 11.1 m/s
+    layer 11: ht=   9238 m, wt= 0.093, ws= 19.1 m/s
+    layer 12: ht=  13856 m, wt= 0.075, ws=  8.2 m/s
+    layer 13: ht=  22518 m, wt= 0.036, ws=  4.8 m/s
+[00;00mReconstruction[00;00m: r0=0.128424m L0=30m. 13 layers. use cone coordinate.
+    layer 0: ht=      0 m, wt= 0.314
+    layer 1: ht=     17 m, wt= 0.160
+    layer 2: ht=     35 m, wt= 0.043
+    layer 3: ht=     52 m, wt= 0.002
+    layer 4: ht=    139 m, wt= 0.022
+    layer 5: ht=    231 m, wt= 0.010
+    layer 6: ht=    323 m, wt= 0.008
+    layer 7: ht=    416 m, wt= 0.005
+    layer 8: ht=    508 m, wt= 0.001
+    layer 9: ht=    932 m, wt= 0.111
+    layer 10: ht=   5022 m, wt= 0.150
+    layer 11: ht=   9238 m, wt= 0.097
+    layer 12: ht=  13856 m, wt= 0.078
+[00;00mThere are 4 powfs[00;00m
+  powfs 0: Order 20, LGS at 99.1 km. Sampling 1/127.886 m. Thres 30%. [00;00mT/T is removed in right hand side in tomography.[00;00m
+    CCD image is 4x4 @ 3000x3000 mas, blur 27% (sigma), 472Hz, wvl: [ 5.89e-07]
+    Gtilt in reconstruction. Physical optics start at 0 with [00;00m'matched filter'[00;00m [00;00m(noisy)[00;00m
+  powfs 1: Order 20, LGS at  20 km. Sampling 1/127.886 m. Thres 30%. [00;00mT/T is removed in right hand side in tomography.[00;00m
+    CCD image is 4x4 @ 3000x3000 mas, blur 27% (sigma), 472Hz, wvl: [ 5.32e-07]
+    Gtilt in reconstruction. Physical optics start at 0 with [00;00m'matched filter'[00;00m [00;00m(noisy)[00;00m
+  powfs 2: Order  1, NGS at inf km. Sampling 1/16 m. Thres 30%. 
+    Gtilt in reconstruction. Geomtric optics start at 2 with ztilt [00;00m(noisy)[00;00m
+  powfs 3: Order 46, NGS at inf km. Sampling 1/32.7869 m. Thres 50%. 
+    CCD image is 3x3 @ 1500x1500 mas, blur 0% (sigma), 0.472Hz, wvl: [ 7.2e-07]
+    Gtilt in reconstruction. Geomtric optics start at 50 with gtilt Physical optics start at 0 with [00;00m'matched filter'[00;00m [00;00m(noisy)[00;00m
+[00;00mThere are 4 wfs[00;00m
+    wfs 0: type 0, at (   0.00,    0.00) arcsec,  99 km, siglev is 71.3856 bkgrnd is 0.009
+    wfs 1: type 1, at (   0.00,    0.00) arcsec,  20 km, siglev is 71.3856 bkgrnd is 0.009
+    wfs 2: type 2, at (   0.00,    0.00) arcsec, inf km, siglev is 128117 bkgrnd is 2.603
+    wfs 3: type 3, at (   0.00,    0.00) arcsec, inf km, siglev is 41.558 bkgrnd is 0.001
+[00;00mThere are 1 DMs[00;00m
+  DM 0 at    0km, actuator pitch 0.244m, offset   0, with 30.000000 micron stroke.
+    Normalized cubic influence function with inter-actuator coupling of 0.223
+[00;00mTomography[00;00m is using CG, with [00;00mNo[00;00m preconditioner, [00;00m120[00;00m iterations, integrated tomo.
+[00;00mDM Fitting [00;00mis using CG, with [00;00mNo[00;00m preconditioner, [00;00m10[00;00m iterations
+[00;00mThere are 1 fit directions[00;00m
+    Fit 0: weight is 1.000, at (   0.00,    0.00) arcsec
+[00;00mThere are 1 evaluation directions[00;00m at sampling 1/32 m.
+    Evl 0: weight is 1.000, at (   0.00,    0.00) arcsec
+[00;00mSimulation[00;00m start at step 0, end at step 800, with time step 1/472s, [00;00mclose loop[00;00m.
+After setup_parms:	119.9 MiB.
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+CUDA: minimum memory requirement is 0.2GB
+GPU 0 has 7.8GB free, 7.9GB total device memory.
+GPU 1 has 7.9GB free, 7.9GB total device memory.
+Using GPU 0 1
+Use 2 GPUs for  WFS Tomo Fit Evl
+
+*** Preparation started at 2024/05/30 09:07:45 in anshar. ***
+
+Using OpenMP version 201511 with 64 threads
+Reading aperture amplitude map from KECK.fits
+Warning(accphi.c:479): 3579 points not covered by input screen
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+ ->maos.c:446->setup.c:148->aper.c:76->utils.c:489->accphi.c:480
+iwvl 0: Science PSF is using grid size of 700. The PSF will sum to 6.57979009545127
+iwvl 1: Science PSF is using grid size of 700. The PSF will sum to 6.57979009545127
+iwvl 2: Science PSF is using grid size of 700. The PSF will sum to 6.57979009545127
+iwvl 3: Science PSF is using grid size of 700. The PSF will sum to 6.57979009545127
+iwvl 4: Science PSF is using grid size of 700. The PSF will sum to 6.57979009545127
+After setup_aper:	1250.0 MiB.
+
+[00;00mSetting up powfs 0 geom[00;00m
+
+There are 72 points in each subaperture of 0.563m.
+There are 248 valid subaperture.
+
+[00;00mSetting up powfs 1 geom[00;00m
+
+There are 72 points in each subaperture of 0.563m.
+There are 248 valid subaperture.
+
+[00;00mSetting up powfs 2 geom[00;00m
+
+There are 176 points in each subaperture of 11m.
+There are 1 valid subaperture.
+
+[00;00mSetting up powfs 3 geom[00;00m
+
+There are 8 points in each subaperture of 0.244m.
+There are 1236 valid subaperture.
+After setup_powfs:	1380.7 MiB.
+
+[00;00mSetting up reconstructor geometry.[00;00m
+
+PLOC is 43x43, with sampling of 0.28m (square)
+    DM 0: grid is 49 x 49
+FLOC is 43x43, with sampling of 0.28m (not square)
+Tomography grid is square:
+    layer 0: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 1: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 2: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 3: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 4: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 5: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 6: xloc grid is  43 x  43, sampling is 0.281 m,  1849 points
+    layer 7: xloc grid is  43 x  43, sampling is 0.280 m,  1849 points
+    layer 8: xloc grid is  43 x  43, sampling is 0.280 m,  1849 points
+    layer 9: xloc grid is  43 x  43, sampling is 0.279 m,  1849 points
+    layer 10: xloc grid is  45 x  45, sampling is 0.267 m,  2025 points
+    layer 11: xloc grid is  47 x  47, sampling is 0.255 m,  2209 points
+    layer 12: xloc grid is  49 x  49, sampling is 0.242 m,  2401 points
+Setting up surface OPD
+
+Surface 0:
+Loading surface OPD from Keck_ncpa_rmswfe130nm.fits
+Does not contain SURFEVL. Assume it covers all evaluation directions.
+Does not contain SURFWFS, Assume it covers all WFS.
+
+[00;00mSetting up powfs 0 PO WFS[00;00m
+
+OTF dimension is 144x144 (calculated)
+Uplink FWHM (illt 0, iwvl 0) is 0.578232"
+Downlink FWHM (illt 0, iwvl 0) is 1.03572"
+Generating matched filter for powfs 0
+sa index   location       noise equivalent angle
+     118: (  1.2,  -0.5) m, (472.33, 472.74) mas
+     120: (  2.3,  -0.5) m, (473.13, 474.09) mas
+     122: (  3.5,  -0.5) m, (465.88, 466.11) mas
+     124: (  4.6,  -0.5) m, (465.15, 465.30) mas
+     241: (  2.3,   4.0) m, (464.84, 464.96) mas
+
+[00;00mSetting up powfs 1 PO WFS[00;00m
+
+OTF dimension is 144x144 (calculated)
+Warning(mkdtf.c:364): Wrong focus!
+Uplink FWHM (illt 0, iwvl 0) is 0.575247"
+Downlink FWHM (illt 0, iwvl 0) is 1.04273"
+Generating matched filter for powfs 1
+sa index   location       noise equivalent angle
+     118: (  1.2,  -0.5) m, (471.81, 472.16) mas
+     120: (  2.3,  -0.5) m, (472.65, 473.42) mas
+     122: (  3.5,  -0.5) m, (465.17, 465.15) mas
+     124: (  4.6,  -0.5) m, (463.94, 463.94) mas
+     241: (  2.3,   4.0) m, (463.94, 463.94) mas
+
+[00;00mSetting up powfs 3 PO WFS[00;00m
+
+OTF dimension is 16x16 (calculated)
+Generating matched filter for powfs 3
+Use sanea to derive neasim
+Use sanea to derive neasim
+Use sanea to derive neasim
+
+[00;00mSetting up reconstructor[00;00m
+
+Recon NEA: cmf(475.17) cmf(474.22) geom(1.57) mf(9.09)  mas
+Setup or update control matrix parameters.
+RRtwfs svd threshold is 1e-10
+Replacing HA by HA*fit->actextrap
+Adding piston cr to fit matrix
+    dm 0, mode 1: there are 0 slave actuators
+
+Signal caught: Segmentation fault (11)
+Memory location: 0x40
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+ ->maos.c:446->setup.c:182->recon_setup.c:1295->recon_fit.c:419->recon_fit.c:180->slaving.c:379
+maos_signal_handler: Segmentation fault (11)

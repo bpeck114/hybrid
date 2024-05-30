@@ -1,5 +1,5 @@
 # FILE script_on_axis.py
-# For running hybrid simulations
+# For running on-axis hybrid simulations
 
 # Importing necessary packages
 import numpy as np
@@ -27,7 +27,7 @@ for h, rounded_h in zip(height, rounded_height):
     print("---------------------------------------")
     print("SIM:", h)
     print("COMMAND:", command)
-    print("MASTER:",f"hybrid.conf") 
+    print("MASTER:",f"A_hybrid.conf") 
     print("LOCATION:", output_file)
     print("---------------------------------------")
 
