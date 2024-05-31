@@ -19,7 +19,7 @@ Other Notes:
     Only has NapDela20.fits for all sims, specifically powfs0_llt.fnprof = NapDelta20.fits
 
 Diff against default/ and 20km
-    MOST IMPORTANT 
+    MOST IMPORTANT (20km is left, default is right)
 #powfs.bkgrnd=[1.5 1.5 8.273 25.25]                           | #powfs.bkgrnd=[1.5 8.273 25.25]
 #powfs.dsa=[0.563 0.563 -1 0]                                 | #powfs.dsa=[0.563 -1 0]
 #powfs.dtrat=[1 1 1 1000]                                     | #powfs.dtrat=[1 1 1000]

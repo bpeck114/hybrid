@@ -7,7 +7,7 @@ import subprocess
 import time
 
 # Set parameters for hybrid study
-output_file = "on_axis_study2"
+output_file = "on_axis_study3"
 angle_degrees = 30
 height = np.array([20, 22, 24, 26, 28, 30]) #km
 
@@ -33,7 +33,7 @@ for h, rounded_h in zip(height, rounded_height):
 
     # Run simulation (comment out the following line for testing on non-NERSC machine)
     start_time = time.time()
-    subprocess.run(command, shell=True, text=True)
+    #subprocess.run(command, shell=True, text=True)
     end_time = time.time()
     elapsed_time = end_time - start_time
 
@@ -45,6 +45,7 @@ for h, rounded_h in zip(height, rounded_height):
 
     duration.append({
         "sim": h,
+        "elapsed_time": elapsed_time,
         "time_hours": hours,
         "time_minutes" : minutes,
         "time_seconds" : seconds,
@@ -53,7 +54,27 @@ for h, rounded_h in zip(height, rounded_height):
 
     print("\n")
 
+# Total duration
+total_elapsed_time = sum(dur["elapsed_time"] for dur in duration)
+total_hours = int(total_elapsed_time // 3600)
+total_minutes = int((total_elapsed_time % 3600) // 60)
+total_seconds = int(total_elapsed_time % 60)
+total_milliseconds = int((total_elapsed_time - int(total_elapsed_time)) * 1000)
+
 print("---------------------------------------")
 for dur in duration:
     print("SIM ({}) TIME:". format(dur["sim"]), "{}:{}:{}.{}".format(dur["time_hours"], dur["time_minutes"], dur["time_seconds"], dur["time_milliseconds"]))
+print("   TOTAL TIME: {}:{}:{}.{}".format(total_hours, total_minutes, total_seconds, total_milliseconds))
 print("---------------------------------------")
+
+os.chdir(output_file)
+
+with open("maos_sim_time.txt", "a") as file:
+    file.write("---------------------------------------\n")
+    for dur in duration:
+        file.write("SIM ({}) TIME: {}:{}:{}.{}\n".format(
+            dur["sim"], dur["time_hours"], dur["time_minutes"], dur["time_seconds"], dur["time_milliseconds"]))
+    file.write("   TOTAL TIME: {}:{}:{}.{}\n".format(total_hours, total_minutes, total_seconds, total_milliseconds))
+    file.write("---------------------------------------\n")
+
+os.chdir("..")
