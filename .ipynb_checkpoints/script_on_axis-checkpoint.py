@@ -1,13 +1,16 @@
 # FILE script_on_axis.py
 # For running on-axis hybrid simulations
+# To just test script, comment out line 38 or "subprocess.run(command, shell=True, text=True))"
 
 # Importing necessary packages
 import numpy as np
 import subprocess
 import time
+import os
 
 # Set parameters for hybrid study
-output_file = "on_axis_study3"
+output_file = "on_axis_rayleigh_study1A"
+master_file = "A_rayleigh.conf"
 angle_degrees = 30
 height = np.array([20, 22, 24, 26, 28, 30]) #km
 
@@ -18,22 +21,22 @@ rounded_height = np.round(corrected_height, 2)
 duration = [] # For recording how long each simulation takes
 
 # Describe what is happening
-print("Running on-axis hybrid study:\n")
+print(f"Running {output_file} hybrid study:\n")
 
 # Run MAOS simulations for on-axis hybrid study
 for h, rounded_h in zip(height, rounded_height):
-    command = f"maos -o {output_file}/{h}km -c A_hybrid.conf plot.all=1 plot.setup=1 -O powfs.hs=[90e3,{rounded_h}e3,inf,inf] powfs1_llt.fnprof = NapDelta{h}.fits"
+    command = f"maos -o {output_file}/{h}km -c {master_file} plot.all=1 plot.setup=1 -O powfs.hs=[{rounded_h}e3 inf inf] powfs0_llt.fnprof = NapDelta{h}.fits"
     
     print("---------------------------------------")
     print("SIM:", h)
     print("COMMAND:", command)
-    print("MASTER:",f"A_hybrid.conf") 
+    print("MASTER:", master_file) 
     print("LOCATION:", output_file)
     print("---------------------------------------")
 
     # Run simulation (comment out the following line for testing on non-NERSC machine)
     start_time = time.time()
-    #subprocess.run(command, shell=True, text=True)
+    subprocess.run(command, shell=True, text=True)
     end_time = time.time()
     elapsed_time = end_time - start_time
 
