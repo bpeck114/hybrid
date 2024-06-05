@@ -9,8 +9,8 @@ import time
 import os
 
 # Set parameters for hybrid study
-output_file = "on_axis_rayleigh_study1A"
-master_file = "A_rayleigh.conf"
+output_file = "1S4R3T_on_axis_study1A"
+master_file = "A_hybrid.conf"
 angle_degrees = 30
 height = np.array([20, 22, 24, 26, 28, 30]) #km
 
@@ -25,7 +25,7 @@ print(f"Running {output_file} hybrid study:\n")
 
 # Run MAOS simulations for on-axis hybrid study
 for h, rounded_h in zip(height, rounded_height):
-    command = f"maos -o {output_file}/{h}km -c {master_file} plot.all=1 plot.setup=1 -O powfs.hs=[{rounded_h}e3 inf inf] powfs0_llt.fnprof = NapDelta{h}.fits"
+    command = f"maos -o {output_file}/{h}km -c {master_file} plot.all=1 plot.setup=1 -O powfs.hs=[90e3 {rounded_h}e3 inf inf] powfs1_llt.fnprof = NapDelta{h}.fits"
     
     print("---------------------------------------")
     print("SIM:", h)
