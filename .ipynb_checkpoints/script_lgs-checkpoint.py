@@ -9,7 +9,7 @@ import os
 
 # Set parameters for hybrid study
 output_file = "30km60asR_15asS_lgs_study1A"
-master_file = "A_hybrid.conf"
+master_file = "A_mcao_hybrid.conf"
 n_sodium = 3
 n_rayleigh = [2, 4, 6, 8, 10]
 r_sodium = 15
