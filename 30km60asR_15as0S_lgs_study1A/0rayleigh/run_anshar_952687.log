@@ -1,0 +1,1415 @@
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+/scr2/bpeck/work/hybrid/maos -o 30km60asR_15as0S_lgs_study1A/0rayleigh -c A_hybrid.conf plot.all=1 plot.setup=1 -O powfs.nwfs=[0 0 3 1] wfs.thetax=[ 5 -2.5 -2.5 0] wfs.thetay=[ 0 4.33 -4.33 0] powfs0_llt.ox = []*6.5 powfs0_llt.oy=[]*6.5 powfs1_llt.ox = []*6.5 powfs1_llt.oy=[]*6.5 
+Output folder is '30km60asR_15as0S_lgs_study1A/0rayleigh'.
+SRC: /usr/local/src/maos v2.8.1 071e2afe 2023-06-02 20:48:10 -0700
+BUILT: /usr/local/test_maos by GCC (8) on 2023/08/18 16:11:06 CPU(double) +CUDA(single) +optimization.
+Launched at 2024/06/13 08:04:02 in anshar with PID 952687.
+The web based job monitor can be accessed at http://localhost:10300
+Main config file is /scr2/bpeck/work/hybrid/A_hybrid.conf
+addpath bin
+addpath atm
+loaded 139 (139 new) records from '/scr2/bpeck/work/hybrid/./keck_sim.conf'
+loaded  19 ( 19 new) records from '/scr2/bpeck/work/hybrid/./keck_dm_single.conf'
+loaded   7 (  5 new) records from '/scr2/bpeck/work/hybrid/./atm_mk13n50p_ground_detail.conf'
+Found multiple powfs_none.conf at /scr2/bpeck/work/hybrid/./powfs_none.conf, /usr/local/src/maos/config/maos/powfs_none.conf. Will use the first one found.
+Found multiple powfs_common.conf at /scr2/bpeck/work/hybrid/./powfs_common.conf, /usr/local/src/maos/config/maos/powfs_common.conf. Will use the first one found.
+loaded  69 ( 69 new) records from '/scr2/bpeck/work/hybrid/./powfs_common.conf'
+loaded  44 ( 38 new) records from '/scr2/bpeck/work/hybrid/./powfs_none.conf'
+loaded  45 (  0 new) records from '/scr2/bpeck/work/hybrid/./keck_shwfs_lgs.conf'
+loaded  46 (  0 new) records from '/scr2/bpeck/work/hybrid/./keck_shwfs_lgs_R20.conf'
+loaded  45 (  0 new) records from '/scr2/bpeck/work/hybrid/./keck_shwfs_ttf_strap.conf'
+loaded  44 (  0 new) records from '/scr2/bpeck/work/hybrid/./keck_shwfs_twfs_lbwfs.conf'
+loaded   0 (  0 new) records from '/scr2/bpeck/work/hybrid/./keck_wfs_hybrid_strap_lbwfs.conf'
+loaded  71 ( 71 new) records from '/usr/local/src/maos/config/maos/recon.conf'
+loaded  88 ( 88 new) records from '/usr/local/src/maos/config/maos/dbg.conf'
+loaded   4 (  4 new) records from '/scr2/bpeck/work/hybrid/./keck_fit.conf'
+loaded  38 ( 10 new) records from '/scr2/bpeck/work/hybrid/A_hybrid.conf'
+Overriding plot.all            	0 --> 1
+Overriding plot.setup          	0 --> 1
+Overriding powfs.nwfs          	[1 1 1 1] --> [0 0 3 1]
+Overriding wfs.thetax          	[0 0 0 0] --> [5 -2.5 -2.5 0]
+Overriding wfs.thetay          	[0 0 0 0] --> [0 4.33 -4.33 0]
+Overriding powfs0_llt.ox       	[0]*6.5 --> []*6.5
+Overriding powfs0_llt.oy       	[0]*6.5 --> []*6.5
+Overriding powfs1_llt.ox       	[0]*6.5 --> []*6.5
+Overriding powfs1_llt.oy       	[0]*6.5 --> []*6.5
+loaded   9 (  0 new) records from 'command line'
+atm.wddeg=0: fill 1 to 14 by value in 0
+atm.L0=30: fill 1 to 14 by value in 0
+powfs.sigrecon=[0]: fill 1 to 4 by value in 0
+powfs.saloc=[""]: Fill 1 to 4 by value in 0
+powfs.amp=[""]: Fill 1 to 4 by value in 0
+powfs.piinfile=[""]: Fill 1 to 4 by value in 0
+powfs.sninfile=[""]: Fill 1 to 4 by value in 0
+powfs.safill2d=[1]: fill 1 to 4 by value in 0
+powfs.saspherical=[0]: fill 1 to 4 by value in 0
+powfs.safocuspv=[0]: fill 1 to 4 by value in 0
+powfs.neaphy=[0]: fill 1 to 4 by value in 0
+powfs.neareconfile=[""]: Fill 1 to 4 by value in 0
+powfs.neasimfile=[""]: Fill 1 to 4 by value in 0
+powfs.neasim=[-1]: fill 1 to 4 by value in 0
+powfs.neaextra=[0]: fill 1 to 4 by value in 0
+powfs.neamin=[0]: fill 1 to 4 by value in 0
+powfs.bkgrndc=[1]: fill 1 to 4 by value in 0
+powfs.bkgrndfn=[""]: Fill 1 to 4 by value in 0
+powfs.bkgrndfnc=[""]: Fill 1 to 4 by value in 0
+powfs.radpixtheta=[0]: fill 1 to 4 by value in 0
+powfs.pixoffx=[0]: fill 1 to 4 by value in 0
+powfs.pixoffy=[0]: fill 1 to 4 by value in 0
+powfs.phyusenea=[-1]: fill 1 to 4 by value in 0
+powfs.radpix=[0]: fill 1 to 4 by value in 0
+powfs.radgx=[1]: fill 1 to 4 by value in 0
+powfs.embfac=[2]: fill 1 to 4 by value in 0
+powfs.notf=[0]: fill 1 to 4 by value in 0
+powfs.psfout=[0]: fill 1 to 4 by value in 0
+powfs.pistatout=[0]: fill 1 to 4 by value in 0
+powfs.pistatstart=[20]: fill 1 to 4 by value in 0
+powfs.pistatstc=[0]: fill 1 to 4 by value in 0
+powfs.phytype_sim2=[1]: fill 1 to 4 by value in 0
+powfs.r0=[-1]: fill 1 to 4 by value in 0
+powfs.L0=[-1]: fill 1 to 4 by value in 0
+powfs.mtchcpl=[1]: fill 1 to 4 by value in 0
+powfs.mtchadp=[0]: fill 1 to 4 by value in 0
+powfs.mtchfft=[0]: fill 1 to 4 by value in 0
+powfs.cogthres=[0]: fill 1 to 4 by value in 0
+powfs.cogoff=[0]: fill 1 to 4 by value in 0
+powfs.ncpa_method=[-1]: fill 1 to 4 by value in 0
+powfs.i0scale=[0]: fill 1 to 4 by value in 0
+powfs.i0save=[0]: fill 1 to 4 by value in 0
+powfs.i0load=[""]: Fill 1 to 4 by value in 0
+powfs.sigscale=[1]: fill 1 to 4 by value in 0
+powfs.gradscale=[1]: fill 1 to 4 by value in 0
+powfs.moao=[-1]: fill 1 to 4 by value in 0
+powfs.dither_ogsingle=[0]: fill 1 to 4 by value in 0
+powfs.dither_gdrift=[0]: fill 1 to 4 by value in 0
+powfs.dither_glpf=[1]: fill 1 to 4 by value in 0
+powfs.zoomshare=[1]: fill 1 to 4 by value in 0
+powfs.zoomgain=[0.5]: fill 1 to 4 by value in 0
+powfs.zoomgain_drift=[0.5]: fill 1 to 4 by value in 0
+powfs.zoomset=[1]: fill 1 to 4 by value in 0
+powfs.qe=[""]: Fill 1 to 4 by value in 0
+powfs.frs=[0]: fill 1 to 4 by value in 0
+powfs.noisy=[1]: fill 1 to 4 by value in 0
+There are 2 powfs with LLT. 
+loaded  23 ( 23 new) records from '/scr2/bpeck/work/hybrid/./keck_llt_CL.conf'
+loaded  23 ( 23 new) records from '/scr2/bpeck/work/hybrid/./keck_llt_CL.conf'
+wfs.fitwt=[0]: fill 1 to 4 by value in 0
+wfs.sabad=[""]: Fill 1 to 4 by value in 0
+wfs.delta_hs=[0]: fill 1 to 4 by value in 0
+wfs.delta_hc=[0]: fill 1 to 4 by value in 0
+powfs[0].wvlwts is 1x1
+powfs[0].siglevs is 1x1
+powfs[1].wvlwts is 1x1
+powfs[1].siglevs is 1x1
+atmr.os=[2]: fill 1 to 14 by value in 0
+fit.hs=[inf]: fill 1 to 9 by value in 0
+evl.wt=[1]: fill 1 to 10 by value in 0
+evl.hs=[inf]: fill 1 to 10 by value in 0
+evl.psf=[1]: fill 1 to 10 by value in 0
+evl.psfr=[0]: fill 1 to 10 by value in 0
+evl.pttr=[0]: fill 1 to 10 by value in 0
+draw_helper started
+save.ints=0: fill 1 to 4 by value in 0
+save.wfsopd=0: fill 1 to 4 by value in 0
+save.grad=0: fill 1 to 4 by value in 0
+save.gradnf=0: fill 1 to 4 by value in 0
+save.gradpsol=0: fill 1 to 4 by value in 0
+save.gradgeom=0: fill 1 to 4 by value in 0
+Adjust LGS range by telescope altitude 4145m.
+Zenith angle is 30 degree.
+    Scaling turbulence height and LGS hs by sec(za).
+    Scaling r0 by cos(za)^(3/5).
+    Scaling wind speed and LGS signal level by cos(za).
+powfs 1: Adjusting dx from 0.03125 to 0.0287. 
+dtrat_lo=1, dtrat_lo2=1, dtrat_lof=-1
+In GLAO or single high wfs Mode, use 1 tomography grid near the ground dm.
+atm layer 0 is maped to atmr 0
+atm layer 1 is maped to atmr 0
+atm layer 2 is maped to atmr 0
+atm layer 3 is maped to atmr 0
+atm layer 4 is maped to atmr 0
+atm layer 5 is maped to atmr 0
+atm layer 6 is maped to atmr 0
+atm layer 7 is maped to atmr 0
+atm layer 8 is maped to atmr 0
+atm layer 9 is maped to atmr 0
+atm layer 10 is maped to atmr 0
+atm layer 11 is maped to atmr 0
+atm layer 12 is maped to atmr 0
+atm layer 13 is maped to atmr 0
+Warning(parms.c:2246): Layer 1 at 17.3205m is very close to layer 0 at 0m (OK).
+Warning(parms.c:2246): Layer 2 at 34.641m is very close to layer 1 at 17.3205m (OK).
+Warning(parms.c:2246): Layer 3 at 51.9615m is very close to layer 2 at 34.641m (OK).
+dm 0: stroke=300 um is provided in micron.
+dm 0: assume ia stroke=20 um is provided in micron.
+Disable tomo.ahst_focus.
+Lock Res_1.lock success.
+There are 1 valid simulation seeds:  1
+Output PSF for 10 directions
+Used 462 of 489 supplied keys
+Warning(readcfg.c:191): key "dm.dratio" is not recognized, value is [1]
+Warning(readcfg.c:191): key "ncpa.calib" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.hs" is not recognized, value is []
+Warning(readcfg.c:191): key "ncpa.preload" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.rmsci" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.thetax" is not recognized, value is []
+Warning(readcfg.c:191): key "ncpa.thetay" is not recognized, value is []
+Warning(readcfg.c:191): key "ncpa.ttr" is not recognized, value is 0
+Warning(readcfg.c:191): key "ncpa.wt" is not recognized, value is []
+Warning(readcfg.c:191): key "powfs0_llt.dhs" is not recognized, value is 10000
+Warning(readcfg.c:191): key "powfs0_llt.fcfsm" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs0_llt.na_fit_dh" is not recognized, value is 500
+Warning(readcfg.c:191): key "powfs0_llt.na_fit_maxit" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs0_llt.na_fit_svdthres" is not recognized, value is 1e-3
+Warning(readcfg.c:191): key "powfs0_llt.na_interp" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs0_llt.na_smooth" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs0_llt.na_thres" is not recognized, value is 100
+Warning(readcfg.c:191): key "powfs0_llt.nhs" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs1_llt.dhs" is not recognized, value is 10000
+Warning(readcfg.c:191): key "powfs1_llt.fcfsm" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs1_llt.na_fit_dh" is not recognized, value is 500
+Warning(readcfg.c:191): key "powfs1_llt.na_fit_maxit" is not recognized, value is 0
+Warning(readcfg.c:191): key "powfs1_llt.na_fit_svdthres" is not recognized, value is 1e-3
+Warning(readcfg.c:191): key "powfs1_llt.na_interp" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs1_llt.na_smooth" is not recognized, value is 1
+Warning(readcfg.c:191): key "powfs1_llt.na_thres" is not recognized, value is 100
+Warning(readcfg.c:191): key "powfs1_llt.nhs" is not recognized, value is 1
+[00;00mAperture[00;00m is 11 m with sampling 1/128 m
+[00;00mTurbulence at 30 degree zenith angle:[00;00m r0=0.128424m, L0=30m, 14 layers.
+    Greenwood freq is 25.1Hz, anisoplanatic angle is 1.58 as
+    Sampled 8192x8192 at 1/128m. wind dir is randomized.
+    layer 0: ht=      0 m, wt= 0.302, ws=  4.8 m/s
+    layer 1: ht=     17 m, wt= 0.154, ws=  5.0 m/s
+    layer 2: ht=     35 m, wt= 0.041, ws=  5.4 m/s
+    layer 3: ht=     52 m, wt= 0.002, ws=  6.6 m/s
+    layer 4: ht=    139 m, wt= 0.021, ws=  6.1 m/s
+    layer 5: ht=    231 m, wt= 0.010, ws=  6.1 m/s
+    layer 6: ht=    323 m, wt= 0.008, ws=  6.1 m/s
+    layer 7: ht=    416 m, wt= 0.005, ws=  6.1 m/s
+    layer 8: ht=    508 m, wt= 0.001, ws=  6.1 m/s
+    layer 9: ht=    932 m, wt= 0.107, ws=  5.6 m/s
+    layer 10: ht=   5022 m, wt= 0.144, ws= 11.1 m/s
+    layer 11: ht=   9238 m, wt= 0.093, ws= 19.1 m/s
+    layer 12: ht=  13856 m, wt= 0.075, ws=  8.2 m/s
+    layer 13: ht=  22518 m, wt= 0.036, ws=  4.8 m/s
+[00;00mReconstruction[00;00m: r0=0.128424m L0=30m. 1 layers. use cone coordinate.
+    layer 0: ht=      0 m, wt= 1.000
+[00;00mThere are 2 powfs[00;00m
+  powfs 0: Order  1, NGS at inf km. Sampling 1/16 m. Thres 30%. 
+    Gtilt in reconstruction. Geomtric optics start at 2 with ztilt [00;00m(noisy)[00;00m
+  powfs 1: Order 39, NGS at inf km. Sampling 1/34.8432 m. Thres 50%. 
+    Gtilt in reconstruction. Geomtric optics start at 50 with gtilt [00;00m(noisy)[00;00m
+[00;00mThere are 4 wfs[00;00m
+    wfs 0: type 0, at (   5.00,    0.00) arcsec, inf km, siglev is 64529 bkgrnd is 8.273
+    wfs 1: type 0, at (  -2.50,    4.33) arcsec, inf km, siglev is 64529 bkgrnd is 8.273
+    wfs 2: type 0, at (  -2.50,   -4.33) arcsec, inf km, siglev is 64529 bkgrnd is 8.273
+    wfs 3: type 1, at (   0.00,    0.00) arcsec, inf km, siglev is 147933 bkgrnd is 25.25
+[00;00mThere are 1 DMs[00;00m
+  DM 0 at    0km, actuator pitch 0.287m, offset   0, with 300.000000 micron stroke.
+    Normalized cubic influence function with inter-actuator coupling of 0.223
+[00;00mTomography[00;00m is using CG, with [00;00mNo[00;00m preconditioner, [00;00m40[00;00m iterations, ad hoc split tomo.
+[00;00mDM Fitting [00;00mis using CG, with [00;00mNo[00;00m preconditioner, [00;00m10[00;00m iterations
+[00;00mThere are 9 fit directions[00;00m
+    Fit 0: weight is 0.444, at (   0.00,    0.00) arcsec
+    Fit 1: weight is 0.111, at (  15.00,    0.00) arcsec
+    Fit 2: weight is 0.111, at (   0.00,   15.00) arcsec
+    Fit 3: weight is 0.111, at ( -15.00,    0.00) arcsec
+    Fit 4: weight is 0.111, at (   0.00,  -15.00) arcsec
+    Fit 5: weight is 0.028, at (  15.00,   15.00) arcsec
+    Fit 6: weight is 0.028, at ( -15.00,   15.00) arcsec
+    Fit 7: weight is 0.028, at ( -15.00,  -15.00) arcsec
+    Fit 8: weight is 0.028, at (  15.00,  -15.00) arcsec
+[00;00mThere are 10 evaluation directions[00;00m at sampling 1/128 m.
+    Evl 0: weight is 0.100, at (   0.00,    0.00) arcsec
+    Evl 1: weight is 0.100, at (   5.00,    0.00) arcsec
+    Evl 2: weight is 0.100, at (  10.00,    0.00) arcsec
+    Evl 3: weight is 0.100, at (  15.00,    0.00) arcsec
+    Evl 4: weight is 0.100, at (  20.00,    0.00) arcsec
+    Evl 5: weight is 0.100, at (  25.00,    0.00) arcsec
+    Evl 6: weight is 0.100, at (  30.00,    0.00) arcsec
+    Evl 7: weight is 0.100, at (  35.00,    0.00) arcsec
+    Evl 8: weight is 0.100, at (  45.00,    0.00) arcsec
+    Evl 9: weight is 0.100, at (  60.00,    0.00) arcsec
+[00;00mSimulation[00;00m start at step 0, end at step 1000, with time step 1/1500s, [00;00mclose loop[00;00m.
+After setup_parms:	121.3 MiB.
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+CUDA: minimum memory requirement is 0.6GB
+Lock /home/bpeck/.aos/tmp/anshar/gpu.lock success.
+GPU 0 has 7.8GB free, 7.9GB total device memory.
+GPU 1 has 7.9GB free, 7.9GB total device memory.
+Using GPU 0 1
+EVL 0 --> GPU 0
+EVL 1 --> GPU 1
+EVL 2 --> GPU 0
+EVL 3 --> GPU 1
+EVL 4 --> GPU 0
+EVL 5 --> GPU 1
+EVL 6 --> GPU 0
+EVL 7 --> GPU 1
+EVL 8 --> GPU 0
+EVL 9 --> GPU 1
+RECON --> GPU 0
+WFS 0 --> GPU 1
+WFS 1 --> GPU 1
+WFS 2 --> GPU 0
+WFS 3 --> GPU 1
+Use 2 GPUs for  WFS Tomo Fit Evl
+
+*** Preparation started at 2024/06/13 08:04:03 in anshar. ***
+
+Using OpenMP version 201511 with 64 threads
+TOMOSCALE=1e-12
+set dsvd_ext to gpu_dsvd
+Reading aperture amplitude map from KECK.fits
+Warning(accphi.c:479): 53978 points not covered by input screen
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+ ->maos.c:446->setup.c:148->aper.c:76->utils.c:489->accphi.c:480
+iwvl 0: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 1: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 2: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 3: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 4: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 5: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 6: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 7: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+iwvl 8: Science PSF is using grid size of 2880. The PSF will sum to 6.9516723282638
+setup_aper takes 0.483544 seconds.
+After setup_aper:	1308.1 MiB.
+
+[00;00mSetting up powfs 0 geom[00;00m
+
+There are 176 points in each subaperture of 11m.
+offsetx=-0.5, offsety=-0.5, order=1, orderpad=1
+There are 1 valid subaperture.
+
+[00;00mSetting up powfs 1 geom[00;00m
+
+There are 10 points in each subaperture of 0.287m.
+offsetx=-1.08, offsety=-1.08, order=39, orderpad=41
+There are 893 valid subaperture.
+setup_powfs_init takes 0.033406 seconds.
+After setup_powfs:	1308.3 MiB.
+
+[00;00mSetting up reconstructor geometry.[00;00m
+
+PLOC is 81x81, with sampling of 0.14m (square)
+    DM 0: grid is 42 x 42
+FLOC is 81x81, with sampling of 0.14m (not square)
+rout is set to floc radius 5.74
+GP takes 0.035809 seconds.
+Tomography grid is square:
+    layer 0: xloc grid is  81 x  81, sampling is 0.143 m,  6561 points
+HXW takes 0.000006 seconds.
+GX takes 0.000004 seconds.
+Setting up surface OPD
+
+Surface 0:
+Loading surface OPD from Keck_ncpa_rmswfe130nm.fits
+/usr/local/src/maos/config/maos/bin/Keck_ncpa_rmswfe130nm.fits: EOF encountered
+Does not contain SURFEVL. Assume it covers all evaluation directions.
+Does not contain SURFWFS, Assume it covers all WFS.
+surf prop takes 0.049194 seconds.
+setup_powfs_phy takes 0.000005 seconds.
+
+[00;00mSetting up reconstructor[00;00m
+
+GA takes 0.011096 seconds.
+twfs mode is all modes from order 3 to 20 on 1 layers.
+Low order modes: nmod=3, mffocus=0, ahst_focus=0, indps=0, indastig=0
+mcc takes 0.063292 seconds.
+Low order control includes WFS 0 1 2
+Recon NEA: geom(2.22) geom(2.22) geom(2.22) geom(0.04)  mas
+Setup or update control matrix parameters.
+RRtwfs svd threshold is 1e-10
+setup_recon_tomo takes 0.000317 seconds.
+Rngs is using wfs  0 1 2
+HXF takes 0.001492 seconds.
+HA takes 0.004613 seconds.
+Replacing HA by HA*fit->actextrap
+Adding piston cr to fit matrix
+    dm 0, mode 1: there are 8 slave actuators
+slaving takes 0.000061 seconds.
+Before assembling fit matrix:	1461.2 MiB.
+Building fit->FR
+Building fit->FL
+Adding tikhonov constraint of 1.0e-07 to FLM
+The maximum eigen value is estimated to be around 2.8e-03
+DM Fit number of Low rank terms: 10 in LHS
+After assemble fit matrix:	1471.4 MiB.
+Setting up DM Fitting. takes 0.196228 seconds.
+setup_recon_control takes 0.291902 seconds.
+After setup_recon:	1471.4 MiB.
+gpu_wfsgrad_update_etf takes 0.000011 seconds.
+gpu_wfsgrad_update_etf takes 0.000002 seconds.
+GPU 1: mem used 406 MB (wfs init)
+initialize reconstructor in GPU
+update reconstructor geometry.
+Initialize DM fit in GPU 0 with gpu.fit=1 and fit.alg=1.
+initialize tomography in GPU 0.
+GPU 0: mem used 375 MB (recon init)
+GPU 1: mem used 3323 MB (perf init)
+setup_recon_post takes 0.000590 seconds.
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+[2024/06/13 08:04:05]scheduler_socket: scheduler_socket operation -1 failed with error
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+[2024/06/13 08:04:05]scheduler_socket: scheduler_socket operation -1 failed with error
+launch using scheduler: sock=-1
+Warning(draw.c:416): Unable to open drawdaemon. Disable drawing.
+fftw_thread_set_callback with fftw_task_callback
+FFTW 2880x2880 using 64 threads 
+Plan 0x7f3954000c30 created
+Plan 0x7f3a28000c30 created
+Plan 0x7f39f8000c30 created
+Plan 0x7f3982578820 created
+Plan 0x7f3954000c30 destroyed
+Plan 0x7f3a28000c30 destroyed
+Plan 0x7f39f8000c30 destroyed
+Plan 0x7f3982578820 destroyed
+Plan 0x7f3954001790 created
+Plan 0x7f3a28067710 created
+Plan 0x7f39f8067710 created
+Plan 0x7f39825bafd0 created
+Plan 0x7f3954001790 destroyed
+Plan 0x7f3a28067710 destroyed
+Plan 0x7f39f8067710 destroyed
+Plan 0x7f39825bafd0 destroyed
+Plan 0x7f3a28002320 created
+Plan 0x7f3a28002320 destroyed
+Presimulation takes 1.659485 seconds.
+
+*** Simulation started at 2024/06/13 08:04:05 in anshar. ***
+
+PARALLEL=1, NTHREAD=64
+Running seed 1
+GPU 1: mem used 3323 MB (wfs seeding)
+Converting windshake PSD to time series.
+FFTW 1024x1 using 1 threads 
+Plan 0x7f39825c6fa0 created
+Plan 0x7f39825c6fa0 destroyed
+DM cache with grid dm[0]@1/13.9373m
+zero out runtime data.
+Warning(accphi.c:710): 3793 points not covered by input screen
+Warning(sock.c:515): connect locally (/home/bpeck/.aos/tmp/anshar/scheduler) failed: Connection refused. 
+ ->sim.c:268->sim.c:68->sim_utils.c:1489->filter.c:592->cachedm.c:100->cachedm.c:97->accphi.c:214->accphi.c:711
+Wind dir: 267.3 261.7 167.0 130.5 300.7  32.3 119.8 139.0 150.8 277.7 203.0 133.1  45.9 265.1 deg
+FFTW 8192x8192 using 64 threads 
+Layer 0: Randn: 2.78 FFT: 1.09 Copy: 0.20 seconds.
+Layer 1: Randn: 0.00 FFT: 0.07 Copy: 0.20 seconds.
+Layer 2: Randn: 1.65 FFT: 1.05 Copy: 0.21 seconds.
+Layer 3: Randn: 0.00 FFT: 0.07 Copy: 0.20 seconds.
+Layer 4: Randn: 1.59 FFT: 1.06 Copy: 0.21 seconds.
+Layer 5: Randn: 0.00 FFT: 0.08 Copy: 0.22 seconds.
+Layer 6: Randn: 1.60 FFT: 1.06 Copy: 0.21 seconds.
+Layer 7: Randn: 0.00 FFT: 0.08 Copy: 0.21 seconds.
+Layer 8: Randn: 1.59 FFT: 1.05 Copy: 0.21 seconds.
+Layer 9: Randn: 0.00 FFT: 0.08 Copy: 0.22 seconds.
+Layer 10: Randn: 1.62 FFT: 1.04 Copy: 0.23 seconds.
+Layer 11: Randn: 0.00 FFT: 0.09 Copy: 0.23 seconds.
+Layer 12: Randn: 1.63 FFT: 1.02 Copy: 0.23 seconds.
+Layer 13: Randn: 0.00 FFT: 0.08 Copy: 0.23 seconds.
+Plan 0x7f3a38e30d60 destroyed
+Atmosphere  takes 23.390253 seconds.
+After genatm:	8773.0 MiB.
+Min atm is 3160x3160, available memory is 4794~4824 MB, need at least 533MB
+We will host 6320x6320 in GPU, taking 2133 MiB
+Step     #  Open Loop  PR TT  On axis  PR TT  Field RMS PR TT Split     HIGH   TT    LOW 
+Step     0: OL  905.9  138.7  OA  901.5  92.6 CL  905.9 138.7 Split   898.6 110.6  115.2 nm
+Timing: WFS 0.002 Recon 0.000 EVAL 0.020 Other 0.001 Tot 0.021 Mean 0.021. Used 0:00, Left 0:00
+Step    21: OL  914.8  104.1  OA  928.2   8.9 CL  913.5  91.3 Split   912.6  36.7   40.9 nm
+Timing: WFS 0.521 Recon 0.521 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.071. Used 0:00, Left 0:01
+Step    23: OL  915.4   97.7  OA  931.3  23.0 CL  915.3  96.9 Split   913.9  48.9   51.3 nm
+Timing: WFS 0.530 Recon 0.529 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.111. Used 0:00, Left 0:01
+Step    25: OL  916.1   92.6  OA  934.4  26.1 CL  916.9  99.9 Split   915.2  54.9   56.6 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.145. Used 0:00, Left 0:02
+Step    27: OL  917.5   93.6  OA  938.2  44.9 CL  919.6 112.3 Split   916.5  75.5   76.4 nm
+Timing: WFS 0.529 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.174. Used 0:00, Left 0:02
+Step    29: OL  920.0  104.4  OA  940.8  36.5 CL  920.4 108.0 Split   917.7  69.1   69.9 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.198. Used 0:00, Left 0:03
+Step    31: OL  923.7  124.4  OA  944.8  56.6 CL  923.4 121.8 Split   919.0  89.3   89.6 nm
+Timing: WFS 0.532 Recon 0.527 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.220. Used 0:00, Left 0:03
+Step    33: OL  928.7  150.2  OA  947.6  53.6 CL  924.4 120.6 Split   920.2  87.8   88.0 nm
+Timing: WFS 0.521 Recon 0.514 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.238. Used 0:00, Left 0:03
+Step    35: OL  934.9  178.0  OA  950.2  48.6 CL  925.2 117.2 Split   921.5  83.0   83.1 nm
+Timing: WFS 0.522 Recon 0.522 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.255. Used 0:00, Left 0:03
+Step    37: OL  941.6  205.1  OA  952.6  37.5 CL  925.3 107.6 Split   922.8  68.7   68.7 nm
+Timing: WFS 0.522 Recon 0.515 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.269. Used 0:00, Left 0:04
+Step    39: OL  948.4  229.1  OA  955.5  36.2 CL  926.6 107.6 Split   924.0  68.7   68.7 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.000 Tot 0.534 Mean 0.283. Used 0:00, Left 0:04
+Step    41: OL  954.4  248.3  OA  958.6  39.4 CL  927.8 108.0 Split   925.2  69.3   69.4 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.295. Used 0:00, Left 0:04
+Step    43: OL  959.1  261.6  OA  960.9  15.4 CL  927.8  96.5 Split   926.5  49.7   50.0 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.306. Used 0:00, Left 0:04
+Step    45: OL  962.1  267.9  OA  963.8  15.7 CL  929.2  97.4 Split   927.7  51.6   52.0 nm
+Timing: WFS 0.539 Recon 0.538 EVAL 0.539 Other 0.000 Tot 0.539 Mean 0.316. Used 0:00, Left 0:04
+Step    47: OL  963.0  267.0  OA  966.8  12.7 CL  930.3  96.4 Split   928.9  49.9   50.5 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.325. Used 0:00, Left 0:05
+Step    49: OL  962.0  258.7  OA  969.9  18.7 CL  930.6  87.2 Split   930.1  27.7   29.5 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.333. Used 0:00, Left 0:05
+Step    51: OL  959.2  243.7  OA  973.2  33.8 CL  931.6  84.6 Split   931.4  16.8   21.2 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.341. Used 0:00, Left 0:05
+Step    53: OL  955.3  222.9  OA  975.9  18.4 CL  932.9  85.9 Split   932.5  23.4   27.0 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.348. Used 0:00, Left 0:05
+Step    55: OL  951.0  198.0  OA  979.3  32.7 CL  933.9  83.2 Split   933.7   8.1   17.6 nm
+Timing: WFS 0.530 Recon 0.514 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.355. Used 0:00, Left 0:05
+Step    57: OL  947.0  171.1  OA  982.7  42.6 CL  935.1  83.3 Split   934.9   7.3   18.9 nm
+Timing: WFS 0.540 Recon 0.537 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.361. Used 0:00, Left 0:05
+Step    59: OL  943.9  145.3  OA  985.6  38.3 CL  936.3  82.9 Split   936.1   3.1   18.8 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.367. Used 0:00, Left 0:05
+Step    61: OL  942.1  124.2  OA  988.7  38.9 CL  937.5  83.1 Split   937.3   6.9   20.9 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.373. Used 0:00, Left 0:05
+Step    63: OL  941.6  111.0  OA  992.7  56.4 CL  939.0  86.1 Split   938.4  23.3   31.3 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.000 Tot 0.538 Mean 0.378. Used 0:00, Left 0:05
+Step    65: OL  942.3  106.7  OA  994.4  18.5 CL  940.2  87.0 Split   939.6  27.5   35.3 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.531 Mean 0.383. Used 0:00, Left 0:05
+Step    67: OL  943.7  108.5  OA  997.8  29.0 CL  941.2  84.6 Split   940.7  16.9   29.9 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.388. Used 0:00, Left 0:05
+Step    69: OL  945.3  111.8  OA 1001.2  40.5 CL  942.6  86.0 Split   941.9  22.4   35.2 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.392. Used 0:00, Left 0:05
+Step    71: OL  946.7  113.4  OA 1003.6  10.8 CL  944.3  91.7 Split   943.0  39.6   48.5 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.396. Used 0:00, Left 0:06
+Step    73: OL  947.8  112.6  OA 1006.9  17.3 CL  946.5 102.1 Split   944.1  60.2   66.9 nm
+Timing: WFS 0.535 Recon 0.535 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.400. Used 0:00, Left 0:06
+Step    75: OL  948.9  111.3  OA 1010.2  25.4 CL  948.3 107.1 Split   945.3  68.4   75.2 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.403. Used 0:00, Left 0:06
+Step    77: OL  950.4  113.9  OA 1013.6  36.3 CL  950.2 113.6 Split   946.4  78.2   85.2 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.407. Used 0:00, Left 0:06
+Step    79: OL  953.1  125.6  OA 1016.9  42.0 CL  951.8 116.4 Split   947.5  82.0   89.8 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.410. Used 0:00, Left 0:06
+Step    81: OL  957.5  147.8  OA 1020.1  42.0 CL  953.3 118.6 Split   948.7  85.3   93.5 nm
+Timing: WFS 0.525 Recon 0.518 EVAL 0.525 Other 0.000 Tot 0.525 Mean 0.413. Used 0:00, Left 0:06
+Step    83: OL  963.8  178.2  OA 1023.1  39.4 CL  954.3 117.1 Split   949.8  83.0   92.6 nm
+Timing: WFS 0.527 Recon 0.519 EVAL 0.527 Other 0.001 Tot 0.527 Mean 0.416. Used 0:00, Left 0:06
+Step    85: OL  972.0  212.6  OA 1026.8  53.1 CL  956.8 127.3 Split   950.9  97.0  106.2 nm
+Timing: WFS 0.524 Recon 0.523 EVAL 0.524 Other 0.001 Tot 0.524 Mean 0.418. Used 0:01, Left 0:06
+Step    87: OL  981.2  246.7  OA 1029.6  45.7 CL  957.3 121.2 Split   952.1  88.5  100.0 nm
+Timing: WFS 0.539 Recon 0.536 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.421. Used 0:01, Left 0:06
+Step    89: OL  990.4  277.1  OA 1032.8  48.2 CL  958.7 123.0 Split   953.2  90.9  103.3 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.000 Tot 0.539 Mean 0.424. Used 0:01, Left 0:06
+Step    91: OL  998.6  301.2  OA 1035.2  32.0 CL  958.7 112.3 Split   954.3  75.4   91.4 nm
+Timing: WFS 0.518 Recon 0.518 EVAL 0.518 Other 0.001 Tot 0.519 Mean 0.426. Used 0:01, Left 0:06
+Step    93: OL 1004.7  317.0  OA 1038.2  24.4 CL  959.4 108.1 Split   955.4  69.0   87.6 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.428. Used 0:01, Left 0:06
+Step    95: OL 1008.0  323.7  OA 1041.2  21.9 CL  960.2 103.5 Split   956.5  61.0   83.4 nm
+Timing: WFS 0.521 Recon 0.514 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.430. Used 0:01, Left 0:06
+Step    97: OL 1008.3  321.2  OA 1044.1   9.9 CL  960.8  98.0 Split   957.6  50.9   77.8 nm
+Timing: WFS 0.532 Recon 0.531 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.433. Used 0:01, Left 0:06
+Step    99: OL 1006.0  310.2  OA 1047.4  22.3 CL  961.0  87.7 Split   958.8  24.6   65.8 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.435. Used 0:01, Left 0:06
+Step   101: OL 1001.7  291.9  OA 1050.8  33.7 CL  962.0  85.9 Split   959.8  15.8   65.0 nm
+Timing: WFS 0.538 Recon 0.535 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.436. Used 0:01, Left 0:06
+Step   103: OL  996.3  268.5  OA 1053.6  25.1 CL  963.3  87.0 Split   960.9  20.6   68.1 nm
+Timing: WFS 0.535 Recon 0.535 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.438. Used 0:01, Left 0:06
+Step   105: OL  990.7  242.0  OA 1056.9  32.7 CL  964.6  88.9 Split   962.0  27.1   71.3 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.440. Used 0:01, Left 0:06
+Step   107: OL  985.6  215.1  OA 1061.2  61.3 CL  965.8  88.4 Split   963.1  23.4   72.3 nm
+Timing: WFS 0.535 Recon 0.534 EVAL 0.535 Other 0.001 Tot 0.535 Mean 0.442. Used 0:01, Left 0:06
+Step   109: OL  981.6  190.1  OA 1064.0  55.4 CL  966.8  86.1 Split   964.2  10.5   71.2 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.444. Used 0:01, Left 0:06
+Step   111: OL  979.0  169.1  OA 1066.0  29.2 CL  968.2  90.6 Split   965.2  30.8   77.2 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.445. Used 0:01, Left 0:06
+Step   113: OL  977.5  153.4  OA 1068.8  22.2 CL  969.4  90.8 Split   966.2  31.0   78.8 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.447. Used 0:01, Left 0:06
+Step   115: OL  977.1  143.3  OA 1072.3  38.6 CL  970.1  86.6 Split   967.2  11.5   75.8 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.448. Used 0:01, Left 0:06
+Step   117: OL  977.5  138.0  OA 1074.9  25.1 CL  971.4  88.7 Split   968.2  21.9   79.7 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.450. Used 0:01, Left 0:06
+Step   119: OL  978.3  135.8  OA 1077.6   6.5 CL  973.1  95.7 Split   969.1  42.1   88.4 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.000 Tot 0.538 Mean 0.451. Used 0:01, Left 0:06
+Step   121: OL  979.4  135.7  OA 1080.6  10.7 CL  974.9 102.2 Split   970.0  55.0   96.8 nm
+Timing: WFS 0.527 Recon 0.526 EVAL 0.527 Other 0.001 Tot 0.527 Mean 0.453. Used 0:01, Left 0:06
+Step   123: OL  980.6  136.9  OA 1083.5  11.9 CL  975.8 101.3 Split   971.0  52.9   97.4 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.454. Used 0:01, Left 0:06
+Step   125: OL  982.0  139.3  OA 1086.4  19.2 CL  977.0 102.4 Split   971.9  54.6  100.3 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.455. Used 0:01, Left 0:06
+Step   127: OL  983.6  143.5  OA 1089.1  14.3 CL  978.2 104.0 Split   972.7  57.1  103.2 nm
+Timing: WFS 0.539 Recon 0.538 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.457. Used 0:01, Left 0:06
+Step   129: OL  985.6  150.3  OA 1091.9  20.0 CL  979.7 109.1 Split   973.6  65.7  109.7 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.458. Used 0:01, Left 0:06
+Step   131: OL  988.2  160.2  OA 1094.8  27.2 CL  980.7 108.5 Split   974.4  64.3  111.2 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.540 Mean 0.459. Used 0:01, Left 0:06
+Step   133: OL  991.3  173.2  OA 1098.4  52.5 CL  984.4 131.0 Split   975.2  97.7  134.2 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.460. Used 0:01, Left 0:06
+Step   135: OL  995.1  188.9  OA 1100.8  46.5 CL  984.7 126.3 Split   976.0  90.8  131.1 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.461. Used 0:01, Left 0:06
+Step   137: OL  999.5  206.1  OA 1103.2  42.1 CL  985.3 123.0 Split   976.7  85.9  129.6 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.462. Used 0:01, Left 0:06
+Step   139: OL 1004.1  223.7  OA 1105.9  43.2 CL  986.4 125.1 Split   977.4  88.5  133.0 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.464. Used 0:01, Left 0:06
+Step   141: OL 1008.8  240.1  OA 1108.1  34.6 CL  987.0 122.4 Split   978.1  84.3  131.8 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.464. Used 0:01, Left 0:06
+Step   143: OL 1013.0  254.0  OA 1110.3  17.1 CL  986.2 107.8 Split   978.8  60.1  120.7 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.465. Used 0:01, Left 0:06
+Step   145: OL 1016.4  264.2  OA 1112.6   5.5 CL  986.7 105.0 Split   979.4  54.3  119.8 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.466. Used 0:01, Left 0:06
+Step   147: OL 1018.6  269.6  OA 1115.0  10.7 CL  987.8 108.6 Split   980.0  60.4  124.3 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.535 Mean 0.467. Used 0:01, Left 0:06
+Step   149: OL 1019.3  269.7  OA 1117.4  14.2 CL  988.5 107.5 Split   980.5  57.8  125.5 nm
+Timing: WFS 0.526 Recon 0.519 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.468. Used 0:01, Left 0:06
+Step   151: OL 1018.6  264.2  OA 1119.5   1.8 CL  989.0 106.2 Split   981.0  54.6  125.7 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.469. Used 0:01, Left 0:06
+Step   153: OL 1016.5  253.6  OA 1121.9  18.2 CL  989.1 101.0 Split   981.5  42.3  123.1 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.470. Used 0:01, Left 0:06
+Step   155: OL 1013.5  238.6  OA 1124.3  30.8 CL  989.3  95.8 Split   981.9  25.5  121.1 nm
+Timing: WFS 0.536 Recon 0.535 EVAL 0.536 Other 0.001 Tot 0.536 Mean 0.471. Used 0:01, Left 0:06
+Step   157: OL 1010.0  220.8  OA 1126.4  31.1 CL  990.1  98.4 Split   982.2  33.2  124.5 nm
+Timing: WFS 0.540 Recon 0.539 EVAL 0.540 Other 0.001 Tot 0.540 Mean 0.471. Used 0:01, Left 0:06
+Step   159: OL 1006.6  201.8  OA 1128.3  29.9 CL  991.2 105.8 Split   982.5  50.6  131.4 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.472. Used 0:01, Left 0:06
+Step   161: OL 1003.7  184.0  OA 1130.2  28.6 CL  991.8 107.1 Split   982.7  52.5  133.8 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.473. Used 0:01, Left 0:06
+Step   163: OL 1001.5  169.2  OA 1132.6  43.1 CL  991.4  97.6 Split   983.0  26.1  128.9 nm
+Timing: WFS 0.527 Recon 0.526 EVAL 0.527 Other 0.000 Tot 0.527 Mean 0.474. Used 0:01, Left 0:06
+Step   165: OL 1000.3  159.1  OA 1134.0  32.2 CL  992.2 103.3 Split   983.1  42.4  134.4 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.474. Used 0:01, Left 0:06
+Step   167: OL  999.9  153.8  OA 1135.6  23.9 CL  992.7 104.6 Split   983.2  44.7  137.0 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.475. Used 0:01, Left 0:06
+Step   169: OL 1000.0  152.2  OA 1137.1  14.8 CL  993.3 107.8 Split   983.3  51.3  141.1 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.476. Used 0:01, Left 0:06
+Step   171: OL 1000.4  152.7  OA 1138.7   2.8 CL  994.3 114.6 Split   983.3  64.1  147.9 nm
+Timing: WFS 0.535 Recon 0.535 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.477. Used 0:01, Left 0:06
+Step   173: OL 1000.9  153.8  OA 1140.3  12.1 CL  995.0 118.1 Split   983.3  69.7  152.5 nm
+Timing: WFS 0.530 Recon 0.528 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.477. Used 0:01, Left 0:06
+Step   175: OL 1001.3  154.4  OA 1142.0  24.4 CL  995.4 118.6 Split   983.2  70.0  155.1 nm
+Timing: WFS 0.535 Recon 0.534 EVAL 0.535 Other 0.001 Tot 0.535 Mean 0.478. Used 0:01, Left 0:06
+Step   177: OL 1001.5  154.5  OA 1143.2   9.5 CL  995.0 113.7 Split   983.1  60.6  153.5 nm
+Timing: WFS 0.528 Recon 0.525 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.479. Used 0:01, Left 0:06
+Step   179: OL 1001.8  154.4  OA 1144.8  22.7 CL  996.1 121.2 Split   983.0  73.5  161.2 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.479. Used 0:01, Left 0:06
+Step   181: OL 1002.1  155.1  OA 1145.9  15.8 CL  996.8 125.8 Split   982.8  80.5  166.5 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.536 Mean 0.480. Used 0:01, Left 0:06
+Step   183: OL 1002.6  157.2  OA 1147.2  22.8 CL  997.6 130.9 Split   982.6  88.1  172.5 nm
+Timing: WFS 0.537 Recon 0.529 EVAL 0.537 Other 0.001 Tot 0.537 Mean 0.480. Used 0:01, Left 0:06
+Step   185: OL 1003.4  161.1  OA 1148.7  32.6 CL  998.3 134.5 Split   982.4  93.0  177.6 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.481. Used 0:01, Left 0:06
+Step   187: OL 1004.4  166.7  OA 1149.6  27.8 CL  998.2 132.4 Split   982.1  89.6  178.3 nm
+Timing: WFS 0.532 Recon 0.527 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.482. Used 0:01, Left 0:06
+Step   189: OL 1005.6  173.1  OA 1150.5  18.3 CL  997.2 123.1 Split   981.9  74.4  174.3 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.482. Used 0:01, Left 0:06
+Step   191: OL 1006.9  179.4  OA 1151.6  29.6 CL  999.0 136.9 Split   981.5  95.5  186.1 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.483. Used 0:01, Left 0:06
+Step   193: OL 1007.9  184.6  OA 1152.8  39.8 CL  999.7 141.1 Split   981.2 101.3  191.6 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.483. Used 0:01, Left 0:06
+Step   195: OL 1008.6  187.9  OA 1153.1  17.2 CL  997.9 126.3 Split   980.8  78.6  183.8 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.484. Used 0:01, Left 0:06
+Step   197: OL 1008.8  188.7  OA 1153.8   5.9 CL  997.7 124.3 Split   980.4  74.8  184.7 nm
+Timing: WFS 0.542 Recon 0.535 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.484. Used 0:02, Left 0:06
+Step   199: OL 1008.5  186.9  OA 1154.7  13.3 CL  997.2 120.0 Split   980.0  66.8  184.5 nm
+Timing: WFS 0.526 Recon 0.519 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.485. Used 0:02, Left 0:06
+Step   201: OL 1007.7  182.7  OA 1155.7  26.8 CL  996.6 113.9 Split   979.5  54.3  183.5 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.485. Used 0:02, Left 0:06
+Step   203: OL 1006.7  176.7  OA 1156.6  35.4 CL  996.3 111.1 Split   979.1  47.5  184.5 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.486. Used 0:02, Left 0:06
+Step   205: OL 1005.5  170.0  OA 1156.7  18.7 CL  997.2 121.4 Split   978.5  68.1  192.4 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.486. Used 0:02, Left 0:06
+Step   207: OL 1004.4  163.8  OA 1157.5  29.3 CL  997.5 124.8 Split   977.9  73.7  196.7 nm
+Timing: WFS 0.526 Recon 0.525 EVAL 0.526 Other 0.001 Tot 0.526 Mean 0.487. Used 0:02, Left 0:06
+Step   209: OL 1003.7  159.4  OA 1157.9  24.0 CL  997.3 124.3 Split   977.3  72.6  198.7 nm
+Timing: WFS 0.536 Recon 0.530 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.487. Used 0:02, Left 0:06
+Step   211: OL 1003.3  157.8  OA 1158.8  38.7 CL  996.8 121.3 Split   976.7  66.8  199.4 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.488. Used 0:02, Left 0:06
+Step   213: OL 1003.4  159.1  OA 1159.1  36.5 CL  996.2 117.5 Split   976.0  59.2  199.7 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.488. Used 0:02, Left 0:06
+Step   215: OL 1003.8  162.8  OA 1158.9  12.0 CL  997.3 129.9 Split   975.2  81.3  208.9 nm
+Timing: WFS 0.530 Recon 0.525 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.489. Used 0:02, Left 0:06
+Step   217: OL 1004.4  167.8  OA 1159.2  17.1 CL  997.6 135.0 Split   974.3  89.2  214.2 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.489. Used 0:02, Left 0:06
+Step   219: OL 1005.0  172.7  OA 1159.3  10.0 CL  997.0 132.3 Split   973.5  84.8  215.1 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.489. Used 0:02, Left 0:06
+Step   221: OL 1005.3  176.4  OA 1159.4  10.2 CL  997.0 135.4 Split   972.6  89.4  219.3 nm
+Timing: WFS 0.522 Recon 0.515 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.490. Used 0:02, Left 0:06
+Step   223: OL 1005.3  178.0  OA 1159.5   9.2 CL  996.4 133.7 Split   971.6  86.7  221.0 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.490. Used 0:02, Left 0:06
+Step   225: OL 1004.8  177.3  OA 1159.5   9.0 CL  996.9 140.1 Split   970.6  96.3  227.4 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.540 Mean 0.490. Used 0:02, Left 0:06
+Step   227: OL 1003.9  174.6  OA 1159.4   9.5 CL  996.9 143.5 Split   969.5 101.1  231.9 nm
+Timing: WFS 0.539 Recon 0.538 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.491. Used 0:02, Left 0:06
+Step   229: OL 1002.8  170.5  OA 1159.4  19.7 CL  997.2 149.2 Split   968.4 109.0  238.0 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.491. Used 0:02, Left 0:06
+Step   231: OL 1001.5  166.1  OA 1159.4  25.1 CL  996.6 148.2 Split   967.2 107.5  240.3 nm
+Timing: WFS 0.542 Recon 0.535 EVAL 0.542 Other 0.001 Tot 0.542 Mean 0.492. Used 0:02, Left 0:06
+Step   233: OL 1000.4  162.2  OA 1159.3  26.7 CL  995.1 140.2 Split   966.0  95.9  238.7 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.492. Used 0:02, Left 0:06
+Step   235: OL  999.4  159.3  OA 1158.9  21.0 CL  996.3 153.8 Split   964.8 115.0  248.8 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.000 Tot 0.532 Mean 0.492. Used 0:02, Left 0:06
+Step   237: OL  998.5  157.5  OA 1158.7  27.8 CL  996.3 157.5 Split   963.5 119.8  253.7 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.493. Used 0:02, Left 0:06
+Step   239: OL  997.7  156.6  OA 1158.1  18.3 CL  994.1 146.5 Split   962.1 104.7  250.2 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.493. Used 0:02, Left 0:06
+Step   241: OL  997.0  156.2  OA 1157.6   6.5 CL  992.3 138.0 Split   960.8  92.1  248.4 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.494. Used 0:02, Left 0:06
+Step   243: OL  996.4  156.2  OA 1157.1  14.6 CL  991.8 139.4 Split   959.3  94.0  251.7 nm
+Timing: WFS 0.527 Recon 0.526 EVAL 0.527 Other 0.001 Tot 0.527 Mean 0.494. Used 0:02, Left 0:06
+Step   245: OL  995.8  157.2  OA 1156.5  24.9 CL  991.8 145.3 Split   957.9 102.5  257.3 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.494. Used 0:02, Left 0:06
+Step   247: OL  995.4  159.7  OA 1155.5   0.9 CL  990.8 143.9 Split   956.3 100.5  259.1 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.495. Used 0:02, Left 0:06
+Step   249: OL  995.5  164.6  OA 1154.8  13.5 CL  988.9 136.2 Split   954.8  88.8  257.7 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.495. Used 0:02, Left 0:06
+Step   251: OL  995.9  172.3  OA 1153.9  21.3 CL  988.6 140.9 Split   953.1  95.7  262.4 nm
+Timing: WFS 0.530 Recon 0.529 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.495. Used 0:02, Left 0:06
+Step   253: OL  996.8  182.3  OA 1153.2  37.2 CL  987.9 142.6 Split   951.5  98.1  265.7 nm
+Timing: WFS 0.542 Recon 0.542 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.495. Used 0:02, Left 0:06
+Step   255: OL  998.1  193.7  OA 1151.6  22.9 CL  987.1 144.8 Split   949.7 101.4  269.1 nm
+Timing: WFS 0.539 Recon 0.538 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.496. Used 0:02, Left 0:06
+FFTW 256x1 using 1 threads 
+Plan 0x7f3970015640 created
+Plan 0x7f3970015640 destroyed
+Step   255 updated low order loop gain : 0.459
+Step   257: OL  999.4  205.1  OA 1150.1   9.5 CL  986.2 145.5 Split   947.9 102.5  271.9 nm
+Timing: WFS 0.537 Recon 0.533 EVAL 0.537 Other 0.001 Tot 0.537 Mean 0.496. Used 0:02, Left 0:06
+Step   259: OL 1000.6  215.2  OA 1148.7  13.1 CL  984.7 142.6 Split   946.1  98.1  272.8 nm
+Timing: WFS 0.520 Recon 0.515 EVAL 0.520 Other 0.001 Tot 0.521 Mean 0.496. Used 0:02, Left 0:06
+Step   261: OL 1001.2  222.9  OA 1147.2   5.1 CL  983.9 145.1 Split   944.3 101.7  276.5 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.497. Used 0:02, Left 0:06
+Step   263: OL 1001.2  227.5  OA 1145.7  17.2 CL  982.9 145.4 Split   942.4 102.2  279.3 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.497. Used 0:02, Left 0:06
+Step   265: OL 1000.4  229.0  OA 1143.9   4.6 CL  982.1 148.2 Split   940.4 106.1  283.0 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.497. Used 0:02, Left 0:06
+Step   267: OL  999.0  227.7  OA 1142.2  12.1 CL  982.2 157.4 Split   938.4 118.7  290.0 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.498. Used 0:02, Left 0:06
+Step   269: OL  997.1  224.3  OA 1140.4  13.9 CL  981.1 158.3 Split   936.3 119.8  293.0 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.498. Used 0:02, Left 0:06
+Step   271: OL  994.9  219.9  OA 1138.6  11.2 CL  978.5 148.3 Split   934.3 106.0  290.6 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.498. Used 0:02, Left 0:06
+Step   273: OL  992.6  215.2  OA 1136.7   8.9 CL  976.8 145.5 Split   932.2 102.0  291.9 nm
+Timing: WFS 0.525 Recon 0.525 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.498. Used 0:02, Left 0:06
+Step   275: OL  990.5  211.3  OA 1134.8  25.5 CL  977.8 161.0 Split   930.0 123.4  301.8 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.499. Used 0:02, Left 0:05
+Step   277: OL  988.7  209.0  OA 1132.5   6.4 CL  975.5 155.1 Split   927.9 115.3  301.2 nm
+Timing: WFS 0.520 Recon 0.520 EVAL 0.520 Other 0.001 Tot 0.521 Mean 0.499. Used 0:02, Left 0:05
+Step   279: OL  987.3  208.7  OA 1130.4   7.8 CL  973.9 152.8 Split   925.7 112.1  302.5 nm
+Timing: WFS 0.540 Recon 0.539 EVAL 0.540 Other 0.000 Tot 0.540 Mean 0.499. Used 0:02, Left 0:05
+Step   281: OL  986.4  210.9  OA 1128.1   2.8 CL  972.4 152.3 Split   923.5 111.4  304.5 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.499. Used 0:02, Left 0:05
+Step   283: OL  986.1  215.7  OA 1126.1  19.4 CL  969.5 141.1 Split   921.3  95.2  301.9 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.500. Used 0:02, Left 0:05
+Step   285: OL  986.5  223.4  OA 1123.6  11.7 CL  969.7 153.2 Split   919.0 112.6  309.3 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.500. Used 0:02, Left 0:05
+Step   287: OL  987.5  233.6  OA 1121.2   8.3 CL  967.7 149.7 Split   916.8 107.6  309.7 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.500. Used 0:02, Left 0:05
+Step   289: OL  989.1  246.0  OA 1118.7  14.8 CL  967.1 156.3 Split   914.6 116.6  314.5 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.500. Used 0:02, Left 0:05
+Step   291: OL  991.3  260.0  OA 1116.3  15.3 CL  964.6 149.3 Split   912.3 107.0  313.3 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.501. Used 0:02, Left 0:05
+Step   293: OL  993.9  274.8  OA 1114.0  24.2 CL  962.2 142.7 Split   910.1  97.3  312.4 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.501. Used 0:02, Left 0:05
+Step   295: OL  996.6  289.4  OA 1111.0  10.1 CL  963.6 163.4 Split   907.8 126.0  323.2 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.501. Used 0:02, Left 0:05
+Step   297: OL  999.3  303.1  OA 1108.4  19.2 CL  963.1 169.8 Split   905.5 134.2  327.9 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.501. Used 0:02, Left 0:05
+Step   299: OL 1001.5  314.8  OA 1106.3  28.8 CL  957.2 139.4 Split   903.3  92.1  316.5 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.502. Used 0:02, Left 0:05
+Step   301: OL 1003.0  324.0  OA 1103.2   8.8 CL  957.2 151.0 Split   901.0 109.1  322.9 nm
+Timing: WFS 0.536 Recon 0.535 EVAL 0.536 Other 0.001 Tot 0.536 Mean 0.502. Used 0:02, Left 0:05
+Step   303: OL 1003.6  330.1  OA 1100.4  13.2 CL  957.8 165.9 Split   898.8 129.0  331.2 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.502. Used 0:02, Left 0:05
+Step   305: OL 1003.0  332.7  OA 1097.6   6.1 CL  955.7 162.0 Split   896.5 123.9  331.1 nm
+Timing: WFS 0.524 Recon 0.517 EVAL 0.524 Other 0.000 Tot 0.525 Mean 0.502. Used 0:02, Left 0:05
+Step   307: OL 1001.2  331.8  OA 1094.9   6.7 CL  953.8 159.8 Split   894.2 120.8  331.8 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.000 Tot 0.539 Mean 0.503. Used 0:02, Left 0:05
+Step   309: OL  998.3  327.5  OA 1092.6  33.6 CL  952.7 161.6 Split   891.9 123.3  334.7 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.503. Used 0:02, Left 0:05
+Step   311: OL  994.5  320.2  OA 1089.8  35.1 CL  950.8 159.2 Split   889.7 119.9  335.4 nm
+Timing: WFS 0.530 Recon 0.487 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.503. Used 0:03, Left 0:05
+Step   313: OL  989.9  310.6  OA 1086.3  18.5 CL  950.3 166.6 Split   887.4 129.5  340.1 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.503. Used 0:03, Left 0:05
+Step   315: OL  984.9  299.4  OA 1083.1   9.5 CL  948.7 166.4 Split   885.1 129.2  341.6 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.537 Mean 0.503. Used 0:03, Left 0:05
+Step   317: OL  979.9  287.8  OA 1080.3  16.7 CL  945.9 157.7 Split   882.8 117.6  339.6 nm
+Timing: WFS 0.545 Recon 0.545 EVAL 0.545 Other 0.001 Tot 0.546 Mean 0.504. Used 0:03, Left 0:05
+Step   319: OL  975.2  276.9  OA 1077.1  10.4 CL  944.1 156.4 Split   880.5 115.5  340.6 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.504. Used 0:03, Left 0:05
+Step   321: OL  971.0  267.7  OA 1074.2  29.1 CL  945.2 173.4 Split   878.1 137.9  349.7 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.504. Used 0:03, Left 0:05
+Step   323: OL  967.6  261.4  OA 1070.8  24.5 CL  943.2 171.5 Split   875.8 135.3  350.3 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.504. Used 0:03, Left 0:05
+Step   325: OL  965.3  258.9  OA 1067.6  11.6 CL  938.5 151.8 Split   873.5 108.7  343.2 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.000 Tot 0.527 Mean 0.504. Used 0:03, Left 0:05
+Step   327: OL  964.3  261.0  OA 1064.2  14.1 CL  937.6 156.9 Split   871.1 115.6  346.6 nm
+Timing: WFS 0.523 Recon 0.523 EVAL 0.523 Other 0.001 Tot 0.524 Mean 0.504. Used 0:03, Left 0:05
+Step   329: OL  964.6  268.4  OA 1060.7   3.9 CL  936.0 158.7 Split   868.7 117.8  348.4 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.505. Used 0:03, Left 0:05
+Step   331: OL  966.6  281.3  OA 1057.6  23.7 CL  933.6 155.1 Split   866.4 112.7  347.9 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.505. Used 0:03, Left 0:05
+Step   333: OL  970.4  299.8  OA 1054.4  28.5 CL  931.1 150.2 Split   864.0 105.5  347.0 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.000 Tot 0.529 Mean 0.505. Used 0:03, Left 0:05
+Step   335: OL  976.3  323.5  OA 1050.7  19.8 CL  929.0 149.6 Split   861.6 104.5  347.6 nm
+Timing: WFS 0.529 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.505. Used 0:03, Left 0:05
+Step   337: OL  984.1  351.2  OA 1047.6  40.2 CL  927.9 155.6 Split   859.1 112.6  350.6 nm
+Timing: WFS 0.524 Recon 0.523 EVAL 0.523 Other 0.001 Tot 0.524 Mean 0.505. Used 0:03, Left 0:05
+Step   339: OL  993.6  381.7  OA 1043.8  36.4 CL  926.8 162.1 Split   856.7 121.4  353.8 nm
+Timing: WFS 0.526 Recon 0.526 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.506. Used 0:03, Left 0:05
+Step   341: OL 1004.4  413.2  OA 1040.7  44.9 CL  923.3 151.9 Split   854.2 106.9  350.3 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.506. Used 0:03, Left 0:05
+Step   343: OL 1015.5  443.7  OA 1036.6  35.2 CL  921.0 151.4 Split   851.7 106.0  350.6 nm
+Timing: WFS 0.525 Recon 0.518 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.506. Used 0:03, Left 0:05
+Step   345: OL 1026.1  471.3  OA 1033.0  43.3 CL  921.0 165.2 Split   849.2 124.8  356.6 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.506. Used 0:03, Left 0:05
+Step   347: OL 1035.1  494.4  OA 1029.2  38.4 CL  918.3 161.8 Split   846.7 120.1  355.7 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.000 Tot 0.528 Mean 0.506. Used 0:03, Left 0:05
+Step   349: OL 1041.6  511.4  OA 1025.1  20.3 CL  914.5 150.2 Split   844.1 103.7  351.8 nm
+Timing: WFS 0.528 Recon 0.527 EVAL 0.528 Other 0.001 Tot 0.528 Mean 0.506. Used 0:03, Left 0:05
+Step   351: OL 1044.8  521.6  OA 1020.9  11.0 CL  915.6 170.8 Split   841.5 132.0  360.8 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.506. Used 0:03, Left 0:05
+Step   353: OL 1044.4  524.5  OA 1017.2   8.7 CL  913.4 170.5 Split   838.9 131.3  361.4 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.507. Used 0:03, Left 0:05
+Step   355: OL 1040.4  520.2  OA 1013.8  16.0 CL  909.1 156.1 Split   836.3 111.6  356.3 nm
+Timing: WFS 0.524 Recon 0.517 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.507. Used 0:03, Left 0:05
+Step   357: OL 1033.2  509.5  OA 1010.0  12.7 CL  907.8 161.6 Split   833.7 119.1  359.3 nm
+Timing: WFS 0.526 Recon 0.526 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.507. Used 0:03, Left 0:05
+Step   359: OL 1023.4  493.3  OA 1006.3  31.3 CL  910.5 189.1 Split   831.0 154.4  372.1 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.507. Used 0:03, Left 0:05
+Step   361: OL 1011.8  473.2  OA 1003.0  41.7 CL  909.6 195.1 Split   828.3 161.7  375.9 nm
+Timing: WFS 0.526 Recon 0.519 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.507. Used 0:03, Left 0:05
+Step   363: OL  999.5  450.8  OA  999.3  32.7 CL  904.5 178.3 Split   825.7 140.6  369.1 nm
+Timing: WFS 0.521 Recon 0.521 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.507. Used 0:03, Left 0:05
+Step   365: OL  987.3  427.8  OA  995.5  23.6 CL  900.5 167.7 Split   823.1 126.5  365.3 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.507. Used 0:03, Left 0:05
+Step   367: OL  975.9  405.8  OA  991.4  16.2 CL  899.9 177.3 Split   820.4 138.9  369.9 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.508. Used 0:03, Left 0:05
+Step   369: OL  965.8  386.5  OA  988.1  30.0 CL  898.6 181.8 Split   817.6 144.6  372.9 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.508. Used 0:03, Left 0:05
+Step   371: OL  957.5  371.0  OA  984.0  11.6 CL  895.3 176.1 Split   814.9 137.0  370.7 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.508. Used 0:03, Left 0:05
+Step   373: OL  951.3  360.5  OA  980.3   4.8 CL  891.1 165.6 Split   812.2 122.8  366.6 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.000 Tot 0.530 Mean 0.508. Used 0:03, Left 0:05
+Step   375: OL  947.3  355.8  OA  976.7  13.2 CL  888.0 160.3 Split   809.5 115.3  365.0 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.000 Tot 0.538 Mean 0.508. Used 0:03, Left 0:05
+Step   377: OL  945.6  357.5  OA  972.7   8.0 CL  887.0 169.8 Split   806.7 128.2  368.9 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.508. Used 0:03, Left 0:05
+Step   379: OL  946.5  365.9  OA  968.9   7.7 CL  884.6 169.7 Split   803.9 127.9  369.1 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.531 Mean 0.508. Used 0:03, Left 0:05
+Step   381: OL  950.3  381.2  OA  965.5  23.7 CL  879.5 154.0 Split   801.2 105.7  362.9 nm
+Timing: WFS 0.525 Recon 0.518 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.509. Used 0:03, Left 0:05
+Step   383: OL  957.0  403.3  OA  961.3  20.9 CL  878.3 163.5 Split   798.4 119.0  366.1 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.509. Used 0:03, Left 0:05
+Step   385: OL  967.0  431.7  OA  957.9  39.3 CL  875.7 164.2 Split   795.6 119.7  365.9 nm
+Timing: WFS 0.523 Recon 0.516 EVAL 0.523 Other 0.000 Tot 0.524 Mean 0.509. Used 0:03, Left 0:05
+Step   387: OL  980.5  465.8  OA  954.5  51.2 CL  873.8 169.1 Split   792.8 126.2  367.4 nm
+Timing: WFS 0.526 Recon 0.526 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.509. Used 0:03, Left 0:05
+Step   389: OL  997.1  504.5  OA  951.0  59.0 CL  870.3 164.8 Split   790.0 120.1  365.0 nm
+Timing: WFS 0.521 Recon 0.514 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.509. Used 0:03, Left 0:05
+Step   391: OL 1016.7  546.4  OA  946.8  52.1 CL  864.5 145.9 Split   787.2  92.1  357.2 nm
+Timing: WFS 0.530 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.509. Used 0:03, Left 0:05
+Step   393: OL 1038.4  589.7  OA  941.5  36.3 CL  866.1 173.4 Split   784.4 131.7  367.2 nm
+Timing: WFS 0.526 Recon 0.519 EVAL 0.526 Other 0.001 Tot 0.526 Mean 0.509. Used 0:03, Left 0:05
+Step   395: OL 1061.1  632.4  OA  937.3  30.1 CL  861.6 164.5 Split   781.6 119.4  362.7 nm
+Timing: WFS 0.535 Recon 0.534 EVAL 0.535 Other 0.001 Tot 0.535 Mean 0.509. Used 0:03, Left 0:05
+Step   397: OL 1083.2  672.3  OA  934.5  55.0 CL  856.4 149.9 Split   778.8  97.7  356.2 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.536 Mean 0.509. Used 0:03, Left 0:05
+Step   399: OL 1103.1  707.2  OA  929.8  43.2 CL  853.2 147.8 Split   775.9  94.5  354.8 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.510. Used 0:03, Left 0:05
+Step   401: OL 1118.9  734.8  OA  924.5  22.0 CL  853.8 169.1 Split   773.0 125.4  362.4 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.510. Used 0:03, Left 0:05
+Step   403: OL 1129.0  753.2  OA  920.1  22.6 CL  853.9 185.3 Split   770.2 146.6  368.8 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.000 Tot 0.536 Mean 0.510. Used 0:03, Left 0:05
+Step   405: OL 1132.2  761.1  OA  916.3  36.8 CL  852.1 190.6 Split   767.3 153.2  370.6 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.510. Used 0:03, Left 0:05
+Step   407: OL 1127.7  757.6  OA  912.1  22.6 CL  847.9 181.5 Split   764.5 141.6  366.7 nm
+Timing: WFS 0.539 Recon 0.538 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.510. Used 0:03, Left 0:05
+Step   409: OL 1115.5  742.5  OA  908.2  29.1 CL  844.9 179.8 Split   761.7 139.2  365.7 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.510. Used 0:03, Left 0:05
+Step   411: OL 1096.3  716.6  OA  903.9  26.6 CL  844.2 189.5 Split   758.8 151.6  369.9 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.537 Mean 0.510. Used 0:03, Left 0:04
+Step   413: OL 1071.4  681.4  OA  899.4  17.9 CL  842.3 193.5 Split   756.0 156.6  371.4 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.510. Used 0:03, Left 0:04
+Step   415: OL 1042.8  639.2  OA  895.9  36.4 CL  842.3 204.0 Split   753.2 169.4  376.9 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.511. Used 0:03, Left 0:04
+Step   417: OL 1012.8  592.9  OA  893.0  58.7 CL  843.0 217.0 Split   750.4 184.9  384.1 nm
+Timing: WFS 0.524 Recon 0.517 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.511. Used 0:03, Left 0:04
+Step   419: OL  983.7  545.9  OA  889.7  72.3 CL  844.5 232.5 Split   747.7 203.0  392.6 nm
+Timing: WFS 0.533 Recon 0.528 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.511. Used 0:03, Left 0:04
+Step   421: OL  957.5  501.6  OA  884.9  63.2 CL  841.1 229.2 Split   745.0 199.1  390.5 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.511. Used 0:03, Left 0:04
+Step   423: OL  935.7  463.5  OA  879.3  31.5 CL  833.0 206.0 Split   742.4 171.6  377.8 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.511. Used 0:04, Left 0:04
+Step   425: OL  919.3  434.5  OA  875.0  21.9 CL  829.0 199.4 Split   739.8 163.5  374.1 nm
+Timing: WFS 0.528 Recon 0.512 EVAL 0.528 Other 0.001 Tot 0.528 Mean 0.511. Used 0:04, Left 0:04
+Step   427: OL  908.8  417.0  OA  871.3  25.0 CL  821.3 173.2 Split   737.3 129.7  361.7 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.511. Used 0:04, Left 0:04
+Step   429: OL  904.4  412.4  OA  866.8  17.8 CL  818.8 173.4 Split   734.8 129.9  361.1 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.511. Used 0:04, Left 0:04
+Step   431: OL  906.3  421.5  OA  862.2  24.2 CL  819.2 189.5 Split   732.4 150.7  367.1 nm
+Timing: WFS 0.521 Recon 0.514 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.511. Used 0:04, Left 0:04
+Step   433: OL  914.9  444.2  OA  858.1  33.0 CL  816.2 187.6 Split   730.0 148.2  365.1 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.512. Used 0:04, Left 0:04
+Step   435: OL  930.3  479.4  OA  854.1  41.6 CL  811.6 177.7 Split   727.8 135.2  359.2 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.512. Used 0:04, Left 0:04
+Step   437: OL  952.7  525.2  OA  850.7  54.5 CL  805.0 156.1 Split   725.6 104.6  348.6 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.512. Used 0:04, Left 0:04
+Step   439: OL  981.4  578.9  OA  848.1  81.2 CL  803.4 162.3 Split   723.4 113.5  349.4 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.512. Used 0:04, Left 0:04
+Step   441: OL 1015.1  637.3  OA  842.9  76.4 CL  802.6 172.1 Split   721.3 127.2  351.9 nm
+Timing: WFS 0.534 Recon 0.533 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.512. Used 0:04, Left 0:04
+Step   443: OL 1051.7  696.8  OA  837.1  61.1 CL  799.7 170.6 Split   719.3 125.1  349.5 nm
+Timing: WFS 0.523 Recon 0.523 EVAL 0.523 Other 0.001 Tot 0.523 Mean 0.512. Used 0:04, Left 0:04
+Step   445: OL 1088.6  753.6  OA  832.8  64.5 CL  796.3 166.2 Split   717.4 118.7  345.7 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.512. Used 0:04, Left 0:04
+Step   447: OL 1122.7  804.3  OA  827.3  53.8 CL  796.1 177.9 Split   715.5 134.5  349.2 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.512. Used 0:04, Left 0:04
+Step   449: OL 1151.4  845.9  OA  822.7  48.9 CL  791.8 167.1 Split   713.7 119.6  342.8 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.000 Tot 0.533 Mean 0.512. Used 0:04, Left 0:04
+Step   451: OL 1172.2  875.9  OA  817.8  40.6 CL  790.1 169.9 Split   712.0 123.3  342.6 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.512. Used 0:04, Left 0:04
+Step   453: OL 1183.4  892.6  OA  812.6  21.0 CL  790.9 183.6 Split   710.3 141.6  347.8 nm
+Timing: WFS 0.520 Recon 0.513 EVAL 0.520 Other 0.001 Tot 0.520 Mean 0.512. Used 0:04, Left 0:04
+Step   455: OL 1184.1  895.3  OA  808.7  21.7 CL  787.9 177.6 Split   708.8 133.5  344.2 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.513. Used 0:04, Left 0:04
+Step   457: OL 1174.4  884.0  OA  804.0  12.4 CL  791.8 203.5 Split   707.3 166.5  356.1 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.513. Used 0:04, Left 0:04
+Step   459: OL 1154.9  859.7  OA  800.3  16.5 CL  790.3 203.4 Split   705.9 166.1  355.4 nm
+Timing: WFS 0.535 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.513. Used 0:04, Left 0:04
+Step   461: OL 1127.5  824.1  OA  796.8  31.9 CL  792.1 216.4 Split   704.6 181.8  362.0 nm
+Timing: WFS 0.538 Recon 0.533 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.513. Used 0:04, Left 0:04
+Step   463: OL 1094.2  779.7  OA  793.5  40.7 CL  792.3 221.8 Split   703.4 188.0  364.6 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.513. Used 0:04, Left 0:04
+Step   465: OL 1057.8  729.5  OA  789.9  36.4 CL  788.9 213.6 Split   702.3 177.9  359.5 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.513. Used 0:04, Left 0:04
+Step   467: OL 1021.1  676.9  OA  786.9  52.8 CL  794.5 238.9 Split   701.2 207.6  373.5 nm
+Timing: WFS 0.530 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.513. Used 0:04, Left 0:04
+Step   469: OL  986.6  625.5  OA  783.8  58.8 CL  795.1 244.9 Split   700.2 214.4  376.7 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.513. Used 0:04, Left 0:04
+Step   471: OL  956.4  578.7  OA  781.2  64.9 CL  794.1 244.4 Split   699.4 213.5  376.2 nm
+Timing: WFS 0.542 Recon 0.535 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.513. Used 0:04, Left 0:04
+Step   473: OL  932.3  539.7  OA  776.6  45.3 CL  789.7 233.4 Split   698.6 200.5  368.3 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.513. Used 0:04, Left 0:04
+Step   475: OL  915.0  511.3  OA  772.6  30.4 CL  786.5 226.1 Split   697.9 191.6  362.6 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.513. Used 0:04, Left 0:04
+Step   477: OL  905.2  495.4  OA  769.1  10.3 CL  781.5 211.1 Split   697.4 173.2  352.7 nm
+Timing: WFS 0.538 Recon 0.537 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.514. Used 0:04, Left 0:04
+Step   479: OL  903.1  493.3  OA  766.3  11.9 CL  776.8 196.0 Split   697.0 153.9  343.1 nm
+Timing: WFS 0.521 Recon 0.521 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.514. Used 0:04, Left 0:04
+Step   481: OL  908.8  505.3  OA  763.4  26.1 CL  775.7 196.9 Split   696.5 154.7  341.4 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.528 Mean 0.514. Used 0:04, Left 0:04
+Step   483: OL  922.5  530.9  OA  762.0  54.6 CL  771.4 183.4 Split   696.3 136.4  332.2 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.529 Mean 0.514. Used 0:04, Left 0:04
+Step   485: OL  944.0  568.7  OA  760.1  66.7 CL  769.2 178.3 Split   696.1 128.9  327.4 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.514. Used 0:04, Left 0:04
+Step   487: OL  972.9  616.5  OA  756.6  57.3 CL  767.3 173.3 Split   696.0 121.4  323.0 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.514. Used 0:04, Left 0:04
+Step   489: OL 1007.9  671.2  OA  754.7  67.9 CL  764.9 166.6 Split   696.0 110.7  317.3 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.514. Used 0:04, Left 0:04
+Step   491: OL 1047.0  729.4  OA  751.1  62.9 CL  767.8 185.5 Split   696.0 137.3  324.2 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.514. Used 0:04, Left 0:04
+Step   493: OL 1087.6  787.1  OA  749.5  72.6 CL  765.0 176.8 Split   696.3 124.5  317.0 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.514. Used 0:04, Left 0:04
+Step   495: OL 1126.6  840.7  OA  747.2  75.4 CL  763.6 173.4 Split   696.6 118.9  312.8 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.514. Used 0:04, Left 0:04
+Step   497: OL 1161.0  886.7  OA  743.8  65.0 CL  763.2 174.2 Split   696.9 119.6  311.0 nm
+Timing: WFS 0.543 Recon 0.536 EVAL 0.543 Other 0.001 Tot 0.543 Mean 0.514. Used 0:04, Left 0:04
+Step   499: OL 1188.1  922.2  OA  739.7  44.3 CL  766.2 190.2 Split   697.4 141.5  317.4 nm
+Timing: WFS 0.522 Recon 0.522 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.514. Used 0:04, Left 0:04
+Step   501: OL 1205.8  945.1  OA  736.7  30.2 CL  768.2 199.9 Split   698.0 153.8  320.9 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.515. Used 0:04, Left 0:04
+Step   503: OL 1213.0  954.5  OA  734.8  29.7 CL  767.5 196.9 Split   698.7 149.2  317.6 nm
+Timing: WFS 0.537 Recon 0.532 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.515. Used 0:04, Left 0:04
+Step   505: OL 1209.5  950.1  OA  731.9  21.3 CL  778.4 237.9 Split   699.4 200.2  341.7 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.515. Used 0:04, Left 0:04
+Step   507: OL 1196.0  933.0  OA  730.2  31.2 CL  781.5 248.1 Split   700.3 211.8  346.8 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.515. Used 0:04, Left 0:04
+Step   509: OL 1174.2  904.8  OA  728.1  14.1 CL  777.9 234.9 Split   701.4 195.7  336.4 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.515. Used 0:04, Left 0:04
+Step   511: OL 1146.2  868.1  OA  726.9  33.2 CL  783.7 253.1 Split   702.5 216.9  347.4 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.515. Used 0:04, Left 0:04
+Plan 0x7f39e8011300 created
+Plan 0x7f39e8011300 destroyed
+Step   511 updated low order loop gain : 0.488
+Step   513: OL 1114.6  825.8  OA  726.1  46.0 CL  787.9 264.2 Split   703.7 229.4  354.3 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.515. Used 0:04, Left 0:04
+Step   515: OL 1082.1  781.0  OA  724.5  40.8 CL  787.4 260.8 Split   705.1 225.0  350.5 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.515. Used 0:04, Left 0:04
+Step   517: OL 1051.0  736.9  OA  722.4  21.8 CL  784.1 248.4 Split   706.6 209.9  339.9 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.515. Used 0:04, Left 0:04
+Step   519: OL 1023.4  696.4  OA  721.3  26.5 CL  786.3 253.5 Split   708.1 215.4  341.8 nm
+Timing: WFS 0.541 Recon 0.540 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.515. Used 0:04, Left 0:04
+Step   521: OL 1000.6  661.7  OA  720.2  20.2 CL  785.9 249.0 Split   709.8 209.5  337.3 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.529 Mean 0.515. Used 0:04, Left 0:04
+Step   523: OL  983.4  634.6  OA  719.1  27.3 CL  788.0 253.9 Split   711.5 214.9  338.7 nm
+Timing: WFS 0.541 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.515. Used 0:04, Left 0:04
+Step   525: OL  972.2  616.2  OA  718.5  24.0 CL  785.1 239.8 Split   713.4 197.4  327.7 nm
+Timing: WFS 0.539 Recon 0.538 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.515. Used 0:04, Left 0:04
+Step   527: OL  967.0  606.9  OA  717.4  19.1 CL  784.9 236.1 Split   715.4 192.2  323.0 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.516. Used 0:04, Left 0:04
+Step   529: OL  967.5  606.4  OA  716.2  15.6 CL  785.8 237.1 Split   717.4 192.9  320.8 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.516. Used 0:04, Left 0:04
+Step   531: OL  973.2  614.1  OA  716.3  37.0 CL  782.0 220.1 Split   719.5 170.7  306.3 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.516. Used 0:04, Left 0:04
+Step   533: OL  983.4  628.9  OA  716.0  40.1 CL  781.6 214.0 Split   721.7 162.1  300.0 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.516. Used 0:04, Left 0:03
+Step   535: OL  997.4  649.1  OA  714.8  33.3 CL  786.0 226.6 Split   723.9 177.8  306.1 nm
+Timing: WFS 0.535 Recon 0.535 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.516. Used 0:05, Left 0:03
+Step   537: OL 1014.2  673.3  OA  714.3  31.2 CL  787.1 226.1 Split   726.3 176.4  303.3 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.516. Used 0:05, Left 0:03
+Step   539: OL 1032.9  699.7  OA  714.2  36.7 CL  788.3 226.1 Split   728.7 175.7  300.6 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.516. Used 0:05, Left 0:03
+Step   541: OL 1052.4  726.6  OA  715.4  56.4 CL  786.1 213.2 Split   731.2 157.9  288.5 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.516. Used 0:05, Left 0:03
+Step   543: OL 1071.6  752.6  OA  714.9  48.0 CL  788.2 215.0 Split   733.8 159.5  287.6 nm
+Timing: WFS 0.540 Recon 0.539 EVAL 0.540 Other 0.001 Tot 0.540 Mean 0.516. Used 0:05, Left 0:03
+Step   545: OL 1089.4  776.2  OA  713.3  20.4 CL  796.2 239.0 Split   736.4 190.1  302.7 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.516. Used 0:05, Left 0:03
+Step   547: OL 1104.9  796.3  OA  713.3   7.2 CL  801.5 251.1 Split   739.1 204.6  310.0 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.516. Used 0:05, Left 0:03
+Step   549: OL 1117.5  812.0  OA  715.4  51.4 CL  795.2 224.6 Split   741.9 170.0  286.1 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.000 Tot 0.538 Mean 0.516. Used 0:05, Left 0:03
+Step   551: OL 1126.5  822.8  OA  714.4  21.1 CL  802.3 243.0 Split   744.7 193.2  298.4 nm
+Timing: WFS 0.521 Recon 0.521 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.516. Used 0:05, Left 0:03
+Step   553: OL 1131.8  828.3  OA  715.3  24.4 CL  807.9 255.1 Split   747.6 207.4  306.4 nm
+Timing: WFS 0.525 Recon 0.518 EVAL 0.525 Other 0.001 Tot 0.525 Mean 0.516. Used 0:05, Left 0:03
+Step   555: OL 1133.3  828.7  OA  715.4  10.1 CL  814.6 271.1 Split   750.4 226.4  316.9 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.516. Used 0:05, Left 0:03
+Step   557: OL 1131.3  824.1  OA  716.6  19.6 CL  810.2 251.1 Split   753.5 201.2  297.8 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.517. Used 0:05, Left 0:03
+Step   559: OL 1126.2  815.3  OA  717.2   9.4 CL  817.0 266.8 Split   756.4 220.0  308.7 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.517. Used 0:05, Left 0:03
+Step   561: OL 1118.7  803.0  OA  718.4  15.5 CL  820.4 271.4 Split   759.4 224.9  310.4 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.517. Used 0:05, Left 0:03
+Step   563: OL 1109.6  788.3  OA  719.8  10.4 CL  823.6 274.4 Split   762.5 227.8  311.4 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.517. Used 0:05, Left 0:03
+Step   565: OL 1099.9  772.4  OA  721.1   7.8 CL  822.8 265.6 Split   765.5 216.4  301.6 nm
+Timing: WFS 0.538 Recon 0.497 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.517. Used 0:05, Left 0:03
+Step   567: OL 1090.3  756.5  OA  722.5  14.7 CL  824.4 264.4 Split   768.6 214.2  298.1 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.517. Used 0:05, Left 0:03
+Step   569: OL 1081.6  741.7  OA  724.1  18.2 CL  835.0 289.9 Split   771.7 244.5  318.9 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.517. Used 0:05, Left 0:03
+Step   571: OL 1074.5  729.0  OA  725.8  20.9 CL  838.0 292.3 Split   774.8 246.7  319.2 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.517. Used 0:05, Left 0:03
+Step   573: OL 1069.5  719.2  OA  728.4  35.2 CL  827.8 253.8 Split   778.0 198.5  282.7 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.517. Used 0:05, Left 0:03
+Step   575: OL 1066.7  712.7  OA  729.8  32.7 CL  830.2 255.0 Split   781.1 199.5  281.1 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.517. Used 0:05, Left 0:03
+Step   577: OL 1066.3  709.6  OA  731.2  18.1 CL  836.7 268.9 Split   784.3 216.3  291.5 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.517. Used 0:05, Left 0:03
+Step   579: OL 1067.9  709.5  OA  732.7   3.8 CL  844.8 287.6 Split   787.4 238.6  306.3 nm
+Timing: WFS 0.519 Recon 0.519 EVAL 0.519 Other 0.001 Tot 0.520 Mean 0.517. Used 0:05, Left 0:03
+Step   581: OL 1071.1  711.8  OA  734.8   3.0 CL  846.1 284.8 Split   790.5 234.5  301.6 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.517. Used 0:05, Left 0:03
+Step   583: OL 1075.3  715.6  OA  737.3  23.8 CL  844.5 273.4 Split   793.7 219.8  288.4 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.517. Used 0:05, Left 0:03
+Step   585: OL 1079.8  719.8  OA  739.2   8.7 CL  850.8 285.8 Split   796.9 234.6  298.0 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.517. Used 0:05, Left 0:03
+Step   587: OL 1083.8  723.2  OA  741.6  15.9 CL  854.4 290.2 Split   800.0 239.3  299.8 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.517. Used 0:05, Left 0:03
+Step   589: OL 1086.7  724.9  OA  744.1  11.9 CL  855.6 286.9 Split   803.2 234.6  294.7 nm
+Timing: WFS 0.523 Recon 0.516 EVAL 0.523 Other 0.001 Tot 0.524 Mean 0.517. Used 0:05, Left 0:03
+Step   591: OL 1087.8  724.0  OA  746.6   6.3 CL  860.8 295.7 Split   806.4 244.7  301.4 nm
+Timing: WFS 0.529 Recon 0.524 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.518. Used 0:05, Left 0:03
+Step   593: OL 1086.9  720.0  OA  749.3  17.8 CL  866.8 307.0 Split   809.5 257.8  310.0 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.518. Used 0:05, Left 0:03
+Step   595: OL 1083.9  712.8  OA  752.2  11.4 CL  867.8 302.9 Split   812.7 252.1  304.4 nm
+Timing: WFS 0.525 Recon 0.523 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.518. Used 0:05, Left 0:03
+Step   597: OL 1079.1  702.8  OA  755.1  14.4 CL  867.1 294.0 Split   815.8 240.7  293.7 nm
+Timing: WFS 0.531 Recon 0.528 EVAL 0.531 Other 0.001 Tot 0.531 Mean 0.518. Used 0:05, Left 0:03
+Step   599: OL 1073.0  690.7  OA  757.9  21.0 CL  878.1 319.6 Split   818.9 271.1  317.0 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.518. Used 0:05, Left 0:03
+Step   601: OL 1066.4  677.6  OA  761.0  12.0 CL  876.8 309.3 Split   822.0 258.2  305.2 nm
+Timing: WFS 0.542 Recon 0.542 EVAL 0.542 Other 0.001 Tot 0.542 Mean 0.518. Used 0:05, Left 0:03
+Step   603: OL 1060.1  664.7  OA  764.0  17.6 CL  882.9 320.2 Split   825.1 270.8  314.1 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.538 Mean 0.518. Used 0:05, Left 0:03
+Step   605: OL 1054.8  653.4  OA  767.0   7.3 CL  882.9 313.9 Split   828.2 262.7  305.9 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.518. Used 0:05, Left 0:03
+Step   607: OL 1051.4  644.9  OA  770.3   9.5 CL  885.6 315.2 Split   831.2 263.7  305.7 nm
+Timing: WFS 0.531 Recon 0.525 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.518. Used 0:05, Left 0:03
+Step   609: OL 1050.4  640.2  OA  773.6  12.0 CL  884.9 306.8 Split   834.2 253.0  295.2 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.518. Used 0:05, Left 0:03
+Step   611: OL 1052.1  640.1  OA  776.8   7.1 CL  888.2 310.0 Split   837.2 256.4  296.6 nm
+Timing: WFS 0.522 Recon 0.515 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.518. Used 0:05, Left 0:03
+Step   613: OL 1056.7  644.8  OA  780.9  35.6 CL  884.9 294.1 Split   840.2 236.4  277.6 nm
+Timing: WFS 0.536 Recon 0.533 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.518. Used 0:05, Left 0:03
+Step   615: OL 1064.3  654.1  OA  783.6  13.1 CL  891.2 306.2 Split   843.1 250.7  288.6 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.518. Used 0:05, Left 0:03
+Step   617: OL 1074.3  667.5  OA  787.2  14.2 CL  894.1 308.3 Split   846.1 252.8  289.1 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.518. Used 0:05, Left 0:03
+Step   619: OL 1086.3  683.9  OA  790.7  24.4 CL  897.3 312.0 Split   848.9 256.9  290.7 nm
+Timing: WFS 0.540 Recon 0.539 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.518. Used 0:05, Left 0:03
+Step   621: OL 1099.6  702.1  OA  795.7  56.4 CL  892.5 291.7 Split   851.8 231.2  266.6 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.518. Used 0:05, Left 0:03
+Step   623: OL 1113.1  720.5  OA  798.3  36.4 CL  895.5 294.1 Split   854.6 233.6  267.7 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.518. Used 0:05, Left 0:03
+Step   625: OL 1125.8  737.5  OA  801.6  30.0 CL  899.7 300.4 Split   857.4 240.9  272.8 nm
+Timing: WFS 0.538 Recon 0.538 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.518. Used 0:05, Left 0:03
+Step   627: OL 1136.7  751.7  OA  804.5  19.9 CL  912.0 330.3 Split   860.0 277.2  303.4 nm
+Timing: WFS 0.535 Recon 0.534 EVAL 0.535 Other 0.000 Tot 0.535 Mean 0.518. Used 0:05, Left 0:03
+Step   629: OL 1144.9  761.5  OA  808.5  27.8 CL  905.4 305.2 Split   862.8 246.1  274.4 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.000 Tot 0.533 Mean 0.519. Used 0:05, Left 0:03
+Step   631: OL 1149.4  766.0  OA  812.0  22.2 CL  909.4 311.2 Split   865.5 253.0  279.4 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.000 Tot 0.539 Mean 0.519. Used 0:05, Left 0:03
+Step   633: OL 1149.9  764.4  OA  816.0  30.2 CL  911.2 310.4 Split   868.1 251.5  277.0 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.519. Used 0:05, Left 0:03
+Step   635: OL 1146.0  756.2  OA  819.4  24.6 CL  914.2 313.3 Split   870.7 254.7  278.7 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.519. Used 0:05, Left 0:03
+Step   637: OL 1137.8  741.5  OA  822.6   3.2 CL  922.2 330.9 Split   873.1 275.8  296.8 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.000 Tot 0.533 Mean 0.519. Used 0:05, Left 0:03
+Step   639: OL 1125.9  720.7  OA  826.9  33.1 CL  935.8 362.4 Split   875.5 312.8  330.4 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.519. Used 0:05, Left 0:03
+Step   641: OL 1110.8  694.5  OA  830.6  34.5 CL  938.6 365.0 Split   877.9 315.4  332.1 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.529 Mean 0.519. Used 0:05, Left 0:03
+Step   643: OL 1093.4  664.0  OA  834.1  32.5 CL  940.0 364.1 Split   880.2 314.1  330.0 nm
+Timing: WFS 0.531 Recon 0.530 EVAL 0.531 Other 0.001 Tot 0.531 Mean 0.519. Used 0:05, Left 0:03
+Step   645: OL 1074.8  630.4  OA  838.0  40.7 CL  945.1 372.7 Split   882.4 323.7  338.4 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.519. Used 0:05, Left 0:03
+Step   647: OL 1056.0  595.3  OA  841.8  43.1 CL  947.7 374.9 Split   884.6 326.0  340.1 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.519. Used 0:06, Left 0:03
+Step   649: OL 1038.1  560.3  OA  845.6  45.1 CL  948.2 371.9 Split   886.7 322.1  336.0 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.519. Used 0:06, Left 0:03
+Step   651: OL 1022.0  527.1  OA  848.8  41.8 CL  952.1 377.8 Split   888.7 328.8  341.4 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.519. Used 0:06, Left 0:03
+Step   653: OL 1008.4  497.5  OA  851.9  32.6 CL  950.5 369.9 Split   890.7 319.4  331.9 nm
+Timing: WFS 0.534 Recon 0.531 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.519. Used 0:06, Left 0:02
+Step   655: OL  997.9  473.0  OA  855.2  27.8 CL  951.0 367.4 Split   892.6 316.1  328.1 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.519. Used 0:06, Left 0:02
+Step   657: OL  990.8  455.1  OA  858.5  25.5 CL  951.3 364.7 Split   894.4 312.8  324.2 nm
+Timing: WFS 0.524 Recon 0.517 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.519. Used 0:06, Left 0:02
+Step   659: OL  987.3  444.7  OA  861.7   8.5 CL  947.3 350.3 Split   896.2 295.5  307.0 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.519. Used 0:06, Left 0:02
+Step   661: OL  987.7  442.9  OA  865.6  24.3 CL  946.5 344.2 Split   897.9 287.9  299.2 nm
+Timing: WFS 0.524 Recon 0.522 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.519. Used 0:06, Left 0:02
+Step   663: OL  992.1  450.0  OA  868.8  18.0 CL  949.7 349.8 Split   899.5 294.4  304.7 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.519. Used 0:06, Left 0:02
+Step   665: OL 1000.6  466.2  OA  872.3  26.4 CL  943.2 328.5 Split   901.1 268.4  278.8 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.519. Used 0:06, Left 0:02
+Step   667: OL 1013.5  491.1  OA  875.8  32.4 CL  942.9 324.5 Split   902.5 263.2  273.0 nm
+Timing: WFS 0.527 Recon 0.521 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.519. Used 0:06, Left 0:02
+Step   669: OL 1030.7  523.9  OA  879.8  48.4 CL  939.8 312.0 Split   903.9 247.3  257.0 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.519. Used 0:06, Left 0:02
+Step   671: OL 1052.0  562.9  OA  883.2  50.9 CL  940.5 311.1 Split   905.3 245.9  254.8 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.519. Used 0:06, Left 0:02
+Step   673: OL 1076.5  606.0  OA  885.7  39.0 CL  945.3 322.8 Split   906.5 260.5  267.9 nm
+Timing: WFS 0.527 Recon 0.526 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.519. Used 0:06, Left 0:02
+Step   675: OL 1102.7  650.2  OA  889.1  43.8 CL  945.2 319.9 Split   907.7 256.7  263.5 nm
+Timing: WFS 0.542 Recon 0.535 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.520. Used 0:06, Left 0:02
+Step   677: OL 1128.8  692.4  OA  892.8  52.3 CL  943.5 312.4 Split   908.8 247.0  253.4 nm
+Timing: WFS 0.522 Recon 0.521 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.520. Used 0:06, Left 0:02
+Step   679: OL 1152.5  729.3  OA  896.3  55.5 CL  946.0 317.4 Split   909.9 252.9  258.8 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.520. Used 0:06, Left 0:02
+Step   681: OL 1171.2  757.7  OA  897.7  13.5 CL  957.0 347.0 Split   910.8 289.3  293.7 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.520. Used 0:06, Left 0:02
+Step   683: OL 1182.9  774.8  OA  901.1  27.1 CL  968.6 376.0 Split   911.7 323.5  327.0 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.520. Used 0:06, Left 0:02
+Step   685: OL 1185.8  778.4  OA  903.8  13.9 CL  966.3 368.5 Split   912.6 314.7  317.8 nm
+Timing: WFS 0.532 Recon 0.531 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.520. Used 0:06, Left 0:02
+Step   687: OL 1179.0  767.3  OA  907.1  20.2 CL  969.5 375.1 Split   913.4 322.3  325.0 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.520. Used 0:06, Left 0:02
+Step   689: OL 1162.6  741.2  OA  910.1  16.3 CL  968.7 371.4 Split   914.2 317.8  320.4 nm
+Timing: WFS 0.526 Recon 0.525 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.520. Used 0:06, Left 0:02
+Step   691: OL 1137.9  701.1  OA  913.7  37.2 CL  976.3 389.7 Split   914.8 339.0  341.2 nm
+Timing: WFS 0.538 Recon 0.537 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.520. Used 0:06, Left 0:02
+Step   693: OL 1106.9  649.1  OA  917.6  56.2 CL  984.3 408.2 Split   915.4 360.2  362.0 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.520. Used 0:06, Left 0:02
+Step   695: OL 1072.7  588.1  OA  920.8  58.7 CL  985.7 410.2 Split   915.9 362.4  364.1 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.520. Used 0:06, Left 0:02
+Step   697: OL 1038.3  522.2  OA  924.5  68.8 CL  989.5 418.4 Split   916.4 371.7  373.2 nm
+Timing: WFS 0.542 Recon 0.535 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.520. Used 0:06, Left 0:02
+Step   699: OL 1006.9  456.0  OA  928.3  81.1 CL  995.6 431.8 Split   916.8 386.8  388.1 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.520. Used 0:06, Left 0:02
+Step   701: OL  980.8  394.3  OA  932.8  99.1 CL 1002.8 447.5 Split   917.2 404.2  405.4 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.520. Used 0:06, Left 0:02
+Step   703: OL  961.1  341.8  OA  932.4  62.1 CL  988.7 414.3 Split   917.6 367.0  368.2 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.520. Used 0:06, Left 0:02
+Step   705: OL  947.8  301.7  OA  933.7  34.1 CL  979.4 391.1 Split   917.9 340.5  341.6 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.535 Mean 0.520. Used 0:06, Left 0:02
+Step   707: OL  939.8  275.2  OA  936.7  44.3 CL  982.7 398.8 Split   918.2 349.3  350.3 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.520. Used 0:06, Left 0:02
+Step   709: OL  935.9  261.2  OA  938.9  34.3 CL  976.7 383.3 Split   918.4 331.4  332.4 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.520. Used 0:06, Left 0:02
+Step   711: OL  935.0  257.6  OA  940.7   5.3 CL  970.6 367.3 Split   918.5 312.7  313.6 nm
+Timing: WFS 0.524 Recon 0.519 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.520. Used 0:06, Left 0:02
+Step   713: OL  936.6  263.3  OA  943.0  11.4 CL  970.5 366.9 Split   918.6 312.3  313.1 nm
+Timing: WFS 0.536 Recon 0.536 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.520. Used 0:06, Left 0:02
+Step   715: OL  941.1  279.0  OA  946.3  44.8 CL  956.3 327.5 Split   918.7 264.6  265.4 nm
+Timing: WFS 0.525 Recon 0.524 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.520. Used 0:06, Left 0:02
+Step   717: OL  949.3  305.7  OA  949.1  59.2 CL  952.1 315.2 Split   918.7 249.2  249.8 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.520. Used 0:06, Left 0:02
+Step   719: OL  962.1  343.8  OA  951.2  60.1 CL  951.7 314.5 Split   918.6 248.3  248.8 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.520. Used 0:06, Left 0:02
+Step   721: OL  979.9  391.2  OA  953.7  68.3 CL  949.6 308.2 Split   918.5 240.4  240.7 nm
+Timing: WFS 0.521 Recon 0.514 EVAL 0.521 Other 0.001 Tot 0.522 Mean 0.520. Used 0:06, Left 0:02
+Step   723: OL 1002.1  444.3  OA  956.9  85.8 CL  945.6 296.6 Split   918.4 225.2  225.4 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.520. Used 0:06, Left 0:02
+Step   725: OL 1027.1  498.7  OA  957.4  70.6 CL  948.3 305.8 Split   918.2 237.2  237.4 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.520. Used 0:06, Left 0:02
+Step   727: OL 1052.6  549.6  OA  958.2  57.7 CL  951.5 316.2 Split   917.9 250.8  250.8 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.521. Used 0:06, Left 0:02
+Step   729: OL 1075.5  592.9  OA  959.1  44.7 CL  954.5 326.1 Split   917.5 263.2  263.2 nm
+Timing: WFS 0.522 Recon 0.522 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.521. Used 0:06, Left 0:02
+Step   731: OL 1093.3  625.1  OA  961.0  52.8 CL  951.9 319.4 Split   917.2 254.8  254.8 nm
+Timing: WFS 0.535 Recon 0.534 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.521. Used 0:06, Left 0:02
+Step   733: OL 1103.6  643.6  OA  961.0   6.1 CL  965.9 359.9 Split   916.7 304.3  304.4 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.521. Used 0:06, Left 0:02
+Step   735: OL 1105.1  646.8  OA  962.7  29.7 CL  975.6 386.2 Split   916.2 335.3  335.3 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.521. Used 0:06, Left 0:02
+Step   737: OL 1097.6  634.6  OA  963.5   8.1 CL  966.2 363.0 Split   915.7 308.2  308.3 nm
+Timing: WFS 0.538 Recon 0.537 EVAL 0.538 Other 0.001 Tot 0.538 Mean 0.521. Used 0:06, Left 0:02
+Step   739: OL 1081.8  607.7  OA  965.0  27.6 CL  974.5 385.6 Split   915.1 334.7  334.8 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.521. Used 0:06, Left 0:02
+Step   741: OL 1059.6  568.2  OA  967.2  53.7 CL  981.5 404.4 Split   914.6 356.3  356.4 nm
+Timing: WFS 0.537 Recon 0.505 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.521. Used 0:06, Left 0:02
+Step   743: OL 1033.5  519.0  OA  968.7  62.8 CL  985.6 415.3 Split   913.9 368.8  369.0 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.521. Used 0:06, Left 0:02
+Step   745: OL 1006.5  464.0  OA  971.1  83.4 CL  993.0 433.8 Split   913.2 389.7  389.9 nm
+Timing: WFS 0.537 Recon 0.533 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.521. Used 0:06, Left 0:02
+Step   747: OL  981.3  407.9  OA  972.0  83.8 CL  992.2 433.5 Split   912.5 389.4  389.6 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.521. Used 0:06, Left 0:02
+Step   749: OL  960.0  355.6  OA  972.3  79.1 CL  988.3 425.9 Split   911.8 381.0  381.2 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.521. Used 0:06, Left 0:02
+Step   751: OL  943.9  311.6  OA  972.0  65.6 CL  983.9 417.1 Split   911.1 371.1  371.4 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.521. Used 0:06, Left 0:02
+Step   753: OL  933.0  279.4  OA  971.7  51.9 CL  977.0 402.4 Split   910.3 354.6  355.0 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.521. Used 0:06, Left 0:02
+Step   755: OL  926.5  259.5  OA  971.8  44.2 CL  973.7 396.0 Split   909.5 347.3  347.7 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.521. Used 0:06, Left 0:02
+Step   757: OL  923.0  249.7  OA  971.9  37.2 CL  971.2 391.7 Split   908.6 342.7  343.0 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.521. Used 0:06, Left 0:02
+Step   759: OL  921.3  246.4  OA  971.5  11.7 CL  961.0 367.8 Split   907.8 315.0  315.4 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.521. Used 0:07, Left 0:02
+Step   761: OL  920.5  246.6  OA  971.7   7.4 CL  957.2 360.0 Split   906.9 305.9  306.4 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.521. Used 0:07, Left 0:02
+Step   763: OL  920.4  249.4  OA  971.8  10.0 CL  954.5 354.7 Split   905.9 299.8  300.4 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.521. Used 0:07, Left 0:02
+Step   765: OL  921.3  256.3  OA  972.1  20.3 CL  948.9 342.0 Split   905.0 284.7  285.5 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.000 Tot 0.538 Mean 0.521. Used 0:07, Left 0:02
+Step   767: OL  924.1  269.3  OA  973.5  56.3 CL  938.4 314.2 Split   904.0 250.8  251.7 nm
+Timing: WFS 0.542 Recon 0.542 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.521. Used 0:07, Left 0:02
+Plan 0x7f3a28007620 created
+Plan 0x7f3a28007620 destroyed
+Step   767 updated low order loop gain : 0.503
+Step   769: OL  929.3  289.6  OA  972.6  39.2 CL  942.0 327.2 Split   903.0 267.1  268.2 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.000 Tot 0.533 Mean 0.521. Used 0:07, Left 0:01
+Step   771: OL  937.2  316.7  OA  973.1  54.4 CL  936.3 313.3 Split   902.0 250.0  251.3 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.521. Used 0:07, Left 0:01
+Step   773: OL  947.2  347.9  OA  972.8  53.0 CL  937.3 318.9 Split   900.9 257.2  258.7 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.000 Tot 0.539 Mean 0.521. Used 0:07, Left 0:01
+Step   775: OL  958.4  379.6  OA  972.4  50.7 CL  935.0 315.0 Split   899.8 252.5  254.1 nm
+Timing: WFS 0.541 Recon 0.540 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.521. Used 0:07, Left 0:01
+Step   777: OL  969.2  408.3  OA  971.0  28.4 CL  944.9 345.8 Split   898.7 290.4  291.9 nm
+Timing: WFS 0.524 Recon 0.523 EVAL 0.524 Other 0.001 Tot 0.524 Mean 0.521. Used 0:07, Left 0:01
+Step   779: OL  977.9  430.7  OA  970.2  13.7 CL  943.6 344.7 Split   897.6 289.3  291.1 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.521. Used 0:07, Left 0:01
+Step   781: OL  983.1  444.5  OA  969.7  16.4 CL  941.7 342.2 Split   896.4 286.6  288.6 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.522. Used 0:07, Left 0:01
+Step   783: OL  983.9  448.5  OA  968.8   3.8 CL  944.5 352.4 Split   895.3 299.0  301.0 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.530 Mean 0.522. Used 0:07, Left 0:01
+Step   785: OL  980.2  442.5  OA  968.3  22.4 CL  941.5 347.1 Split   894.2 292.8  294.9 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.522. Used 0:07, Left 0:01
+Step   787: OL  972.5  427.3  OA  967.5  22.5 CL  950.4 373.0 Split   892.9 323.5  325.6 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.522. Used 0:07, Left 0:01
+Step   789: OL  961.9  404.8  OA  967.4  44.8 CL  956.2 389.7 Split   891.7 342.9  345.1 nm
+Timing: WFS 0.533 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.522. Used 0:07, Left 0:01
+Step   791: OL  949.7  377.5  OA  966.3  42.6 CL  954.5 388.1 Split   890.6 341.2  343.3 nm
+Timing: WFS 0.543 Recon 0.542 EVAL 0.543 Other 0.001 Tot 0.543 Mean 0.522. Used 0:07, Left 0:01
+Step   793: OL  937.5  348.4  OA  964.9  33.1 CL  949.4 378.0 Split   889.4 329.9  332.1 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.001 Tot 0.532 Mean 0.522. Used 0:07, Left 0:01
+Step   795: OL  926.5  320.6  OA  964.8  55.8 CL  957.0 399.0 Split   888.2 354.1  356.2 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.522. Used 0:07, Left 0:01
+Step   797: OL  917.6  297.0  OA  963.7  56.6 CL  956.2 399.4 Split   887.1 354.8  356.9 nm
+Timing: WFS 0.533 Recon 0.528 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.522. Used 0:07, Left 0:01
+Step   799: OL  911.0  279.3  OA  961.0  22.1 CL  942.9 369.1 Split   886.0 320.4  322.7 nm
+Timing: WFS 0.531 Recon 0.527 EVAL 0.531 Other 0.001 Tot 0.531 Mean 0.522. Used 0:07, Left 0:01
+Step   801: OL  906.6  267.8  OA  959.8  22.4 CL  941.6 368.1 Split   884.9 319.6  321.8 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.522. Used 0:07, Left 0:01
+Step   803: OL  903.8  261.6  OA  958.5  23.8 CL  941.1 369.2 Split   883.8 321.1  323.3 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.000 Tot 0.532 Mean 0.522. Used 0:07, Left 0:01
+Step   805: OL  902.1  259.0  OA  957.3  29.4 CL  941.5 372.5 Split   882.7 325.2  327.4 nm
+Timing: WFS 0.530 Recon 0.530 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.522. Used 0:07, Left 0:01
+Step   807: OL  901.0  258.2  OA  955.8  24.9 CL  937.4 364.3 Split   881.7 316.0  318.2 nm
+Timing: WFS 0.532 Recon 0.525 EVAL 0.532 Other 0.000 Tot 0.533 Mean 0.522. Used 0:07, Left 0:01
+Step   809: OL  900.1  258.4  OA  954.3  26.1 CL  938.1 368.4 Split   880.6 321.1  323.3 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.522. Used 0:07, Left 0:01
+Step   811: OL  899.4  259.0  OA  952.5   3.6 CL  929.4 348.1 Split   879.6 297.7  300.2 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.522. Used 0:07, Left 0:01
+Step   813: OL  898.8  260.2  OA  951.0  13.8 CL  926.4 342.1 Split   878.6 291.0  293.6 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.522. Used 0:07, Left 0:01
+Step   815: OL  898.6  262.2  OA  949.9  36.6 CL  916.7 317.5 Split   877.7 261.7  264.4 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.522. Used 0:07, Left 0:01
+Step   817: OL  898.6  265.3  OA  947.8  21.4 CL  921.0 331.9 Split   876.7 279.5  282.1 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.522. Used 0:07, Left 0:01
+Step   819: OL  899.0  269.5  OA  946.4  33.2 CL  915.9 319.7 Split   875.7 265.3  268.2 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.522. Used 0:07, Left 0:01
+Step   821: OL  899.7  274.2  OA  944.1  19.4 CL  917.0 325.3 Split   874.8 272.4  275.1 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.522. Used 0:07, Left 0:01
+Step   823: OL  900.3  278.9  OA  942.6  30.8 CL  925.8 351.0 Split   873.8 303.2  305.9 nm
+Timing: WFS 0.527 Recon 0.527 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.522. Used 0:07, Left 0:01
+Step   825: OL  900.9  283.0  OA  940.1  10.7 CL  921.3 340.9 Split   872.9 291.7  294.4 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.522. Used 0:07, Left 0:01
+Step   827: OL  901.1  285.9  OA  938.0   5.7 CL  917.9 333.9 Split   872.1 283.7  286.4 nm
+Timing: WFS 0.542 Recon 0.535 EVAL 0.542 Other 0.001 Tot 0.543 Mean 0.522. Used 0:07, Left 0:01
+Step   829: OL  900.8  287.4  OA  936.3  24.8 CL  920.1 341.6 Split   871.2 293.3  296.0 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.000 Tot 0.530 Mean 0.522. Used 0:07, Left 0:01
+Step   831: OL  900.0  287.2  OA  933.9  16.2 CL  922.2 348.9 Split   870.4 302.1  304.7 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.522. Used 0:07, Left 0:01
+Step   833: OL  898.9  285.5  OA  931.7  16.3 CL  919.6 343.9 Split   869.6 296.6  299.0 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.522. Used 0:07, Left 0:01
+Step   835: OL  897.3  282.7  OA  929.4   8.6 CL  918.1 341.6 Split   868.8 294.3  296.7 nm
+Timing: WFS 0.525 Recon 0.518 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.522. Used 0:07, Left 0:01
+Step   837: OL  895.5  279.0  OA  927.2  17.0 CL  919.9 347.9 Split   868.1 302.1  304.4 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.522. Used 0:07, Left 0:01
+Step   839: OL  893.7  274.9  OA  925.0  19.6 CL  916.8 341.4 Split   867.4 294.8  297.0 nm
+Timing: WFS 0.523 Recon 0.523 EVAL 0.523 Other 0.001 Tot 0.524 Mean 0.522. Used 0:07, Left 0:01
+Step   841: OL  891.9  270.9  OA  922.6  14.3 CL  916.6 342.3 Split   866.6 296.3  298.4 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.522. Used 0:07, Left 0:01
+Step   843: OL  890.2  267.3  OA  920.7  32.4 CL  920.8 355.0 Split   865.9 311.2  313.2 nm
+Timing: WFS 0.523 Recon 0.516 EVAL 0.523 Other 0.001 Tot 0.524 Mean 0.522. Used 0:07, Left 0:01
+Step   845: OL  888.9  264.5  OA  918.4  32.2 CL  921.0 356.7 Split   865.3 313.7  315.6 nm
+Timing: WFS 0.538 Recon 0.537 EVAL 0.538 Other 0.001 Tot 0.538 Mean 0.522. Used 0:07, Left 0:01
+Step   847: OL  887.8  262.6  OA  916.0  34.3 CL  919.0 352.9 Split   864.7 309.6  311.3 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.522. Used 0:07, Left 0:01
+Step   849: OL  887.1  261.9  OA  913.6  34.0 CL  912.8 337.7 Split   864.1 292.4  294.0 nm
+Timing: WFS 0.527 Recon 0.520 EVAL 0.527 Other 0.001 Tot 0.528 Mean 0.523. Used 0:07, Left 0:01
+Step   851: OL  886.8  262.2  OA  911.2  33.3 CL  908.8 328.2 Split   863.6 281.7  283.2 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.523. Used 0:07, Left 0:01
+Step   853: OL  886.8  263.6  OA  908.2  12.8 CL  906.8 323.7 Split   863.0 277.0  278.4 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.523. Used 0:07, Left 0:01
+Step   855: OL  886.9  265.6  OA  905.8  10.4 CL  907.0 325.5 Split   862.4 279.6  281.0 nm
+Timing: WFS 0.534 Recon 0.533 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.523. Used 0:07, Left 0:01
+Step   857: OL  887.3  268.0  OA  903.6  21.6 CL  912.1 340.5 Split   861.8 297.3  298.6 nm
+Timing: WFS 0.526 Recon 0.519 EVAL 0.526 Other 0.001 Tot 0.527 Mean 0.523. Used 0:07, Left 0:01
+Step   859: OL  887.6  270.4  OA  901.0  11.7 CL  908.1 330.8 Split   861.4 286.5  287.6 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.523. Used 0:07, Left 0:01
+Step   861: OL  887.8  272.3  OA  898.6  15.2 CL  902.7 316.7 Split   860.9 270.5  271.6 nm
+Timing: WFS 0.540 Recon 0.500 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.523. Used 0:07, Left 0:01
+Step   863: OL  887.8  273.6  OA  896.4  26.4 CL  908.1 333.0 Split   860.4 289.8  290.7 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.523. Used 0:07, Left 0:01
+Step   865: OL  887.6  273.9  OA  893.9  22.3 CL  908.6 335.2 Split   859.9 292.8  293.6 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.523. Used 0:07, Left 0:01
+Step   867: OL  887.0  273.4  OA  891.6  24.0 CL  907.2 332.4 Split   859.4 290.0  290.7 nm
+Timing: WFS 0.525 Recon 0.518 EVAL 0.525 Other 0.001 Tot 0.526 Mean 0.523. Used 0:07, Left 0:01
+Step   869: OL  886.3  272.1  OA  889.0  10.8 CL  898.0 307.4 Split   858.9 261.1  261.8 nm
+Timing: WFS 0.541 Recon 0.534 EVAL 0.541 Other 0.000 Tot 0.541 Mean 0.523. Used 0:07, Left 0:01
+Step   871: OL  885.4  270.3  OA  886.8  16.9 CL  903.1 323.0 Split   858.5 279.8  280.3 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.523. Used 0:07, Left 0:01
+Step   873: OL  884.5  268.2  OA  884.3   4.4 CL  897.9 309.4 Split   858.0 264.3  264.8 nm
+Timing: WFS 0.536 Recon 0.535 EVAL 0.536 Other 0.001 Tot 0.536 Mean 0.523. Used 0:08, Left 0:01
+Step   875: OL  883.5  266.2  OA  882.3  24.6 CL  893.1 296.0 Split   857.6 248.9  249.3 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.523. Used 0:08, Left 0:01
+Step   877: OL  882.7  264.6  OA  879.8   7.6 CL  897.3 309.7 Split   857.1 265.5  265.8 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.523. Used 0:08, Left 0:01
+Step   879: OL  881.9  263.3  OA  877.5   4.8 CL  896.7 308.8 Split   856.6 264.8  265.1 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.523. Used 0:08, Left 0:01
+Step   881: OL  881.3  262.4  OA  875.3   8.4 CL  893.7 301.3 Split   856.1 256.4  256.6 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.539 Mean 0.523. Used 0:08, Left 0:01
+Step   883: OL  880.8  261.9  OA  873.1   9.6 CL  895.2 306.6 Split   855.6 263.1  263.2 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.523. Used 0:08, Left 0:01
+Step   885: OL  880.4  261.9  OA  870.8   4.1 CL  894.5 306.0 Split   855.1 262.7  262.8 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.523. Used 0:08, Left 0:00
+Step   887: OL  880.2  262.4  OA  868.7  18.3 CL  888.5 289.0 Split   854.6 243.1  243.2 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.523. Used 0:08, Left 0:00
+Step   889: OL  880.2  263.7  OA  866.2   7.1 CL  894.5 308.2 Split   854.0 266.1  266.1 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.523. Used 0:08, Left 0:00
+Step   891: OL  880.5  266.0  OA  864.0  17.9 CL  897.2 317.1 Split   853.4 276.8  276.8 nm
+Timing: WFS 0.541 Recon 0.541 EVAL 0.541 Other 0.001 Tot 0.542 Mean 0.523. Used 0:08, Left 0:00
+Step   893: OL  881.2  269.5  OA  861.7  22.3 CL  895.1 312.3 Split   852.9 271.6  271.6 nm
+Timing: WFS 0.537 Recon 0.530 EVAL 0.537 Other 0.001 Tot 0.537 Mean 0.523. Used 0:08, Left 0:00
+Step   895: OL  882.4  274.5  OA  859.7  35.6 CL  897.4 319.9 Split   852.3 280.8  280.8 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.523. Used 0:08, Left 0:00
+Step   897: OL  883.9  280.6  OA  857.0  27.0 CL  897.4 321.1 Split   851.8 282.5  282.5 nm
+Timing: WFS 0.539 Recon 0.539 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.523. Used 0:08, Left 0:00
+Step   899: OL  885.8  287.7  OA  854.4  24.2 CL  895.9 318.3 Split   851.2 279.6  279.7 nm
+Timing: WFS 0.523 Recon 0.522 EVAL 0.523 Other 0.001 Tot 0.523 Mean 0.523. Used 0:08, Left 0:00
+Step   901: OL  887.8  295.1  OA  851.7  19.8 CL  893.8 313.4 Split   850.6 274.4  274.5 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.000 Tot 0.540 Mean 0.523. Used 0:08, Left 0:00
+Step   903: OL  889.8  302.3  OA  849.2  21.8 CL  893.3 313.1 Split   850.0 274.4  274.6 nm
+Timing: WFS 0.523 Recon 0.523 EVAL 0.523 Other 0.000 Tot 0.524 Mean 0.523. Used 0:08, Left 0:00
+Step   905: OL  891.6  308.7  OA  846.4  13.9 CL  889.2 302.4 Split   849.5 262.4  262.7 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.523. Used 0:08, Left 0:00
+Step   907: OL  893.0  313.8  OA  843.8  17.9 CL  888.1 300.4 Split   848.9 260.5  260.9 nm
+Timing: WFS 0.541 Recon 0.540 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.523. Used 0:08, Left 0:00
+Step   909: OL  893.7  317.0  OA  841.3  26.3 CL  889.8 307.0 Split   848.3 268.4  268.9 nm
+Timing: WFS 0.524 Recon 0.523 EVAL 0.524 Other 0.001 Tot 0.524 Mean 0.523. Used 0:08, Left 0:00
+Step   911: OL  893.7  318.2  OA  838.5  23.0 CL  888.0 302.7 Split   847.7 263.8  264.4 nm
+Timing: WFS 0.531 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.523. Used 0:08, Left 0:00
+Step   913: OL  893.0  317.2  OA  835.5   5.6 CL  884.1 292.2 Split   847.1 252.0  252.9 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.523. Used 0:08, Left 0:00
+Step   915: OL  891.6  314.3  OA  832.8   0.9 CL  882.5 288.8 Split   846.6 248.4  249.4 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.523. Used 0:08, Left 0:00
+Step   917: OL  889.6  309.6  OA  830.2  13.4 CL  882.2 288.9 Split   846.0 248.9  250.1 nm
+Timing: WFS 0.524 Recon 0.524 EVAL 0.524 Other 0.001 Tot 0.525 Mean 0.523. Used 0:08, Left 0:00
+Step   919: OL  887.2  303.5  OA  827.5  13.0 CL  877.9 276.8 Split   845.5 235.0  236.5 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.523. Used 0:08, Left 0:00
+Step   921: OL  884.5  296.6  OA  824.8  11.8 CL  877.5 276.6 Split   844.9 235.0  236.8 nm
+Timing: WFS 0.534 Recon 0.534 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.523. Used 0:08, Left 0:00
+Step   923: OL  881.8  289.3  OA  822.2  16.5 CL  875.9 272.7 Split   844.4 230.8  232.8 nm
+Timing: WFS 0.533 Recon 0.533 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.523. Used 0:08, Left 0:00
+Step   925: OL  879.2  282.3  OA  819.5  16.8 CL  875.4 272.3 Split   843.9 230.7  232.9 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.524. Used 0:08, Left 0:00
+Step   927: OL  876.9  275.9  OA  817.4  34.2 CL  874.1 269.2 Split   843.4 227.5  229.9 nm
+Timing: WFS 0.540 Recon 0.540 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.524. Used 0:08, Left 0:00
+Step   929: OL  874.9  270.6  OA  814.2  18.1 CL  874.7 272.0 Split   842.9 231.0  233.8 nm
+Timing: WFS 0.534 Recon 0.533 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.524. Used 0:08, Left 0:00
+Step   931: OL  873.4  266.6  OA  811.5  15.6 CL  877.8 282.8 Split   842.3 244.1  247.0 nm
+Timing: WFS 0.528 Recon 0.521 EVAL 0.528 Other 0.000 Tot 0.528 Mean 0.524. Used 0:08, Left 0:00
+Step   933: OL  872.4  264.1  OA  809.0  21.0 CL  871.5 263.5 Split   841.9 221.6  225.2 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.534 Mean 0.524. Used 0:08, Left 0:00
+Step   935: OL  871.9  263.3  OA  806.1  10.3 CL  878.4 286.5 Split   841.3 249.0  252.3 nm
+Timing: WFS 0.522 Recon 0.515 EVAL 0.522 Other 0.001 Tot 0.523 Mean 0.524. Used 0:08, Left 0:00
+Step   937: OL  872.0  264.5  OA  803.6  17.5 CL  876.1 280.3 Split   840.9 242.2  245.9 nm
+Timing: WFS 0.529 Recon 0.522 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.524. Used 0:08, Left 0:00
+Step   939: OL  872.9  268.0  OA  801.0  12.4 CL  874.1 274.7 Split   840.5 235.9  240.3 nm
+Timing: WFS 0.534 Recon 0.533 EVAL 0.534 Other 0.001 Tot 0.534 Mean 0.524. Used 0:08, Left 0:00
+Step   941: OL  874.7  274.4  OA  798.4   6.4 CL  874.8 277.4 Split   840.0 239.5  244.2 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.524. Used 0:08, Left 0:00
+Step   943: OL  877.5  284.0  OA  796.1  20.2 CL  878.2 288.8 Split   839.6 253.0  257.6 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.537 Other 0.001 Tot 0.538 Mean 0.524. Used 0:08, Left 0:00
+Step   945: OL  881.7  297.0  OA  793.6  20.8 CL  879.0 291.8 Split   839.1 256.7  261.8 nm
+Timing: WFS 0.530 Recon 0.523 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.524. Used 0:08, Left 0:00
+Step   947: OL  887.1  313.2  OA  791.2  17.9 CL  874.3 277.5 Split   838.8 240.6  246.6 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.000 Tot 0.537 Mean 0.524. Used 0:08, Left 0:00
+Step   949: OL  893.7  331.8  OA  788.6   4.4 CL  871.7 269.6 Split   838.4 231.6  238.5 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.532 Other 0.001 Tot 0.533 Mean 0.524. Used 0:08, Left 0:00
+Step   951: OL  901.1  351.6  OA  786.4  18.2 CL  874.5 278.9 Split   838.0 242.7  249.8 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.538 Mean 0.524. Used 0:08, Left 0:00
+Step   953: OL  908.8  371.0  OA  784.4  29.7 CL  876.7 286.3 Split   837.7 251.5  258.8 nm
+Timing: WFS 0.537 Recon 0.537 EVAL 0.537 Other 0.000 Tot 0.538 Mean 0.524. Used 0:08, Left 0:00
+Step   955: OL  916.0  388.6  OA  783.8  58.7 CL  879.5 294.8 Split   837.3 261.5  269.1 nm
+Timing: WFS 0.520 Recon 0.513 EVAL 0.520 Other 0.000 Tot 0.521 Mean 0.524. Used 0:08, Left 0:00
+Step   957: OL  922.1  402.9  OA  780.1  35.1 CL  878.5 292.1 Split   837.0 258.8  266.9 nm
+Timing: WFS 0.532 Recon 0.531 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.524. Used 0:08, Left 0:00
+Step   959: OL  926.5  412.8  OA  777.6  26.9 CL  876.8 287.3 Split   836.7 253.5  262.1 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.524. Used 0:08, Left 0:00
+Step   961: OL  928.7  417.6  OA  775.3  15.7 CL  873.0 275.2 Split   836.5 239.9  249.7 nm
+Timing: WFS 0.529 Recon 0.529 EVAL 0.529 Other 0.001 Tot 0.530 Mean 0.524. Used 0:08, Left 0:00
+Step   963: OL  928.5  417.2  OA  773.2   5.1 CL  869.9 265.0 Split   836.3 228.5  239.5 nm
+Timing: WFS 0.535 Recon 0.535 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.524. Used 0:08, Left 0:00
+Step   965: OL  926.1  411.8  OA  771.4   9.0 CL  868.5 260.3 Split   836.1 223.3  235.1 nm
+Timing: WFS 0.530 Recon 0.525 EVAL 0.530 Other 0.001 Tot 0.531 Mean 0.524. Used 0:08, Left 0:00
+Step   967: OL  921.9  402.0  OA  769.5  12.1 CL  872.8 274.3 Split   835.9 239.8  251.1 nm
+Timing: WFS 0.528 Recon 0.527 EVAL 0.528 Other 0.001 Tot 0.528 Mean 0.524. Used 0:08, Left 0:00
+Step   969: OL  916.4  389.0  OA  768.1  27.3 CL  866.3 252.6 Split   835.7 214.8  228.2 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.524. Used 0:08, Left 0:00
+Step   971: OL  910.2  373.9  OA  766.5  31.0 CL  864.9 247.3 Split   835.6 208.9  223.2 nm
+Timing: WFS 0.528 Recon 0.528 EVAL 0.528 Other 0.001 Tot 0.529 Mean 0.524. Used 0:08, Left 0:00
+Step   973: OL  903.9  358.1  OA  764.6  21.1 CL  864.1 244.0 Split   835.4 205.3  220.6 nm
+Timing: WFS 0.535 Recon 0.535 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.524. Used 0:08, Left 0:00
+Step   975: OL  898.0  342.7  OA  763.6  36.0 CL  860.5 230.4 Split   835.3 189.2  206.5 nm
+Timing: WFS 0.535 Recon 0.528 EVAL 0.535 Other 0.001 Tot 0.536 Mean 0.524. Used 0:08, Left 0:00
+Step   977: OL  893.0  328.8  OA  761.1   8.4 CL  867.0 253.6 Split   835.1 217.3  232.9 nm
+Timing: WFS 0.541 Recon 0.540 EVAL 0.541 Other 0.001 Tot 0.541 Mean 0.524. Used 0:08, Left 0:00
+Step   979: OL  888.8  317.1  OA  759.6  16.3 CL  870.5 265.4 Split   834.9 231.4  246.3 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.541 Mean 0.524. Used 0:08, Left 0:00
+Step   981: OL  885.8  308.0  OA  758.3  21.2 CL  868.1 257.1 Split   834.8 222.0  238.2 nm
+Timing: WFS 0.536 Recon 0.529 EVAL 0.536 Other 0.001 Tot 0.537 Mean 0.524. Used 0:08, Left 0:00
+Step   983: OL  883.9  301.9  OA  756.8  18.6 CL  868.7 258.4 Split   834.7 224.0  240.6 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.524. Used 0:08, Left 0:00
+Step   985: OL  883.0  298.9  OA  755.4  12.1 CL  867.1 252.4 Split   834.6 217.2  235.1 nm
+Timing: WFS 0.531 Recon 0.530 EVAL 0.531 Other 0.001 Tot 0.531 Mean 0.524. Used 0:09, Left 0:00
+Step   987: OL  883.2  298.8  OA  754.1   3.7 CL  868.6 257.1 Split   834.5 223.1  241.2 nm
+Timing: WFS 0.539 Recon 0.532 EVAL 0.539 Other 0.001 Tot 0.540 Mean 0.524. Used 0:09, Left 0:00
+Step   989: OL  884.3  301.7  OA  752.9   7.7 CL  869.5 259.5 Split   834.4 226.2  244.8 nm
+Timing: WFS 0.540 Recon 0.533 EVAL 0.540 Other 0.001 Tot 0.540 Mean 0.524. Used 0:09, Left 0:00
+Step   991: OL  886.5  307.5  OA  751.6   5.5 CL  869.1 257.5 Split   834.3 224.2  243.7 nm
+Timing: WFS 0.531 Recon 0.524 EVAL 0.531 Other 0.001 Tot 0.532 Mean 0.524. Used 0:09, Left 0:00
+Step   993: OL  889.7  316.0  OA  750.5  11.3 CL  870.5 261.5 Split   834.2 229.2  248.9 nm
+Timing: WFS 0.534 Recon 0.527 EVAL 0.534 Other 0.001 Tot 0.535 Mean 0.524. Used 0:09, Left 0:00
+Step   995: OL  894.0  327.2  OA  749.7  25.8 CL  873.6 270.7 Split   834.1 240.1  259.6 nm
+Timing: WFS 0.533 Recon 0.526 EVAL 0.533 Other 0.001 Tot 0.533 Mean 0.524. Used 0:09, Left 0:00
+Step   997: OL  899.3  340.9  OA  748.7  26.3 CL  871.1 261.5 Split   834.0 229.9  251.2 nm
+Timing: WFS 0.538 Recon 0.531 EVAL 0.538 Other 0.001 Tot 0.539 Mean 0.524. Used 0:09, Left 0:00
+Step 999: Output PSF (cumulative average).
+Step   999: OL  905.7  356.9  OA  747.4  20.9 CL  872.6 266.1 Split   834.0 235.4  256.9 nm
+Timing: WFS 0.532 Recon 0.532 EVAL 0.547 Other 0.001 Tot 0.548 Mean 0.524. Used 0:09, Left 0:00
+Mean: 901.82 271.53 859.97  nm.
+Deleting allocated data
+reset DM fitting in GPU 0.
+reset tomography in GPU 0.
+
+*** Simulation Finished at 2024/06/13 08:13:14 in anshar. ***
+
