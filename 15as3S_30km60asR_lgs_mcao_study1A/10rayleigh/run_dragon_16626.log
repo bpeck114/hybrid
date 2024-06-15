@@ -1,0 +1,1271 @@
+/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/maos -o 15as3S_30km60asR_lgs_mcao_study1A/10rayleigh -c A_mcao_hybrid.conf plot.all=1 plot.setup=1 -O powfs.nwfs=[3 10 3 1] wfs.thetax=[15.0 -7.5 -7.5 60.0 48.54 18.54 -18.54 -48.54 -60.0 -48.54 -18.54 18.54 48.54 5 -2.5 -2.5 0] wfs.thetay=[0.0 12.99 -12.99 0.0 35.27 57.06 57.06 35.27 0.0 -35.27 -57.06 -57.06 -35.27 0 4.33 -4.33 0] powfs0_llt.ox = [1.0 -0.5 -0.5]*6.5 powfs0_llt.oy=[0.0 0.87 -0.87]*6.5 powfs1_llt.ox = [1.0 0.81 0.31 -0.31 -0.81 -1.0 -0.81 -0.31 0.31 0.81]*6.5 powfs1_llt.oy=[0.0 0.59 0.95 0.95 0.59 0.0 -0.59 -0.95 -0.95 -0.59]*6.5 
+Output folder is '15as3S_30km60asR_lgs_mcao_study1A/10rayleigh'.
+SRC: /u/bpeck/code/maos v2.9 2.9
+BUILT: /u/bpeck/code/maos/build by CLANG (v14.0.0) on 2024/03/22 14:52:24 CPU(F64,+O3) w/o CUDA
+Launched at 2024/06/15 01:02:01 in dragon with PID 16626.
+The web based job monitor can be accessed at http://localhost:10300
+Main config file is /System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/A_mcao_hybrid.conf
+Warning(path.c:48): Path not found: path=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/bin; abspath=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/bin; Ignored.
+Warning(path.c:48): Path not found: path=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/atm; abspath=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/atm; Ignored.
+Warning(readcfg.c:399): sim.apfsm has been renamed to powfs.apfsm.
+Warning(readcfg.c:399): sim.epfsm has been renamed to powfs.epfsm.
+Warning(readcfg.c:399): sim.alfsm has been renamed to powfs.alfsm.
+Warning(readcfg.c:399): sim.commonfsm has been renamed to powfs.commonfsm.
+Warning(readcfg.c:399): sim.idealfsm has been renamed to powfs.idealfsm.
+Warning(readcfg.c:399): sim.zetafsm has been renamed to powfs.zetafsm.
+Warning(readcfg.c:399): sim.f0fsm has been renamed to powfs.f0fsm.
+Warning(readcfg.c:399): surf has been renamed to ncpa.surf.
+Warning(readcfg.c:399): tsurf has been renamed to ncpa.tsurf.
+Warning(readcfg.c:399): sim.ncpa_calib has been renamed to ncpa.calib.
+Warning(readcfg.c:399): sim.ncpa_ttr has been renamed to ncpa.ttr.
+Warning(readcfg.c:399): sim.ncpa_thetax has been renamed to ncpa.thetax.
+Warning(readcfg.c:399): sim.ncpa_thetay has been renamed to ncpa.thetay.
+Warning(readcfg.c:399): sim.ncpa_wt has been renamed to ncpa.wt.
+Warning(readcfg.c:399): sim.ncpa_hs has been renamed to ncpa.hs.
+loaded 139 (133 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_sim.conf'
+loaded  19 ( 19 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./dm_none.conf'
+loaded  19 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_DM1.conf'
+loaded  19 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_DM2.conf'
+loaded  19 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_DM3.conf'
+loaded   0 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_dm_multiple.conf'
+loaded   7 (  5 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./atm_mk13n50p_ground_detail.conf'
+loaded  69 ( 69 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./powfs_common.conf'
+loaded  44 ( 38 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./powfs_none.conf'
+loaded  45 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_lgs.conf'
+loaded  46 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_lgs_R20.conf'
+loaded  45 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_ttf_strap.conf'
+loaded  44 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_twfs_lbwfs.conf'
+loaded   0 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_wfs_hybrid_strap_lbwfs.conf'
+loaded  71 ( 71 new) records from '/u/bpeck/code/maos/config/maos/recon.conf'
+loaded  80 ( 80 new) records from '/u/bpeck/code/maos/config/maos/dbg.conf'
+loaded   4 (  4 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_fit.conf'
+loaded  38 ( 10 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/A_mcao_hybrid.conf'
+Overriding plot.all            	0 --> 1
+Overriding plot.setup          	0 --> 1
+Overriding powfs.nwfs          	[1 1 1 1] --> [3 10 3 1]
+Overriding wfs.thetax          	[0 0 0 0] --> [15.0 -7.5 -7.5 60.0 48.54 18.54 -18.54 -48.54 -60.0 -48.54 -18.54 18.54 48.54 5 -2.5 -2.5 0]
+Overriding wfs.thetay          	[0 0 0 0] --> [0.0 12.99 -12.99 0.0 35.27 57.06 57.06 35.27 0.0 -35.27 -57.06 -57.06 -35.27 0 4.33 -4.33 0]
+Overriding powfs0_llt.ox       	[0]*6.5 --> [1.0 -0.5 -0.5]*6.5
+Overriding powfs0_llt.oy       	[0]*6.5 --> [0.0 0.87 -0.87]*6.5
+Overriding powfs1_llt.ox       	[0]*6.5 --> [1.0 0.81 0.31 -0.31 -0.81 -1.0 -0.81 -0.31 0.31 0.81]*6.5
+Overriding powfs1_llt.oy       	[0]*6.5 --> [0.0 0.59 0.95 0.95 0.59 0.0 -0.59 -0.95 -0.95 -0.59]*6.5
+loaded   9 (  0 new) records from 'command line'
+loaded  23 ( 23 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_llt_CL.conf'
+loaded  23 ( 23 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_llt_CL.conf'
+draw_helper started
+Adjust LGS range by telescope altitude 4145m.
+Zenith angle is 30 degree.
+    Scaling turbulence height and LGS hs by sec(za).
+    Scaling r0 by cos(za)^(3/5).
+    Scaling wind speed and LGS signal level by cos(za).
+powfs0: Adjusting dx from 0.0078125 to 0.00797222. 
+powfs0.llt.fsm: f0=0 Hz, LPF ep=0
+powfs1: Adjusting dx from 0.0078125 to 0.00797222. 
+Warning(parms.c:1929): There are multiple LGS type. parms->ilgspowfs points to the first one
+powfs1.llt.fsm: f0=0 Hz, LPF ep=0
+powfs3: Adjusting dx from 0.03125 to 0.0287. 
+powfs3 is TWFS for powfs0
+Warning(parms.c:2297): Layer 1 at 17.3205m is very close to layer 0 at 0m (OK).
+Warning(parms.c:2297): Layer 2 at 34.641m is very close to layer 1 at 17.3205m (OK).
+Warning(parms.c:2297): Layer 3 at 51.9615m is very close to layer 2 at 34.641m (OK).
+Warning(parms.c:2341): Two high order POWFS with different hs found: 99136.8 and 29981.8. Please double check the results.
+dm 0: stroke=300 um is provided in micron.
+dm 0: assume ia stroke=20 um is provided in micron.
+dm 1: stroke=300 um is provided in micron.
+dm 1: assume ia stroke=20 um is provided in micron.
+dm 2: stroke=300 um is provided in micron.
+dm 2: assume ia stroke=20 um is provided in micron.
+There are 1 valid simulation seeds:  1
+Output PSF for 10 directions
+Used 475 of 475 supplied keys
+[00;00mAperture[00;00m is 11 m with sampling 1/128 m
+[00;00mTurbulence at 30 degree zenith angle:[00;00m r0=0.128424m, L0=30m, 14 layers.
+    Greenwood freq is 25.1Hz, anisoplanatic angle is 1.58 as
+    Sampled 8192x8192 at 1/128m. wind dir is randomized.
+    layer 0: ht=      0 m, wt= 0.302, ws=  4.8 m/s
+    layer 1: ht=     17 m, wt= 0.154, ws=  5.0 m/s
+    layer 2: ht=     35 m, wt= 0.041, ws=  5.4 m/s
+    layer 3: ht=     52 m, wt= 0.002, ws=  6.6 m/s
+    layer 4: ht=    139 m, wt= 0.021, ws=  6.1 m/s
+    layer 5: ht=    231 m, wt= 0.010, ws=  6.1 m/s
+    layer 6: ht=    323 m, wt= 0.008, ws=  6.1 m/s
+    layer 7: ht=    416 m, wt= 0.005, ws=  6.1 m/s
+    layer 8: ht=    508 m, wt= 0.001, ws=  6.1 m/s
+    layer 9: ht=    932 m, wt= 0.107, ws=  5.6 m/s
+    layer 10: ht=   5022 m, wt= 0.144, ws= 11.1 m/s
+    layer 11: ht=   9238 m, wt= 0.093, ws= 19.1 m/s
+    layer 12: ht=  13856 m, wt= 0.075, ws=  8.2 m/s
+    layer 13: ht=  22518 m, wt= 0.036, ws=  4.8 m/s
+[00;00mReconstruction[00;00m: r0=0.128424m L0=30m. 14 layers. use cone coordinate.
+    layer 0: ht=      0 m, wt= 0.302
+    layer 1: ht=     17 m, wt= 0.154
+    layer 2: ht=     35 m, wt= 0.041
+    layer 3: ht=     52 m, wt= 0.002
+    layer 4: ht=    139 m, wt= 0.021
+    layer 5: ht=    231 m, wt= 0.010
+    layer 6: ht=    323 m, wt= 0.008
+    layer 7: ht=    416 m, wt= 0.005
+    layer 8: ht=    508 m, wt= 0.001
+    layer 9: ht=    932 m, wt= 0.107
+    layer 10: ht=   5022 m, wt= 0.144
+    layer 11: ht=   9238 m, wt= 0.093
+    layer 12: ht=  13856 m, wt= 0.075
+    layer 13: ht=  22518 m, wt= 0.036
+[00;00mThere are 4 powfs[00;00m
+  powfs0: Order 39, LGS at 99.1 km. Sampling 1/125.436 m. Thres 30%. [00;00mT/T is removed in right hand side in tomography.[00;00m
+    Gtilt in reconstruction. Geomtric optics start at 0 with gtilt [00;00m(noisy)[00;00m
+  powfs1: Order 39, LGS at  30 km. Sampling 1/125.436 m. Thres 30%. [00;00mT/T is removed in right hand side in tomography.[00;00m
+    Gtilt in reconstruction. Geomtric optics start at 0 with gtilt [00;00m(noisy)[00;00m
+  powfs2: Order  1, NGS at inf km. Sampling 1/16 m. Thres 30%. 
+    Gtilt in reconstruction. Geomtric optics start at 2 with ztilt [00;00m(noisy)[00;00m
+  powfs3: Order 39, NGS at inf km. Sampling 1/34.8432 m. Thres 50%. 
+    Gtilt in reconstruction. Geomtric optics start at 50 with gtilt [00;00m(noisy)[00;00m
+[00;00mThere are 17 wfs[00;00m
+    wfs 0: type 0, at (  15.00,    0.00) arcsec,  99 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 1: type 0, at (  -7.50,   12.99) arcsec,  99 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 2: type 0, at (  -7.50,  -12.99) arcsec,  99 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 3: type 1, at (  60.00,    0.00) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 4: type 1, at (  48.54,   35.27) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 5: type 1, at (  18.54,   57.06) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 6: type 1, at ( -18.54,   57.06) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 7: type 1, at ( -48.54,   35.27) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 8: type 1, at ( -60.00,    0.00) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 9: type 1, at ( -48.54,  -35.27) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 10: type 1, at ( -18.54,  -57.06) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 11: type 1, at (  18.54,  -57.06) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 12: type 1, at (  48.54,  -35.27) arcsec,  30 km, siglev is 1099.85 bkgrnd is 1.5
+    wfs 13: type 2, at (   5.00,    0.00) arcsec, inf km, siglev is 64529 bkgrnd is 8.273
+    wfs 14: type 2, at (  -2.50,    4.33) arcsec, inf km, siglev is 64529 bkgrnd is 8.273
+    wfs 15: type 2, at (  -2.50,   -4.33) arcsec, inf km, siglev is 64529 bkgrnd is 8.273
+    wfs 16: type 3, at (   0.00,    0.00) arcsec, inf km, siglev is 1.47933e+08 bkgrnd is 25.25
+[00;00mThere are 3 DMs[00;00m
+  DM 0 at    0km, actuator pitch 0.287m, offset   0, with 300.000000 micron stroke.
+    Normalized cubic influence function with inter-actuator coupling of 0.223
+  DM 1 at    6km, actuator pitch 0.287m, offset   0, with 300.000000 micron stroke.
+    Normalized cubic influence function with inter-actuator coupling of 0.223
+  DM 2 at   10km, actuator pitch 0.287m, offset   0, with 300.000000 micron stroke.
+    Normalized cubic influence function with inter-actuator coupling of 0.223
+[00;00mTomography[00;00m is using CG, with [00;00mNo[00;00m preconditioner, [00;00m40[00;00m iterations, ad hoc split tomo.
+[00;00mDM Fitting [00;00mis using CG, with [00;00mNo[00;00m preconditioner, [00;00m10[00;00m iterations
+[00;00mThere are 9 fit directions[00;00m
+    Fit 0: weight is 0.444, at (   0.00,    0.00) arcsec
+    Fit 1: weight is 0.111, at (  15.00,    0.00) arcsec
+    Fit 2: weight is 0.111, at (   0.00,   15.00) arcsec
+    Fit 3: weight is 0.111, at ( -15.00,    0.00) arcsec
+    Fit 4: weight is 0.111, at (   0.00,  -15.00) arcsec
+    Fit 5: weight is 0.028, at (  15.00,   15.00) arcsec
+    Fit 6: weight is 0.028, at ( -15.00,   15.00) arcsec
+    Fit 7: weight is 0.028, at ( -15.00,  -15.00) arcsec
+    Fit 8: weight is 0.028, at (  15.00,  -15.00) arcsec
+[00;00mThere are 10 evaluation directions[00;00m at sampling 1/128 m.
+    Evl 0: weight is 0.100, at (   0.00,    0.00) arcsec
+    Evl 1: weight is 0.100, at (   5.00,    0.00) arcsec
+    Evl 2: weight is 0.100, at (  10.00,    0.00) arcsec
+    Evl 3: weight is 0.100, at (  15.00,    0.00) arcsec
+    Evl 4: weight is 0.100, at (  20.00,    0.00) arcsec
+    Evl 5: weight is 0.100, at (  25.00,    0.00) arcsec
+    Evl 6: weight is 0.100, at (  30.00,    0.00) arcsec
+    Evl 7: weight is 0.100, at (  35.00,    0.00) arcsec
+    Evl 8: weight is 0.100, at (  45.00,    0.00) arcsec
+    Evl 9: weight is 0.100, at (  60.00,    0.00) arcsec
+[00;00mSimulation[00;00m start at step 0, end at step 1000, with time step 1/1500s, [00;00mclose loop[00;00m.
+After setup_parms:	2.1 MiB.
+
+*** Preparation started at 2024/06/15 01:02:01 in dragon. ***
+
+Using thread pool with 32 threads
+Reading aperture amplitude map from KECK.fits
+Warning(accphi.c:477): 108578 points not covered by input screen
+iwvl 0: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 1: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 2: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 3: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 4: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 5: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 6: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 7: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+iwvl 8: Science PSF is using grid size of 2880. The PSF will sum to 6.95167232824563
+After setup_aper:	88.2 MiB.
+
+[00;00mSetting up powfs 0 geom[00;00m
+
+There are 36 points in each subaperture of 0.287m.
+There are 919 valid subaperture.
+
+[00;00mSetting up powfs 1 geom[00;00m
+
+There are 36 points in each subaperture of 0.287m.
+There are 919 valid subaperture.
+
+[00;00mSetting up powfs 2 geom[00;00m
+
+There are 176 points in each subaperture of 11m.
+There are 1 valid subaperture.
+
+[00;00mSetting up powfs 3 geom[00;00m
+
+There are 10 points in each subaperture of 0.287m.
+There are 893 valid subaperture.
+After setup_powfs_init:	270.1 MiB.
+
+[00;00mSetting up reconstructor geometry.[00;00m
+
+PLOC is 81x81, with sampling of 0.14m (not square)
+    DM 0: grid is 42 x 42
+    DM 1: grid is 50 x 46
+    DM 2: grid is 56 x 48
+FLOC is 81x81, with sampling of 0.14m (not square)
+Tomography grid is not square:
+    layer 0: xloc grid is  81 x  81, sampling is 0.143 m,  5185 points
+    layer 1: xloc grid is  81 x  81, sampling is 0.143 m,  5187 points
+    layer 2: xloc grid is  81 x  81, sampling is 0.143 m,  5195 points
+    layer 3: xloc grid is  81 x  81, sampling is 0.143 m,  5199 points
+    layer 4: xloc grid is  81 x  81, sampling is 0.143 m,  5231 points
+    layer 5: xloc grid is  81 x  81, sampling is 0.143 m,  5265 points
+    layer 6: xloc grid is  82 x  81, sampling is 0.143 m,  5298 points
+    layer 7: xloc grid is  82 x  81, sampling is 0.143 m,  5318 points
+    layer 8: xloc grid is  82 x  81, sampling is 0.143 m,  5356 points
+    layer 9: xloc grid is  84 x  83, sampling is 0.142 m,  5536 points
+    layer 10: xloc grid is 100 x  91, sampling is 0.136 m,  7242 points
+    layer 11: xloc grid is 116 x 101, sampling is 0.130 m,  9396 points
+    layer 12: xloc grid is 138 x 115, sampling is 0.123 m, 12306 points
+    layer 13: xloc grid is 184 x 141, sampling is 0.111 m, 19684 points
+Setting up surface OPD
+
+Surface 0:
+Loading surface OPD from Keck_ncpa_rmswfe130nm.fits
+Does not contain SURFEVL. Assume it covers all evaluation directions.
+Does not contain SURFWFS, Assume it covers all WFS.
+
+[00;00mSetting up reconstructor[00;00m
+
+Low order modes: nmod=2, mffocus=1, ahst_focus=1, indps=0, indastig=0
+Low order control includes WFS 13 14 15
+Recon NEA: geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(43.34) geom(2.22) geom(2.22) geom(2.22) geom(0.04)  mas
+Setup or update control matrix parameters.
+RRtwfs svd threshold is 1e-10
+Replacing HA by HA*fit->actextrap
+Adding piston cr to fit matrix
+Adding TT cr on upper DMs to fit matrix.
+    dm 0, mode 1: there are 8 slave actuators
+    dm 1, mode 1: there are 252 slave actuators
+    dm 2, mode 1: there are 388 slave actuators
+Before assembling fit matrix:	990.4 MiB.
+Building fit->FR
+Building fit->FL
+Adding tikhonov constraint of 1.0e-07 to FLM
+The maximum eigen value is estimated to be around 7.3e-04
+DM Fit number of Low rank terms: 16 in LHS
+After assemble fit matrix:	1525.5 MiB.
+After setup_recon:	1525.5 MiB.
+
+*** Simulation started at 2024/06/15 01:02:10 in dragon. ***
+
+Running seed 1
+Converting windshake PSD to time series.
+DM cache with grid 1/13.9373m 1/13.9373m 1/13.9373m
+Wind dir: 267.3 261.7 167.0 130.5 300.7  32.3 119.8 139.0 150.8 277.7 203.0 133.1  45.9 265.1 deg
+Using /u/bpeck/.aos/cache/atm/vonkarman_14_8192x8192_0.0078125_1115374592d.bin
+After genatm:	1732.1 MiB.
+Step     #  Open Loop  PR TT  On axis  PR TT  Field RMS PR TT Split     HIGH   TT    LOW     Timing 
+Step     0: OL 1038.6  526.5  OA 1044.9 536.4 CL 1038.6 526.5 Split   899.6 519.0  519.0 nm  0.171 s
+Step     2: OL 1050.3  547.1  OA  717.3 409.4 CL  731.6 406.8 Split   615.2 395.9  395.9 nm  0.782 s
+Step     4: OL 1058.2  560.1  OA  379.0 326.2 CL  449.5 331.9 Split   319.0 316.7  316.7 nm  0.783 s
+Step     6: OL 1061.7  564.7  OA  248.6 174.5 CL  368.5 201.4 Split   324.4 174.8  174.8 nm  0.781 s
+Step     8: OL 1060.8  560.9  OA  185.2  76.1 CL  337.3 141.0 Split   322.4  99.1   99.1 nm  0.795 s
+Step    10: OL 1055.7  549.1  OA  183.3  62.7 CL  334.7 125.1 Split   326.9  71.9   71.9 nm  0.783 s
+Step    12: OL 1047.5  530.9  OA  175.0  32.0 CL  330.7 105.9 Split   330.3  17.1   17.1 nm  0.792 s
+Step    14: OL 1037.2  508.0  OA  172.8  45.9 CL  336.4 113.8 Split   334.4  37.4   37.4 nm  0.788 s
+Step    16: OL 1026.2  482.7  OA  166.2  19.9 CL  341.4 116.9 Split   338.8  42.7   42.7 nm  0.790 s
+Step    18: OL 1015.8  457.6  OA  166.0  27.8 CL  344.2 120.0 Split   340.7  48.5   48.5 nm  0.785 s
+Step    20: OL 1007.0  435.2  OA  161.1  27.2 CL  346.9 120.5 Split   343.9  45.0   45.0 nm  2.182 s
+Step    21: OL 1003.5  425.6  OA  161.0  30.4 CL  347.4 120.1 Split   344.9  42.1   42.1 nm  1.852 s
+Step    22: OL 1000.7  417.5  OA  159.8  17.5 CL  347.4 119.0 Split   345.3  38.5   38.5 nm  1.811 s
+Step    23: OL  998.6  411.1  OA  158.8  17.0 CL  347.9 118.1 Split   346.3  32.8   32.8 nm  1.916 s
+Step    24: OL  997.4  406.6  OA  157.8   9.1 CL  349.6 119.1 Split   347.8  35.6   35.6 nm  1.868 s
+Step    25: OL  996.9  404.0  OA  155.5   8.2 CL  350.6 120.3 Split   348.8  35.5   35.5 nm  1.940 s
+Step    26: OL  997.3  403.5  OA  154.0  26.0 CL  350.2 119.7 Split   349.0  28.8   28.8 nm  1.903 s
+Step    27: OL  998.5  405.1  OA  154.2  25.5 CL  351.1 120.6 Split   350.0  27.2   27.2 nm  1.929 s
+Step    28: OL 1000.6  408.8  OA  153.0  13.8 CL  352.5 123.4 Split   350.8  34.1   34.1 nm  1.969 s
+Step    29: OL 1003.6  414.6  OA  153.2   7.5 CL  354.0 128.1 Split   350.9  47.0   47.0 nm  1.967 s
+Step    30: OL 1007.4  422.3  OA  152.5   7.0 CL  356.0 132.2 Split   351.7  55.6   55.6 nm  1.928 s
+Step    31: OL 1012.0  431.9  OA  153.6  14.9 CL  356.4 131.7 Split   352.6  52.0   52.0 nm  1.932 s
+Step    32: OL 1017.5  443.2  OA  153.7  20.8 CL  358.9 137.9 Split   353.0  64.8   64.8 nm  1.948 s
+Step    33: OL 1023.6  455.9  OA  153.2  24.3 CL  360.0 137.3 Split   354.6  62.0   62.0 nm  2.068 s
+Step    34: OL 1030.5  469.8  OA  155.1  33.3 CL  359.6 136.9 Split   354.6  59.4   59.4 nm  1.996 s
+Step    35: OL 1037.9  484.7  OA  155.4  30.8 CL  361.9 140.2 Split   355.9  65.5   65.5 nm  2.024 s
+Step    36: OL 1045.8  500.1  OA  156.2  35.5 CL  362.7 138.9 Split   357.5  61.0   61.0 nm  2.008 s
+Step    37: OL 1053.9  515.9  OA  153.4  34.4 CL  363.6 139.6 Split   358.4  61.5   61.5 nm  1.889 s
+Step    38: OL 1062.3  531.6  OA  156.0  42.3 CL  367.1 142.8 Split   360.9  67.3   67.3 nm  2.047 s
+Step    39: OL 1070.6  547.0  OA  161.9  57.4 CL  368.9 141.7 Split   363.6  62.8   62.8 nm  2.101 s
+Step    40: OL 1078.7  561.7  OA  159.6  46.5 CL  368.3 135.4 Split   365.4  45.6   45.6 nm  2.094 s
+Step    41: OL 1086.5  575.4  OA  154.7  33.1 CL  369.9 139.7 Split   365.7  56.0   56.0 nm  2.106 s
+Step    42: OL 1093.6  587.9  OA  154.6  36.0 CL  370.7 141.5 Split   366.0  59.0   59.0 nm  2.126 s
+Step    43: OL 1100.0  598.7  OA  155.2  35.6 CL  371.4 142.8 Split   366.6  60.0   60.0 nm  2.226 s
+Step    44: OL 1105.5  607.8  OA  152.7  25.4 CL  373.0 146.3 Split   367.1  66.1   66.1 nm  2.132 s
+Step    45: OL 1109.9  614.9  OA  149.9  19.4 CL  373.8 147.1 Split   367.8  66.4   66.4 nm  2.136 s
+Step    46: OL 1113.2  619.8  OA  150.6  21.4 CL  374.0 147.8 Split   368.0  66.5   66.5 nm  2.204 s
+Step    47: OL 1115.2  622.4  OA  151.0  25.7 CL  373.8 147.8 Split   368.2  64.9   64.9 nm  2.096 s
+Step    48: OL 1115.9  622.7  OA  146.2  13.4 CL  374.9 151.7 Split   367.8  72.6   72.6 nm  2.167 s
+Step    49: OL 1115.2  620.6  OA  146.3   7.4 CL  374.1 148.1 Split   368.6  63.8   63.8 nm  2.192 s
+Step    50: OL 1113.3  616.3  OA  147.2   8.5 CL  373.7 147.2 Split   368.6  61.3   61.3 nm  2.077 s
+Step    51: OL 1110.2  609.6  OA  148.4  23.1 CL  374.2 147.1 Split   369.4  59.7   59.7 nm  2.128 s
+Step    52: OL 1105.9  600.8  OA  149.0  27.6 CL  375.1 147.7 Split   370.4  59.3   59.3 nm  2.013 s
+Step    53: OL 1100.6  590.0  OA  149.4  34.6 CL  378.1 151.5 Split   372.3  65.9   65.9 nm  1.971 s
+Step    54: OL 1094.5  577.5  OA  150.8  34.8 CL  380.6 154.8 Split   373.7  71.8   71.8 nm  1.972 s
+Step    55: OL 1087.6  563.5  OA  148.3  29.2 CL  381.2 156.3 Split   374.1  73.4   73.4 nm  1.947 s
+Step    56: OL 1080.3  548.2  OA  147.5  20.9 CL  381.4 158.2 Split   373.8  75.7   75.7 nm  2.099 s
+Step    57: OL 1072.7  531.9  OA  147.3  17.5 CL  382.0 159.4 Split   374.2  77.1   77.1 nm  1.992 s
+Step    58: OL 1065.0  515.0  OA  147.5  20.0 CL  383.9 162.2 Split   375.1  81.9   81.9 nm  2.014 s
+Step    59: OL 1057.3  497.8  OA  149.2  37.5 CL  386.2 164.6 Split   376.6  85.5   85.5 nm  2.110 s
+Step    60: OL 1049.8  480.6  OA  145.7  30.0 CL  385.8 161.7 Split   377.8  78.1   78.1 nm  2.044 s
+Step    61: OL 1042.8  463.7  OA  145.5  23.6 CL  388.9 165.9 Split   379.4  85.3   85.3 nm  2.092 s
+Step    62: OL 1036.3  447.6  OA  150.9  35.3 CL  389.7 167.5 Split   379.8  87.1   87.1 nm  2.044 s
+Step    63: OL 1030.4  432.4  OA  154.7  46.7 CL  393.3 175.8 Split   380.1 100.8  100.8 nm  2.066 s
+Step    64: OL 1025.1  418.5  OA  153.0  45.2 CL  392.2 172.4 Split   381.0  93.2   93.2 nm  2.185 s
+Step    65: OL 1020.7  406.1  OA  149.6  33.6 CL  392.0 171.6 Split   381.5  90.2   90.2 nm  2.097 s
+Step    66: OL 1017.1  395.4  OA  145.2  15.8 CL  392.6 170.5 Split   383.0  86.4   86.4 nm  2.161 s
+Step    67: OL 1014.3  386.7  OA  145.1  13.6 CL  395.8 176.3 Split   384.0  95.9   95.9 nm  2.205 s
+Step    68: OL 1012.4  380.1  OA  144.3   9.6 CL  395.2 175.7 Split   383.8  94.2   94.2 nm  2.277 s
+Step    69: OL 1011.3  375.7  OA  145.1  19.1 CL  391.4 168.6 Split   383.2  79.7   79.7 nm  2.178 s
+Step    70: OL 1011.1  373.7  OA  145.9  21.1 CL  389.2 166.5 Split   381.7  75.6   75.6 nm  2.150 s
+Step    71: OL 1011.8  373.9  OA  145.2  24.8 CL  386.2 161.6 Split   381.3  61.5   61.5 nm  2.038 s
+Step    72: OL 1013.3  376.5  OA  143.0  19.8 CL  387.6 165.0 Split   381.5  68.2   68.2 nm  2.183 s
+Step    73: OL 1015.7  381.4  OA  141.9  24.4 CL  388.4 166.2 Split   382.0  70.3   70.3 nm  2.205 s
+Step    74: OL 1018.9  388.5  OA  144.1  31.8 CL  391.3 170.2 Split   383.3  78.7   78.7 nm  2.179 s
+Step    75: OL 1023.1  397.6  OA  147.5  40.0 CL  396.4 181.0 Split   383.7  99.8   99.8 nm  2.161 s
+Step    76: OL 1028.0  408.8  OA  146.0  35.4 CL  400.1 186.8 Split   384.9 109.4  109.4 nm  2.287 s
+Step    77: OL 1033.7  421.6  OA  144.9  34.1 CL  398.7 183.8 Split   385.3 102.5  102.5 nm  2.237 s
+Step    78: OL 1040.3  436.1  OA  144.4  33.4 CL  399.8 185.5 Split   385.6 105.4  105.4 nm  2.123 s
+Step    79: OL 1047.5  451.7  OA  145.7  37.2 CL  402.7 188.6 Split   387.2 110.7  110.7 nm  2.230 s
+Step    80: OL 1055.4  468.4  OA  144.0  36.3 CL  398.4 180.1 Split   386.9  95.1   95.1 nm  2.284 s
+Step    81: OL 1063.7  485.8  OA  145.0  38.9 CL  394.7 174.5 Split   385.7  83.9   83.9 nm  2.107 s
+Step    82: OL 1072.5  503.6  OA  141.7  30.9 CL  393.1 174.1 Split   384.4  82.3   82.3 nm  2.150 s
+Step    83: OL 1081.6  521.5  OA  143.3  40.7 CL  392.9 175.6 Split   383.8  84.0   84.0 nm  2.124 s
+Step    84: OL 1090.7  539.1  OA  143.0  39.7 CL  391.9 174.8 Split   383.3  81.5   81.5 nm  2.141 s
+Step    85: OL 1099.8  556.1  OA  141.9  39.4 CL  391.4 174.9 Split   383.2  79.9   79.9 nm  2.139 s
+Step    86: OL 1108.5  572.3  OA  146.6  53.8 CL  390.3 170.9 Split   384.0  69.7   69.7 nm  2.140 s
+Step    87: OL 1116.8  587.2  OA  145.8  54.6 CL  395.6 181.7 Split   384.7  92.1   92.1 nm  2.116 s
+Step    88: OL 1124.5  600.7  OA  140.2  42.8 CL  397.2 186.0 Split   384.4 100.1  100.1 nm  2.105 s
+Step    89: OL 1131.4  612.5  OA  138.4  37.1 CL  395.6 181.4 Split   385.0  90.8   90.8 nm  2.080 s
+Step    90: OL 1137.3  622.4  OA  138.6  31.9 CL  397.8 182.9 Split   387.0  92.3   92.3 nm  2.180 s
+Step    91: OL 1142.0  630.1  OA  138.7  29.9 CL  398.1 182.3 Split   387.8  89.9   89.9 nm  2.204 s
+Step    92: OL 1145.6  635.6  OA  137.7  25.6 CL  401.4 188.6 Split   388.5 100.7  100.7 nm  2.196 s
+Step    93: OL 1147.8  638.7  OA  135.3  15.1 CL  398.9 185.7 Split   387.6  94.1   94.1 nm  2.213 s
+Step    94: OL 1148.7  639.4  OA  135.2   9.9 CL  399.6 186.8 Split   388.3  94.4   94.4 nm  2.236 s
+Step    95: OL 1148.2  637.7  OA  135.8   5.9 CL  400.8 189.1 Split   388.5  98.7   98.7 nm  2.235 s
+Step    96: OL 1146.4  633.5  OA  136.9   5.4 CL  402.6 189.7 Split   390.2  99.1   99.1 nm  2.215 s
+Step    97: OL 1143.3  626.9  OA  137.2   1.4 CL  404.9 192.1 Split   391.6 103.2  103.2 nm  2.169 s
+Step    98: OL 1139.0  618.2  OA  138.3   2.6 CL  407.7 194.9 Split   393.2 107.8  107.8 nm  2.182 s
+Step    99: OL 1133.7  607.3  OA  138.7  15.7 CL  409.4 197.3 Split   394.0 111.2  111.2 nm  2.380 s
+Step   100: OL 1127.5  594.6  OA  139.7  28.9 CL  409.2 197.0 Split   394.4 109.2  109.2 nm  2.506 s
+Step   101: OL 1120.5  580.2  OA  140.3  37.4 CL  410.2 199.5 Split   394.5 112.6  112.6 nm  2.234 s
+Step   102: OL 1112.9  564.4  OA  141.9  43.3 CL  412.2 202.3 Split   395.3 116.8  116.8 nm  2.107 s
+Step   103: OL 1104.9  547.5  OA  142.4  47.3 CL  414.4 208.6 Split   394.5 126.8  126.8 nm  2.148 s
+Step   104: OL 1096.7  529.7  OA  140.1  38.6 CL  417.6 213.1 Split   395.8 133.2  133.2 nm  2.174 s
+Step   105: OL 1088.6  511.4  OA  139.7  36.4 CL  416.4 211.4 Split   396.0 128.9  128.9 nm  2.133 s
+Step   106: OL 1080.5  493.0  OA  142.9  46.0 CL  416.7 211.2 Split   396.8 127.4  127.4 nm  2.110 s
+Step   107: OL 1072.8  474.6  OA  141.5  46.4 CL  417.4 209.2 Split   398.8 123.0  123.0 nm  2.200 s
+Step   108: OL 1065.5  456.7  OA  139.1  43.0 CL  417.2 207.3 Split   399.8 119.0  119.0 nm  2.228 s
+Step   109: OL 1058.8  439.5  OA  137.7  36.4 CL  418.7 208.2 Split   401.3 119.2  119.2 nm  2.254 s
+Step   110: OL 1052.7  423.3  OA  136.3  34.9 CL  418.2 207.9 Split   401.3 117.9  117.9 nm  2.126 s
+Step   111: OL 1047.4  408.4  OA  140.8  49.0 CL  416.6 203.1 Split   402.4 107.9  107.9 nm  2.125 s
+Step   112: OL 1042.7  395.0  OA  138.5  44.7 CL  420.5 208.5 Split   404.0 116.7  116.7 nm  2.154 s
+Step   113: OL 1038.9  383.3  OA  135.3  29.4 CL  422.6 210.5 Split   405.5 118.9  118.9 nm  2.199 s
+Step   114: OL 1035.8  373.4  OA  132.9  30.0 CL  420.0 205.0 Split   406.0 107.8  107.8 nm  2.137 s
+Step   115: OL 1033.5  365.5  OA  132.7  35.5 CL  416.8 198.7 Split   406.2  93.6   93.6 nm  2.109 s
+Step   116: OL 1032.0  359.7  OA  132.1  28.7 CL  418.1 202.7 Split   405.6 101.5  101.5 nm  2.121 s
+Step   117: OL 1031.2  355.9  OA  132.9  22.3 CL  419.5 206.3 Split   405.4 107.9  107.9 nm  2.077 s
+Step   118: OL 1031.1  354.2  OA  133.2  25.0 CL  420.0 207.4 Split   405.6 109.0  109.0 nm  2.367 s
+Step   119: OL 1031.8  354.6  OA  133.3  25.1 CL  419.3 205.9 Split   405.8 105.3  105.3 nm  2.129 s
+Step   120: OL 1033.1  357.0  OA  133.2  17.5 CL  422.2 210.6 Split   406.5 113.9  113.9 nm  2.203 s
+Step   121: OL 1035.1  361.3  OA  131.0  14.4 CL  426.0 216.4 Split   407.6 123.7  123.7 nm  2.209 s
+Step   122: OL 1037.7  367.4  OA  130.5  11.1 CL  431.4 224.6 Split   409.4 136.0  136.0 nm  2.153 s
+Step   123: OL 1041.0  375.2  OA  131.1   6.0 CL  431.4 223.5 Split   410.1 133.9  133.9 nm  1.996 s
+Step   124: OL 1044.9  384.5  OA  131.1  16.8 CL  431.3 222.7 Split   410.7 131.8  131.8 nm  2.137 s
+Step   125: OL 1049.2  395.0  OA  132.1  30.5 CL  431.6 221.0 Split   412.0 128.6  128.6 nm  2.052 s
+Step   126: OL 1054.1  406.6  OA  132.0  31.8 CL  432.2 219.7 Split   413.6 125.2  125.2 nm  2.117 s
+Step   127: OL 1059.5  419.1  OA  131.3  29.1 CL  430.6 216.6 Split   414.0 118.4  118.4 nm  2.101 s
+Step   128: OL 1065.2  432.2  OA  131.2  29.0 CL  427.5 212.7 Split   413.0 110.3  110.3 nm  2.072 s
+Step   129: OL 1071.1  445.6  OA  132.2  34.9 CL  427.8 216.1 Split   412.2 114.7  114.7 nm  1.986 s
+Step   130: OL 1077.2  459.0  OA  134.2  42.9 CL  430.7 224.0 Split   411.5 127.1  127.1 nm  2.288 s
+Step   131: OL 1083.4  472.3  OA  133.3  38.0 CL  435.5 233.3 Split   411.6 142.3  142.3 nm  2.110 s
+Step   132: OL 1089.4  485.2  OA  139.2  52.6 CL  438.6 237.7 Split   412.7 148.4  148.4 nm  2.221 s
+Step   133: OL 1095.4  497.5  OA  139.1  53.2 CL  438.1 234.1 Split   414.5 141.8  141.8 nm  2.024 s
+Step   134: OL 1101.0  508.8  OA  137.7  49.7 CL  439.7 235.9 Split   415.6 143.5  143.5 nm  2.065 s
+Step   135: OL 1106.2  519.2  OA  133.4  38.8 CL  436.5 229.7 Split   416.2 131.6  131.6 nm  2.263 s
+Step   136: OL 1110.9  528.3  OA  129.8  26.1 CL  437.1 230.4 Split   416.7 131.9  131.9 nm  2.288 s
+Step   137: OL 1115.0  536.1  OA  127.5  10.4 CL  440.9 237.9 Split   416.7 143.8  143.8 nm  2.501 s
+Step   138: OL 1118.4  542.4  OA  128.9  15.6 CL  445.3 245.2 Split   417.5 154.7  154.7 nm  2.248 s
+Step   139: OL 1121.1  547.2  OA  128.7  18.0 CL  448.7 251.9 Split   417.4 164.6  164.6 nm  2.090 s
+Step   140: OL 1123.1  550.4  OA  128.2  20.4 CL  449.5 254.3 Split   416.8 168.3  168.3 nm  2.161 s
+Step   141: OL 1124.2  552.1  OA  127.1  22.9 CL  444.5 246.4 Split   416.5 155.3  155.3 nm  2.077 s
+Step   142: OL 1124.6  552.1  OA  126.6  17.3 CL  440.5 239.5 Split   416.8 142.7  142.7 nm  2.226 s
+Step   143: OL 1124.2  550.7  OA  127.3  13.0 CL  442.9 244.1 Split   416.9 149.7  149.7 nm  2.069 s
+Step   144: OL 1123.1  547.8  OA  126.2  12.9 CL  447.3 252.2 Split   417.1 161.5  161.5 nm  2.187 s
+Step   145: OL 1121.4  543.5  OA  126.6  14.3 CL  450.6 257.7 Split   417.6 169.3  169.3 nm  2.160 s
+Step   146: OL 1119.0  538.0  OA  128.2  19.3 CL  453.0 260.8 Split   418.6 173.3  173.3 nm  2.109 s
+Step   147: OL 1116.1  531.4  OA  129.5  24.5 CL  451.7 257.7 Split   419.4 167.8  167.8 nm  2.151 s
+Step   148: OL 1112.8  523.8  OA  132.8  40.4 CL  447.8 250.8 Split   419.7 156.2  156.2 nm  2.196 s
+Step   149: OL 1109.2  515.4  OA  134.6  49.7 CL  451.5 259.0 Split   418.8 168.6  168.6 nm  2.205 s
+Step   150: OL 1105.3  506.4  OA  129.2  30.9 CL  453.1 260.4 Split   419.9 170.2  170.2 nm  1.981 s
+Step   151: OL 1101.3  496.9  OA  127.2  12.7 CL  453.0 258.9 Split   421.2 166.8  166.8 nm  2.131 s
+Step   152: OL 1097.2  487.2  OA  128.8  17.3 CL  450.2 252.8 Split   422.3 156.1  156.1 nm  2.094 s
+Step   153: OL 1093.1  477.3  OA  132.7  38.0 CL  445.4 245.4 Split   421.7 143.1  143.1 nm  2.093 s
+Step   154: OL 1089.1  467.5  OA  130.9  34.7 CL  446.9 250.0 Split   420.8 150.3  150.3 nm  2.142 s
+Step   155: OL 1085.2  457.9  OA  130.8  35.2 CL  450.8 257.2 Split   420.8 161.7  161.7 nm  2.089 s
+Step   156: OL 1081.6  448.6  OA  131.4  37.3 CL  452.9 260.2 Split   421.4 166.0  166.0 nm  2.189 s
+Step   157: OL 1078.1  439.8  OA  130.8  36.9 CL  453.8 261.7 Split   421.6 168.0  168.0 nm  2.134 s
+Step   158: OL 1075.0  431.5  OA  125.0  19.2 CL  456.3 266.8 Split   421.6 174.6  174.6 nm  2.082 s
+Step   159: OL 1072.2  423.9  OA  122.2   8.8 CL  454.1 265.0 Split   421.0 170.4  170.4 nm  2.063 s
+Step   160: OL 1069.6  417.0  OA  122.7  12.7 CL  456.3 267.3 Split   422.3 172.9  172.9 nm  2.168 s
+Step   161: OL 1067.4  410.9  OA  123.7   4.7 CL  457.3 269.3 Split   422.2 175.6  175.6 nm  2.182 s
+Step   162: OL 1065.6  405.6  OA  125.1  11.2 CL  461.9 275.7 Split   423.2 184.9  184.9 nm  2.091 s
+Step   163: OL 1064.1  401.2  OA  124.8   8.5 CL  460.0 272.1 Split   424.0 178.5  178.5 nm  2.195 s
+Step   164: OL 1062.9  397.5  OA  126.1   7.9 CL  465.5 280.8 Split   424.5 191.1  191.1 nm  2.359 s
+Step   165: OL 1062.0  394.8  OA  125.7   2.7 CL  463.2 275.8 Split   425.4 183.3  183.3 nm  2.257 s
+Step   166: OL 1061.3  392.7  OA  126.4  13.1 CL  459.1 269.4 Split   425.1 173.2  173.2 nm  2.140 s
+Step   167: OL 1061.0  391.5  OA  126.3  14.3 CL  460.1 271.0 Split   425.5 174.9  174.9 nm  2.166 s
+Step   168: OL 1060.9  390.9  OA  125.9  14.4 CL  460.7 271.1 Split   426.5 174.1  174.1 nm  2.091 s
+Step   169: OL 1061.0  390.9  OA  125.1  12.9 CL  462.2 274.2 Split   426.4 178.4  178.4 nm  2.114 s
+Step   170: OL 1061.3  391.5  OA  124.9   8.0 CL  464.9 281.1 Split   424.8 188.9  188.9 nm  2.299 s
+Step   171: OL 1061.8  392.5  OA  125.6  14.7 CL  461.3 276.6 Split   423.8 182.3  182.3 nm  2.368 s
+Step   172: OL 1062.3  393.8  OA  125.6   4.5 CL  465.3 284.4 Split   423.2 193.4  193.4 nm  2.097 s
+Step   173: OL 1063.0  395.5  OA  125.9   9.5 CL  468.3 288.9 Split   423.7 199.5  199.5 nm  2.032 s
+Step   174: OL 1063.7  397.2  OA  128.2  19.9 CL  464.9 281.2 Split   425.5 187.5  187.5 nm  2.156 s
+Step   175: OL 1064.5  399.1  OA  127.6  23.0 CL  460.9 273.0 Split   427.0 173.6  173.6 nm  2.162 s
+Step   176: OL 1065.2  401.0  OA  126.2  19.6 CL  462.7 275.8 Split   427.4 177.2  177.2 nm  2.103 s
+Step   177: OL 1065.9  402.7  OA  126.5  24.5 CL  462.1 274.6 Split   427.9 174.4  174.4 nm  2.186 s
+Step   178: OL 1066.6  404.3  OA  126.1  20.2 CL  466.2 280.6 Split   428.7 183.1  183.1 nm  2.418 s
+Step   179: OL 1067.1  405.6  OA  125.5  14.3 CL  468.7 284.6 Split   428.9 189.0  189.0 nm  2.107 s
+Step   180: OL 1067.5  406.6  OA  126.0  16.0 CL  466.5 281.3 Split   428.7 183.8  183.8 nm  2.357 s
+Step   181: OL 1067.8  407.3  OA  125.2   6.4 CL  469.6 287.2 Split   428.2 192.7  192.7 nm  2.207 s
+Step   182: OL 1067.9  407.6  OA  124.3  10.6 CL  477.1 299.5 Split   428.4 210.0  210.0 nm  2.256 s
+Step   183: OL 1067.9  407.6  OA  124.9  14.8 CL  479.3 303.4 Split   428.4 215.0  215.0 nm  2.195 s
+Step   184: OL 1067.8  407.2  OA  125.3   5.5 CL  474.4 297.6 Split   427.2 206.3  206.3 nm  2.153 s
+Step   185: OL 1067.5  406.4  OA  126.8  10.7 CL  475.5 299.9 Split   427.0 209.2  209.2 nm  1.940 s
+Step   186: OL 1067.0  405.3  OA  125.8   9.4 CL  469.9 292.0 Split   426.3 197.7  197.7 nm  1.986 s
+Step   187: OL 1066.5  403.9  OA  126.0  13.2 CL  467.9 287.9 Split   427.3 190.8  190.8 nm  2.139 s
+Step   188: OL 1065.9  402.4  OA  125.9  13.9 CL  468.6 287.8 Split   428.3 190.1  190.1 nm  2.078 s
+Step   189: OL 1065.2  400.7  OA  124.9  10.2 CL  470.4 290.4 Split   428.6 193.7  193.7 nm  2.082 s
+Step   190: OL 1064.5  398.9  OA  125.2  10.2 CL  473.0 292.6 Split   430.2 196.7  196.7 nm  2.038 s
+Step   191: OL 1063.9  397.2  OA  125.0   7.8 CL  474.4 294.8 Split   430.3 199.7  199.7 nm  2.101 s
+Step   192: OL 1063.2  395.7  OA  124.0   5.7 CL  475.6 297.8 Split   429.8 203.5  203.5 nm  2.043 s
+Step   193: OL 1062.7  394.3  OA  124.0   2.6 CL  477.2 301.0 Split   429.6 207.8  207.8 nm  2.139 s
+Step   194: OL 1062.3  393.4  OA  123.9   3.6 CL  478.8 302.4 Split   430.5 209.6  209.6 nm  1.997 s
+Step   195: OL 1062.0  392.8  OA  124.0  12.8 CL  477.0 299.5 Split   430.6 205.1  205.1 nm  2.094 s
+Step   196: OL 1061.9  392.7  OA  123.8  16.9 CL  473.4 294.9 Split   429.9 198.1  198.1 nm  2.165 s
+Step   197: OL 1062.0  393.3  OA  125.4  19.0 CL  472.3 291.7 Split   431.4 192.1  192.1 nm  2.111 s
+Step   198: OL 1062.4  394.5  OA  126.4  17.8 CL  478.1 297.7 Split   434.1 200.2  200.2 nm  2.130 s
+Step   199: OL 1063.0  396.4  OA  126.8  23.2 CL  478.8 296.2 Split   436.0 197.8  197.8 nm  2.209 s
+Step   200: OL 1064.0  399.1  OA  125.7  18.2 CL  482.3 302.1 Split   436.1 205.9  205.9 nm  2.202 s
+Step   201: OL 1065.2  402.5  OA  124.8   5.1 CL  484.1 305.5 Split   436.2 210.0  210.0 nm  2.205 s
+Step   202: OL 1066.7  406.7  OA  124.6   5.2 CL  486.5 309.8 Split   435.8 216.3  216.3 nm  2.119 s
+Step   203: OL 1068.5  411.7  OA  124.1   1.4 CL  485.0 308.9 Split   434.9 214.7  214.7 nm  2.240 s
+Step   204: OL 1070.5  417.3  OA  125.4  15.2 CL  480.0 301.2 Split   435.0 202.9  202.9 nm  2.091 s
+Step   205: OL 1072.9  423.6  OA  126.8  20.2 CL  482.7 303.8 Split   436.5 206.2  206.2 nm  2.194 s
+Step   206: OL 1075.5  430.4  OA  127.0  23.1 CL  484.6 306.3 Split   437.1 209.4  209.4 nm  2.167 s
+Step   207: OL 1078.3  437.7  OA  128.4  28.7 CL  486.3 309.3 Split   436.8 213.7  213.7 nm  2.289 s
+Step   208: OL 1081.2  445.2  OA  127.9  24.0 CL  492.3 320.9 Split   435.3 229.8  229.8 nm  2.105 s
+Step   209: OL 1084.3  452.9  OA  127.3  22.8 CL  491.9 319.8 Split   435.9 227.9  227.9 nm  2.341 s
+Step   210: OL 1087.4  460.6  OA  125.1  12.9 CL  490.9 317.3 Split   436.7 224.2  224.2 nm  2.242 s
+Step   211: OL 1090.4  468.2  OA  126.0  20.9 CL  483.6 305.5 Split   437.1 207.1  207.1 nm  2.271 s
+Step   212: OL 1093.3  475.3  OA  124.7  19.5 CL  483.7 305.7 Split   437.2 207.0  207.0 nm  2.197 s
+Step   213: OL 1096.0  481.9  OA  125.3  22.8 CL  487.4 311.1 Split   437.6 214.7  214.7 nm  2.225 s
+Step   214: OL 1098.4  487.7  OA  126.5  29.8 CL  491.3 317.3 Split   437.6 223.5  223.5 nm  2.266 s
+Step   215: OL 1100.4  492.6  OA  127.3  29.9 CL  495.8 323.5 Split   438.3 231.6  231.6 nm  2.098 s
+Step   216: OL 1101.9  496.4  OA  124.1  11.6 CL  494.4 322.4 Split   437.6 230.1  230.1 nm  2.257 s
+Step   217: OL 1102.8  499.0  OA  122.9   9.3 CL  496.1 326.4 Split   436.8 235.1  235.1 nm  2.189 s
+Step   218: OL 1103.1  500.1  OA  124.2  17.1 CL  499.6 332.6 Split   436.3 243.6  243.6 nm  2.129 s
+Step   219: OL 1102.7  499.8  OA  124.1  15.8 CL  498.3 331.0 Split   435.9 241.4  241.4 nm  2.107 s
+Step   220: OL 1101.5  497.8  OA  123.0   8.8 CL  495.8 326.9 Split   436.1 235.8  235.8 nm  2.124 s
+Step   221: OL 1099.6  494.1  OA  122.7   6.1 CL  495.5 325.4 Split   436.9 233.7  233.7 nm  2.073 s
+Step   222: OL 1097.0  488.8  OA  122.8  11.4 CL  487.3 313.7 Split   436.2 217.3  217.3 nm  2.149 s
+Step   223: OL 1093.6  481.8  OA  122.1   4.7 CL  491.2 319.7 Split   436.4 225.6  225.6 nm  2.182 s
+Step   224: OL 1089.5  473.2  OA  122.5  13.6 CL  494.9 325.0 Split   436.8 232.8  232.8 nm  2.145 s
+Step   225: OL 1084.9  463.0  OA  123.9  20.8 CL  494.3 324.2 Split   436.9 231.2  231.2 nm  2.122 s
+Step   226: OL 1079.6  451.4  OA  126.6  31.4 CL  498.6 330.5 Split   437.2 239.7  239.7 nm  2.127 s
+Step   227: OL 1074.0  438.6  OA  130.6  44.6 CL  503.2 337.5 Split   437.1 249.3  249.3 nm  2.197 s
+Step   228: OL 1068.0  424.6  OA  133.5  49.6 CL  503.1 335.9 Split   438.0 247.5  247.5 nm  2.168 s
+Step   229: OL 1061.9  409.9  OA  132.8  50.3 CL  499.0 330.9 Split   436.9 241.2  241.2 nm  2.177 s
+Step   230: OL 1055.7  394.5  OA  128.8  40.6 CL  498.0 331.0 Split   435.5 241.5  241.5 nm  2.149 s
+Step   231: OL 1049.5  378.7  OA  129.5  39.2 CL  501.5 336.4 Split   435.4 248.9  248.9 nm  2.165 s
+Step   232: OL 1043.5  362.9  OA  128.9  34.4 CL  498.3 331.2 Split   435.8 241.6  241.6 nm  2.215 s
+Step   233: OL 1037.8  347.2  OA  128.6  31.6 CL  497.4 329.9 Split   435.8 239.8  239.8 nm  2.190 s
+Step   234: OL 1032.4  332.1  OA  129.3  32.8 CL  498.2 330.4 Split   436.6 240.0  240.0 nm  2.144 s
+Step   235: OL 1027.5  317.7  OA  132.6  44.2 CL  502.7 336.9 Split   436.9 248.7  248.7 nm  2.266 s
+Step   236: OL 1022.9  304.4  OA  137.5  55.7 CL  499.8 332.6 Split   436.4 243.6  243.6 nm  2.238 s
+Step   237: OL 1019.0  292.3  OA  139.5  58.6 CL  501.8 334.8 Split   436.7 247.1  247.1 nm  2.030 s
+Step   238: OL 1015.5  281.6  OA  135.5  47.0 CL  498.3 329.3 Split   436.8 239.8  239.8 nm  2.176 s
+Step   239: OL 1012.5  272.5  OA  132.8  39.2 CL  491.4 318.5 Split   436.9 224.8  224.8 nm  2.128 s
+Step   240: OL 1010.1  265.2  OA  129.7  30.1 CL  491.9 319.0 Split   437.1 225.6  225.6 nm  2.220 s
+Step   241: OL 1008.2  259.7  OA  128.4  24.7 CL  498.2 328.5 Split   437.1 239.2  239.2 nm  2.183 s
+Step   242: OL 1006.8  256.0  OA  130.4  30.3 CL  502.0 333.6 Split   437.5 246.0  246.0 nm  2.169 s
+Step   243: OL 1005.8  254.4  OA  129.7  27.0 CL  501.2 332.3 Split   437.7 244.0  244.0 nm  2.297 s
+Step   244: OL 1005.4  254.7  OA  126.8   9.6 CL  498.4 326.9 Split   438.9 236.2  236.2 nm  2.084 s
+Step   245: OL 1005.4  257.0  OA  125.8   3.8 CL  499.7 328.6 Split   438.9 238.8  238.8 nm  2.190 s
+Step   246: OL 1006.0  261.4  OA  124.9   5.3 CL  498.3 326.2 Split   438.8 236.1  236.1 nm  2.190 s
+Step   247: OL 1007.2  267.8  OA  124.5  12.3 CL  495.3 323.0 Split   437.8 231.6  231.6 nm  2.137 s
+Step   248: OL 1008.9  276.3  OA  127.9  29.3 CL  500.5 331.5 Split   437.3 243.4  243.4 nm  2.215 s
+Step   249: OL 1011.2  286.7  OA  131.9  39.2 CL  503.8 335.7 Split   438.2 248.6  248.6 nm  2.259 s
+Step   250: OL 1014.2  299.0  OA  131.4  28.6 CL  505.6 336.0 Split   440.3 248.6  248.6 nm  2.177 s
+Step   251: OL 1017.8  313.0  OA  130.7  26.5 CL  503.9 333.9 Split   440.0 245.6  245.6 nm  2.208 s
+Step   252: OL 1022.1  328.6  OA  131.7  32.3 CL  508.1 339.0 Split   440.8 252.7  252.7 nm  2.177 s
+Step   253: OL 1027.0  345.4  OA  132.5  37.4 CL  508.0 338.1 Split   441.5 251.3  251.3 nm  2.150 s
+Step   254: OL 1032.6  363.3  OA  134.5  45.6 CL  507.8 338.2 Split   441.3 251.3  251.3 nm  2.166 s
+Step   255: OL 1038.6  381.8  OA  134.0  43.4 CL  505.3 333.9 Split   441.4 246.0  246.0 nm  2.098 s
+Step   255 updated high order loop gain: 0.426
+Step   255 updated low order loop gain : 0.432
+Step   256: OL 1045.0  400.6  OA  136.9  53.3 CL  504.9 333.7 Split   441.0 245.9  245.9 nm  2.179 s
+Step   257: OL 1051.7  419.4  OA  138.1  56.7 CL  504.6 334.7 Split   439.5 248.0  248.0 nm  2.197 s
+Step   258: OL 1058.6  437.7  OA  140.7  62.5 CL  503.1 334.4 Split   437.8 247.9  247.9 nm  2.125 s
+Step   259: OL 1065.3  455.3  OA  141.7  63.6 CL  505.1 338.8 Split   436.9 253.5  253.5 nm  2.251 s
+Step   260: OL 1071.7  471.6  OA  138.2  55.1 CL  499.8 331.3 Split   436.8 243.0  243.0 nm  2.243 s
+Step   261: OL 1077.7  486.5  OA  131.2  37.2 CL  499.2 330.1 Split   436.9 241.5  241.5 nm  2.327 s
+Step   262: OL 1083.0  499.5  OA  133.9  43.8 CL  495.1 322.2 Split   438.3 230.3  230.3 nm  2.043 s
+Step   263: OL 1087.3  510.3  OA  131.0  29.2 CL  496.0 319.9 Split   440.9 227.2  227.2 nm  2.057 s
+Step   264: OL 1090.7  518.8  OA  132.4  30.3 CL  499.0 322.2 Split   442.7 230.1  230.1 nm  2.223 s
+Step   265: OL 1092.8  524.6  OA  130.6  23.8 CL  502.7 326.8 Split   443.8 236.1  236.1 nm  2.024 s
+Step   266: OL 1093.6  527.7  OA  129.4  21.8 CL  509.2 336.7 Split   443.8 249.8  249.8 nm  2.188 s
+Step   267: OL 1093.0  527.9  OA  127.4   8.4 CL  509.3 339.4 Split   441.8 253.5  253.5 nm  2.112 s
+Step   268: OL 1090.9  525.2  OA  127.5  16.8 CL  513.9 347.2 Split   440.9 263.9  263.9 nm  2.071 s
+Step   269: OL 1087.5  519.5  OA  129.8  26.3 CL  516.9 352.1 Split   440.3 270.8  270.8 nm  2.169 s
+Step   270: OL 1082.7  511.0  OA  130.6  27.0 CL  514.4 347.1 Split   441.1 264.6  264.6 nm  2.225 s
+Step   271: OL 1076.7  499.7  OA  131.0  28.9 CL  512.3 343.1 Split   441.6 259.7  259.7 nm  2.049 s
+Step   272: OL 1069.5  485.8  OA  132.7  40.5 CL  511.4 340.8 Split   442.1 256.9  256.9 nm  2.275 s
+Step   273: OL 1061.5  469.5  OA  135.5  52.8 CL  513.7 343.3 Split   442.7 260.7  260.7 nm  2.214 s
+Step   274: OL 1052.7  451.2  OA  140.6  65.3 CL  527.1 362.4 Split   443.0 285.6  285.6 nm  2.267 s
+Step   275: OL 1043.5  431.1  OA  140.2  62.9 CL  525.4 358.8 Split   444.0 280.9  280.9 nm  2.074 s
+Step   276: OL 1034.0  409.7  OA  136.2  50.8 CL  520.1 349.4 Split   445.3 268.7  268.7 nm  2.171 s
+Step   277: OL 1024.5  387.2  OA  132.3  39.0 CL  514.8 340.1 Split   446.5 256.3  256.3 nm  2.070 s
+Step   278: OL 1015.2  364.2  OA  138.3  55.2 CL  512.8 336.3 Split   446.7 251.9  251.9 nm  2.127 s
+Step   279: OL 1006.3  341.2  OA  139.3  59.4 CL  512.3 335.8 Split   446.4 251.3  251.3 nm  2.026 s
+Step   280: OL  997.9  318.5  OA  139.3  60.3 CL  522.4 351.7 Split   446.1 271.8  271.8 nm  2.051 s
+Step   281: OL  990.3  296.7  OA  140.3  60.6 CL  527.5 358.5 Split   447.1 279.9  279.9 nm  2.106 s
+Step   282: OL  983.5  276.1  OA  138.1  55.6 CL  532.9 365.3 Split   448.1 288.4  288.4 nm  2.034 s
+Step   283: OL  977.5  257.2  OA  130.0  34.9 CL  523.7 350.5 Split   449.1 269.4  269.4 nm  2.213 s
+Step   284: OL  972.2  240.3  OA  130.7  38.1 CL  525.5 352.5 Split   449.3 272.5  272.5 nm  2.122 s
+Step   285: OL  967.8  225.7  OA  133.6  46.2 CL  525.7 352.9 Split   449.1 273.3  273.3 nm  2.255 s
+Step   286: OL  964.1  213.4  OA  131.6  37.4 CL  522.4 347.0 Split   450.0 265.2  265.2 nm  2.190 s
+Step   287: OL  961.1  203.6  OA  128.9  20.7 CL  521.5 342.3 Split   452.8 258.6  258.6 nm  2.173 s
+Step   288: OL  958.6  196.3  OA  130.3  29.6 CL  527.0 348.5 Split   454.5 266.9  266.9 nm  2.211 s
+Step   289: OL  956.7  191.2  OA  129.7  28.6 CL  525.7 346.9 Split   453.9 265.2  265.2 nm  2.146 s
+Step   290: OL  955.2  188.4  OA  129.7  24.9 CL  523.6 343.5 Split   454.0 260.8  260.8 nm  2.146 s
+Step   291: OL  954.1  187.7  OA  128.5  16.4 CL  524.8 343.7 Split   455.3 261.1  261.1 nm  2.265 s
+Step   292: OL  953.4  189.2  OA  127.4   6.5 CL  525.4 343.1 Split   456.5 260.2  260.2 nm  2.116 s
+Step   293: OL  953.2  192.8  OA  127.3   8.6 CL  521.3 334.8 Split   457.9 249.2  249.2 nm  2.232 s
+Step   294: OL  953.5  198.7  OA  128.8  23.8 CL  515.7 326.0 Split   458.0 237.1  237.1 nm  2.124 s
+Step   295: OL  954.3  206.9  OA  131.6  37.0 CL  516.1 328.5 Split   456.5 240.9  240.9 nm  2.165 s
+Step   296: OL  955.7  217.5  OA  132.3  40.2 CL  520.9 336.6 Split   456.0 251.8  251.8 nm  2.232 s
+Step   297: OL  957.7  230.5  OA  131.5  40.7 CL  520.2 336.6 Split   454.8 252.4  252.4 nm  2.246 s
+Step   298: OL  960.5  245.6  OA  133.3  51.6 CL  524.1 342.4 Split   454.7 260.5  260.5 nm  2.267 s
+Step   299: OL  964.1  262.6  OA  137.3  58.8 CL  535.7 357.6 Split   456.2 280.8  280.8 nm  2.319 s
+Step   300: OL  968.4  281.3  OA  138.9  60.2 CL  536.7 355.8 Split   458.6 278.9  278.9 nm  2.237 s
+Step   301: OL  973.4  301.1  OA  138.5  58.3 CL  530.8 344.9 Split   459.5 265.7  265.7 nm  2.128 s
+Step   302: OL  979.0  321.8  OA  141.5  64.0 CL  530.6 345.3 Split   458.7 266.8  266.8 nm  2.146 s
+Step   303: OL  985.1  342.7  OA  148.7  78.9 CL  528.7 344.7 Split   456.7 266.4  266.4 nm  2.285 s
+Step   304: OL  991.6  363.5  OA  151.0  84.2 CL  522.6 336.3 Split   456.0 255.4  255.4 nm  2.149 s
+Step   305: OL  998.2  383.6  OA  140.6  65.1 CL  518.9 329.5 Split   456.9 246.0  246.0 nm  2.111 s
+Step   306: OL 1004.8  402.7  OA  133.4  49.9 CL  523.4 336.3 Split   457.0 255.2  255.2 nm  2.111 s
+Step   307: OL 1011.0  420.3  OA  132.6  49.3 CL  526.1 339.0 Split   457.9 258.9  258.9 nm  2.122 s
+Step   308: OL 1016.8  436.1  OA  131.8  47.3 CL  528.2 342.0 Split   457.9 263.3  263.3 nm  2.263 s
+Step   309: OL 1021.7  449.7  OA  124.2  17.9 CL  523.7 335.0 Split   457.9 254.2  254.2 nm  2.106 s
+Step   310: OL 1025.8  461.0  OA  124.1  10.7 CL  523.5 332.9 Split   458.8 252.0  252.0 nm  2.120 s
+Step   311: OL 1028.8  469.6  OA  127.2  18.4 CL  517.8 321.3 Split   460.6 236.4  236.4 nm  2.158 s
+Step   312: OL 1030.5  475.4  OA  130.9  30.2 CL  519.4 322.5 Split   461.3 238.6  238.6 nm  2.157 s
+Step   313: OL 1030.9  478.3  OA  131.8  33.8 CL  523.7 330.1 Split   460.5 249.4  249.4 nm  2.153 s
+Step   314: OL 1030.0  478.4  OA  127.8  24.4 CL  530.5 341.4 Split   459.6 264.9  264.9 nm  2.329 s
+Step   315: OL 1027.7  475.6  OA  124.7  14.2 CL  528.4 339.3 Split   458.8 262.2  262.2 nm  2.269 s
+Step   316: OL 1024.2  470.0  OA  122.8   1.7 CL  522.2 330.6 Split   457.8 251.3  251.3 nm  2.345 s
+Step   317: OL 1019.5  461.7  OA  124.3  13.2 CL  519.4 325.4 Split   458.2 244.7  244.7 nm  2.096 s
+Step   318: OL 1013.7  451.0  OA  128.5  32.0 CL  521.0 327.2 Split   458.8 247.1  247.1 nm  2.307 s
+Step   319: OL 1007.0  438.1  OA  129.3  32.3 CL  525.1 334.4 Split   458.1 256.8  256.8 nm  2.340 s
+Step   320: OL  999.7  423.2  OA  129.8  34.3 CL  527.9 338.8 Split   457.8 262.9  262.9 nm  2.244 s
+Step   321: OL  991.8  406.7  OA  132.0  41.4 CL  530.4 340.8 Split   459.0 265.8  265.8 nm  2.392 s
+Step   322: OL  983.6  389.0  OA  134.2  46.5 CL  529.5 336.8 Split   460.9 260.7  260.7 nm  2.185 s
+Step   323: OL  975.3  370.3  OA  137.9  58.7 CL  532.5 338.6 Split   462.7 263.5  263.5 nm  2.298 s
+Step   324: OL  967.1  351.0  OA  135.4  54.6 CL  532.9 338.9 Split   462.9 264.0  264.0 nm  2.051 s
+Step   325: OL  959.2  331.5  OA  134.2  51.0 CL  536.8 344.3 Split   463.2 271.3  271.3 nm  2.161 s
+Step   326: OL  951.6  312.3  OA  130.9  37.6 CL  538.3 345.3 Split   464.0 272.9  272.9 nm  2.250 s
+Step   327: OL  944.6  293.5  OA  135.4  51.1 CL  545.7 355.6 Split   464.6 286.3  286.3 nm  2.114 s
+Step   328: OL  938.1  275.7  OA  136.0  53.5 CL  549.7 361.8 Split   464.1 294.6  294.6 nm  2.182 s
+Step   329: OL  932.2  259.0  OA  132.7  46.8 CL  542.6 352.5 Split   462.6 283.4  283.4 nm  2.375 s
+Step   330: OL  926.9  243.7  OA  131.7  44.2 CL  536.1 342.4 Split   462.5 271.2  271.2 nm  2.240 s
+Step   331: OL  922.3  230.1  OA  132.8  45.8 CL  531.5 335.0 Split   462.4 261.9  261.9 nm  2.341 s
+Step   332: OL  918.3  218.2  OA  134.6  53.9 CL  533.1 338.3 Split   461.7 266.6  266.6 nm  2.168 s
+Step   333: OL  914.8  208.2  OA  135.2  56.4 CL  536.9 345.9 Split   460.1 276.8  276.8 nm  2.185 s
+Step   334: OL  911.8  200.1  OA  129.9  41.4 CL  533.2 340.8 Split   459.5 270.6  270.6 nm  2.223 s
+Step   335: OL  909.3  193.8  OA  130.3  38.3 CL  532.7 339.1 Split   460.1 268.5  268.5 nm  2.333 s
+Step   336: OL  907.2  189.4  OA  127.5  25.2 CL  526.5 328.3 Split   460.9 254.5  254.5 nm  2.190 s
+Step   337: OL  905.4  186.6  OA  126.1   8.2 CL  521.2 319.6 Split   460.9 243.3  243.3 nm  2.200 s
+Step   338: OL  904.0  185.6  OA  125.9  12.0 CL  520.2 317.6 Split   461.1 240.8  240.8 nm  2.166 s
+Step   339: OL  902.9  186.3  OA  123.6   7.4 CL  521.4 320.5 Split   460.2 245.1  245.1 nm  2.245 s
+Step   340: OL  902.1  188.5  OA  121.6   8.4 CL  523.7 324.4 Split   460.0 250.5  250.5 nm  2.157 s
+Step   341: OL  901.8  192.4  OA  122.1  12.6 CL  523.7 323.3 Split   460.3 249.8  249.8 nm  2.033 s
+Step   342: OL  901.7  197.8  OA  122.2   5.4 CL  518.9 314.6 Split   460.5 239.0  239.0 nm  2.163 s
+Step   343: OL  902.0  204.9  OA  121.7   8.5 CL  515.7 309.7 Split   459.8 233.5  233.5 nm  2.253 s
+Step   344: OL  902.8  213.4  OA  122.1  15.5 CL  515.6 310.6 Split   458.9 235.0  235.0 nm  2.118 s
+Step   345: OL  903.9  223.3  OA  120.9  14.4 CL  516.6 311.9 Split   459.0 237.1  237.1 nm  2.108 s
+Step   346: OL  905.5  234.5  OA  121.6  16.1 CL  515.8 311.0 Split   458.3 236.7  236.7 nm  2.287 s
+Step   347: OL  907.5  246.8  OA  122.0  16.2 CL  513.3 306.0 Split   458.6 230.5  230.5 nm  2.101 s
+Step   348: OL  909.9  260.0  OA  123.5  20.4 CL  511.9 304.3 Split   458.1 228.5  228.5 nm  2.209 s
+Step   349: OL  912.7  273.8  OA  125.5  29.6 CL  511.4 305.5 Split   456.8 229.9  229.9 nm  2.110 s
+Step   350: OL  915.8  288.0  OA  129.8  43.0 CL  516.7 315.9 Split   455.8 243.5  243.5 nm  2.080 s
+Step   351: OL  919.2  302.3  OA  128.4  38.0 CL  517.2 318.0 Split   454.8 246.3  246.3 nm  2.168 s
+Step   352: OL  922.6  316.4  OA  125.9  28.1 CL  515.3 315.3 Split   454.4 242.9  242.9 nm  2.162 s
+Step   353: OL  926.2  330.1  OA  126.9  27.2 CL  506.7 302.1 Split   453.5 226.2  226.2 nm  2.187 s
+Step   354: OL  929.6  343.1  OA  126.4  27.7 CL  510.8 309.4 Split   452.9 236.3  236.3 nm  2.145 s
+Step   355: OL  932.9  355.2  OA  126.4  33.2 CL  522.9 327.8 Split   453.6 260.3  260.3 nm  2.067 s
+Step   356: OL  935.8  366.1  OA  123.1  24.8 CL  515.5 314.9 Split   454.0 244.1  244.1 nm  2.090 s
+Step   357: OL  938.3  375.5  OA  120.6  21.0 CL  508.5 303.7 Split   453.5 230.2  230.2 nm  2.193 s
+Step   358: OL  940.3  383.4  OA  122.3  26.3 CL  502.6 292.1 Split   454.5 214.5  214.5 nm  2.159 s
+Step   359: OL  941.5  389.6  OA  122.2  20.5 CL  504.6 293.6 Split   455.9 216.4  216.4 nm  2.114 s
+Step   360: OL  942.1  393.9  OA  121.3  16.7 CL  505.6 296.8 Split   454.7 221.0  221.0 nm  2.204 s
+Step   361: OL  941.8  396.2  OA  121.5  23.5 CL  501.4 290.4 Split   453.9 213.0  213.0 nm  2.067 s
+Step   362: OL  940.6  396.5  OA  122.9  26.1 CL  506.1 299.4 Split   453.1 225.6  225.6 nm  2.157 s
+Step   363: OL  938.6  394.7  OA  121.1  14.3 CL  504.4 297.3 Split   452.2 223.6  223.6 nm  2.030 s
+Step   364: OL  935.6  390.8  OA  122.4  14.8 CL  502.4 295.3 Split   451.1 221.0  221.0 nm  2.177 s
+Step   365: OL  931.9  384.9  OA  122.3  11.1 CL  506.0 301.6 Split   450.8 229.7  229.7 nm  2.123 s
+Step   366: OL  927.4  377.0  OA  124.4  27.9 CL  511.1 310.1 Split   450.7 240.9  240.9 nm  2.115 s
+Step   367: OL  922.2  367.3  OA  125.9  34.8 CL  514.5 315.7 Split   450.8 248.1  248.1 nm  2.156 s
+Step   368: OL  916.4  355.9  OA  126.9  38.0 CL  520.8 325.7 Split   450.6 261.1  261.1 nm  2.215 s
+Step   369: OL  910.1  343.1  OA  125.7  34.5 CL  515.9 317.9 Split   450.2 252.0  252.0 nm  2.176 s
+Step   370: OL  903.5  328.9  OA  128.4  41.0 CL  512.1 312.0 Split   449.9 244.7  244.7 nm  2.227 s
+Step   371: OL  896.7  313.7  OA  125.4  33.8 CL  510.2 310.3 Split   448.7 243.0  243.0 nm  2.111 s
+Step   372: OL  889.8  297.7  OA  128.1  44.1 CL  511.0 310.9 Split   448.7 244.6  244.6 nm  2.259 s
+Step   373: OL  883.0  281.2  OA  135.7  59.5 CL  514.9 315.3 Split   449.8 250.5  250.5 nm  2.240 s
+Step   374: OL  876.5  264.5  OA  135.9  54.9 CL  510.0 307.7 Split   449.8 240.5  240.5 nm  2.054 s
+Step   375: OL  870.2  247.9  OA  136.4  55.3 CL  502.0 295.8 Split   448.7 225.1  225.1 nm  2.096 s
+Step   376: OL  864.3  231.8  OA  135.9  54.0 CL  496.7 286.2 Split   448.9 212.6  212.6 nm  2.098 s
+Step   377: OL  858.8  216.4  OA  132.5  45.9 CL  499.3 290.6 Split   448.8 218.9  218.9 nm  2.161 s
+Step   378: OL  853.8  202.0  OA  129.4  41.2 CL  505.4 301.8 Split   447.6 234.7  234.7 nm  2.098 s
+Step   379: OL  849.4  188.9  OA  130.8  47.9 CL  513.2 315.8 Split   446.2 253.6  253.6 nm  2.136 s
+Step   380: OL  845.4  177.3  OA  132.8  53.4 CL  514.4 318.8 Split   445.1 257.8  257.8 nm  1.958 s
+Step   381: OL  841.8  167.3  OA  130.2  42.1 CL  510.4 313.9 Split   443.7 252.3  252.3 nm  2.081 s
+Step   382: OL  838.7  159.0  OA  129.2  35.4 CL  507.6 309.0 Split   443.8 246.3  246.3 nm  2.154 s
+Step   383: OL  835.9  152.3  OA  129.3  37.9 CL  505.2 306.2 Split   442.8 243.1  243.1 nm  2.190 s
+Step   384: OL  833.5  147.1  OA  129.1  39.9 CL  502.9 304.2 Split   441.6 240.6  240.6 nm  2.103 s
+Step   385: OL  831.3  143.4  OA  127.5  35.3 CL  504.0 306.2 Split   441.4 243.3  243.3 nm  2.136 s
+Step   386: OL  829.4  140.9  OA  127.3  35.5 CL  503.4 304.6 Split   441.3 242.2  242.2 nm  2.132 s
+Step   387: OL  827.6  139.6  OA  125.0  23.1 CL  499.7 297.4 Split   441.5 233.9  233.9 nm  2.200 s
+Step   388: OL  826.0  139.3  OA  122.4   2.6 CL  494.8 288.4 Split   441.8 222.9  222.9 nm  2.066 s
+Step   389: OL  824.7  140.1  OA  123.0  17.8 CL  488.9 279.1 Split   440.8 211.5  211.5 nm  2.290 s
+Step   390: OL  823.4  142.0  OA  126.4  33.4 CL  482.9 270.5 Split   439.5 200.1  200.1 nm  2.168 s
+Step   391: OL  822.4  145.0  OA  127.5  34.0 CL  480.1 265.1 Split   439.5 193.1  193.1 nm  2.171 s
+Step   392: OL  821.6  149.2  OA  125.6  27.1 CL  481.2 266.8 Split   439.6 195.7  195.7 nm  2.249 s
+Step   393: OL  821.1  154.7  OA  125.1  29.9 CL  481.5 268.1 Split   438.8 198.2  198.2 nm  2.119 s
+Step   394: OL  820.8  161.5  OA  123.3  23.7 CL  489.1 279.8 Split   439.5 214.7  214.7 nm  2.215 s
+Step   395: OL  820.9  169.5  OA  121.1  25.4 CL  492.9 288.8 Split   437.4 227.3  227.3 nm  2.173 s
+Step   396: OL  821.3  178.6  OA  118.9  24.2 CL  485.2 277.2 Split   436.1 212.7  212.7 nm  2.114 s
+Step   397: OL  822.0  188.8  OA  125.8  43.4 CL  476.6 261.1 Split   436.7 190.9  190.9 nm  2.118 s
+Step   398: OL  823.0  199.7  OA  123.9  33.2 CL  476.6 260.2 Split   437.4 189.3  189.3 nm  2.190 s
+Step   399: OL  824.4  211.2  OA  121.8  23.0 CL  480.4 264.9 Split   438.5 196.1  196.1 nm  2.138 s
+Step   400: OL  826.0  223.1  OA  121.6  26.4 CL  479.7 263.2 Split   438.7 194.1  194.1 nm  2.051 s
+Step   401: OL  827.7  235.0  OA  123.4  31.9 CL  482.2 268.1 Split   437.9 201.7  201.7 nm  2.111 s
+Step   402: OL  829.6  246.8  OA  124.2  32.3 CL  486.6 278.8 Split   435.9 216.1  216.1 nm  2.293 s
+Step   403: OL  831.6  258.2  OA  125.9  40.3 CL  486.1 280.1 Split   434.4 218.2  218.2 nm  2.184 s
+Step   404: OL  833.5  269.0  OA  123.5  33.9 CL  481.0 273.3 Split   432.7 210.1  210.1 nm  2.111 s
+Step   405: OL  835.2  279.0  OA  124.8  39.5 CL  475.8 266.4 Split   431.0 201.5  201.5 nm  2.227 s
+Step   406: OL  836.8  288.1  OA  123.2  34.9 CL  470.6 257.2 Split   430.7 189.8  189.8 nm  2.351 s
+Step   407: OL  838.1  296.1  OA  118.8   8.1 CL  478.2 270.6 Split   430.3 208.7  208.7 nm  2.218 s
+Step   408: OL  839.0  302.8  OA  120.6  15.6 CL  477.1 268.6 Split   430.2 206.4  206.4 nm  2.254 s
+Step   409: OL  839.4  308.2  OA  121.5  18.0 CL  480.6 274.4 Split   430.0 214.7  214.7 nm  2.204 s
+Step   410: OL  839.5  312.3  OA  120.7  14.7 CL  477.1 268.0 Split   429.8 207.2  207.2 nm  2.140 s
+Step   411: OL  839.0  314.9  OA  121.1  14.2 CL  474.3 261.9 Split   430.1 199.9  199.9 nm  2.153 s
+Step   412: OL  837.9  316.1  OA  122.1  14.9 CL  474.9 261.6 Split   430.6 200.2  200.2 nm  2.226 s
+Step   413: OL  836.3  315.9  OA  121.5  11.0 CL  472.8 261.1 Split   428.4 200.1  200.1 nm  2.244 s
+Step   414: OL  834.2  314.2  OA  121.4   7.0 CL  473.9 262.7 Split   428.3 202.8  202.8 nm  2.264 s
+Step   415: OL  831.6  311.1  OA  120.8   7.4 CL  478.3 270.2 Split   428.3 212.8  212.8 nm  2.081 s
+Step   416: OL  828.5  306.8  OA  121.4   8.6 CL  477.9 269.3 Split   428.3 212.1  212.1 nm  2.148 s
+Step   417: OL  825.0  301.1  OA  122.2   9.8 CL  477.8 269.0 Split   427.8 212.8  212.8 nm  2.198 s
+Step   418: OL  821.0  294.3  OA  123.2   2.1 CL  474.4 264.4 Split   426.5 207.8  207.8 nm  2.239 s
+Step   419: OL  816.8  286.4  OA  122.4   8.1 CL  475.1 267.7 Split   425.0 212.3  212.3 nm  2.380 s
+Step   420: OL  812.3  277.5  OA  123.2  15.1 CL  477.1 271.8 Split   424.6 217.5  217.5 nm  2.294 s
+Step   421: OL  807.5  267.8  OA  126.1  33.1 CL  477.7 272.1 Split   425.2 217.6  217.6 nm  2.275 s
+Step   422: OL  802.7  257.4  OA  127.6  38.4 CL  479.7 274.3 Split   426.1 220.3  220.3 nm  2.283 s
+Step   423: OL  797.7  246.4  OA  125.5  31.9 CL  482.0 278.0 Split   426.2 225.1  225.1 nm  2.090 s
+Step   424: OL  792.8  234.9  OA  125.3  34.0 CL  487.7 287.8 Split   425.8 237.7  237.7 nm  2.089 s
+Step   425: OL  788.0  223.2  OA  122.8  26.9 CL  480.9 278.2 Split   424.0 226.9  226.9 nm  2.209 s
+Step   426: OL  783.3  211.3  OA  122.1  22.0 CL  475.8 272.3 Split   421.8 220.1  220.1 nm  2.139 s
+Step   427: OL  778.8  199.6  OA  122.1  15.8 CL  469.7 261.9 Split   421.6 207.2  207.2 nm  2.103 s
+Step   428: OL  774.5  188.1  OA  122.9  20.4 CL  470.2 263.8 Split   420.8 209.9  209.9 nm  2.146 s
+Step   429: OL  770.5  177.1  OA  123.0  23.9 CL  468.3 259.0 Split   421.5 204.1  204.1 nm  2.167 s
+Step   430: OL  766.8  166.7  OA  123.2  28.0 CL  468.1 258.1 Split   421.6 203.4  203.4 nm  2.123 s
+Step   431: OL  763.3  157.2  OA  124.1  33.4 CL  469.1 261.4 Split   420.5 208.1  208.1 nm  2.130 s
+Step   432: OL  760.2  148.6  OA  125.3  35.7 CL  466.5 257.9 Split   419.3 204.4  204.4 nm  2.152 s
+Step   433: OL  757.5  141.2  OA  124.4  21.9 CL  467.6 260.3 Split   418.9 207.8  207.8 nm  2.096 s
+Step   434: OL  755.0  134.9  OA  125.3  18.3 CL  469.5 264.7 Split   418.0 213.7  213.7 nm  2.101 s
+Step   435: OL  752.7  129.9  OA  125.6  25.3 CL  470.9 269.5 Split   416.2 220.3  220.3 nm  2.178 s
+Step   436: OL  750.7  126.0  OA  123.5  12.3 CL  466.1 260.8 Split   416.3 209.7  209.7 nm  2.218 s
+Step   437: OL  748.9  123.2  OA  122.8  10.4 CL  465.2 258.9 Split   416.4 207.5  207.5 nm  2.120 s
+Step   438: OL  747.3  121.3  OA  124.7  20.1 CL  464.7 259.8 Split   415.2 208.6  208.6 nm  2.208 s
+Step   439: OL  745.8  120.0  OA  127.0  32.1 CL  465.6 262.8 Split   414.4 212.3  212.3 nm  2.125 s
+Step   440: OL  744.5  119.3  OA  124.6  24.0 CL  465.7 263.0 Split   414.2 212.8  212.8 nm  2.143 s
+Step   441: OL  743.2  118.9  OA  123.9  19.4 CL  466.3 264.6 Split   413.5 215.5  215.5 nm  2.302 s
+Step   442: OL  741.9  118.8  OA  123.0  16.1 CL  462.4 258.5 Split   412.7 208.5  208.5 nm  2.267 s
+Step   443: OL  740.7  119.0  OA  123.5  12.3 CL  462.1 257.9 Split   412.6 208.1  208.1 nm  2.158 s
+Step   444: OL  739.6  119.4  OA  124.6  13.4 CL  456.2 247.2 Split   412.7 194.4  194.4 nm  2.143 s
+Step   445: OL  738.5  120.2  OA  125.3  10.5 CL  458.2 250.0 Split   413.1 198.0  198.0 nm  2.179 s
+Step   446: OL  737.6  121.5  OA  123.2   6.1 CL  460.6 253.4 Split   413.8 202.2  202.2 nm  2.127 s
+Step   447: OL  736.8  123.5  OA  125.1  27.3 CL  459.6 250.8 Split   414.1 199.5  199.5 nm  2.106 s
+Step   448: OL  736.2  126.5  OA  126.4  35.4 CL  456.0 247.0 Split   411.9 195.6  195.6 nm  2.220 s
+Step   449: OL  735.8  130.5  OA  127.2  35.4 CL  452.2 241.5 Split   410.7 189.4  189.4 nm  2.057 s
+Step   450: OL  735.6  135.8  OA  125.8  28.4 CL  454.3 245.8 Split   410.1 195.6  195.6 nm  2.021 s
+Step   451: OL  735.8  142.4  OA  125.2  21.0 CL  453.7 245.1 Split   409.9 194.6  194.6 nm  2.198 s
+Step   452: OL  736.3  150.3  OA  127.4  31.5 CL  449.7 237.1 Split   410.3 184.1  184.1 nm  2.323 s
+Step   453: OL  737.2  159.3  OA  129.5  42.1 CL  446.1 230.9 Split   409.9 176.0  176.0 nm  2.322 s
+Step   454: OL  738.4  169.2  OA  130.6  43.8 CL  440.9 221.1 Split   409.8 162.8  162.8 nm  2.171 s
+Step   455: OL  740.0  179.9  OA  129.6  44.0 CL  441.8 223.1 Split   409.6 165.5  165.5 nm  2.130 s
+Step   456: OL  741.8  191.0  OA  132.7  49.6 CL  438.5 215.6 Split   410.1 155.1  155.1 nm  2.206 s
+Step   457: OL  743.9  202.3  OA  131.2  42.6 CL  440.4 217.6 Split   411.0 158.2  158.2 nm  2.114 s
+Step   458: OL  746.1  213.5  OA  124.8  23.2 CL  448.6 235.6 Split   409.7 182.7  182.7 nm  2.119 s
+Step   459: OL  748.4  224.4  OA  125.1  26.9 CL  450.7 242.5 Split   407.9 191.8  191.8 nm  2.142 s
+Step   460: OL  750.7  234.7  OA  124.4  27.1 CL  449.1 240.6 Split   407.1 189.7  189.7 nm  2.103 s
+Step   461: OL  752.8  244.2  OA  124.1  26.9 CL  447.6 238.3 Split   406.8 186.8  186.8 nm  2.128 s
+Step   462: OL  754.9  252.7  OA  128.2  42.0 CL  450.7 242.9 Split   407.5 192.5  192.5 nm  2.145 s
+Step   463: OL  756.5  260.0  OA  128.0  41.8 CL  449.4 239.6 Split   408.2 188.0  188.0 nm  2.097 s
+Step   464: OL  757.9  266.1  OA  125.3  33.5 CL  442.2 228.1 Split   407.0 172.9  172.9 nm  2.077 s
+Step   465: OL  758.8  270.7  OA  122.9  20.3 CL  442.2 230.6 Split   405.1 177.1  177.1 nm  2.139 s
+Step   466: OL  759.2  273.9  OA  122.4  17.2 CL  444.1 236.6 Split   403.5 185.5  185.5 nm  2.182 s
+Step   467: OL  759.1  275.7  OA  122.4  12.8 CL  447.0 242.4 Split   403.4 192.5  192.5 nm  2.155 s
+Step   468: OL  758.5  276.0  OA  122.2   2.5 CL  449.5 246.2 Split   404.1 197.0  197.0 nm  2.092 s
+Step   469: OL  757.5  274.8  OA  123.6  11.6 CL  452.6 250.8 Split   404.6 202.7  202.7 nm  2.172 s
+Step   470: OL  755.9  272.3  OA  126.1  22.8 CL  451.1 248.6 Split   404.0 200.8  200.8 nm  2.256 s
+Step   471: OL  753.9  268.5  OA  126.7  24.6 CL  453.3 253.3 Split   403.1 207.3  207.3 nm  2.432 s
+Step   472: OL  751.5  263.5  OA  126.2  23.3 CL  453.0 252.8 Split   403.0 206.9  206.9 nm  2.157 s
+Step   473: OL  748.9  257.5  OA  126.3  31.3 CL  457.5 261.2 Split   402.5 217.6  217.6 nm  2.290 s
+Step   474: OL  746.0  250.7  OA  125.4  26.6 CL  455.8 257.4 Split   402.9 213.0  213.0 nm  2.251 s
+Step   475: OL  742.9  243.1  OA  122.9  14.6 CL  451.9 251.9 Split   402.1 206.2  206.2 nm  2.264 s
+Step   476: OL  739.7  234.9  OA  124.3  23.2 CL  456.1 260.7 Split   401.2 216.8  216.8 nm  2.295 s
+Step   477: OL  736.5  226.4  OA  123.7  12.0 CL  452.0 252.8 Split   401.9 206.9  206.9 nm  2.149 s
+Step   478: OL  733.4  217.7  OA  125.1   8.0 CL  450.9 249.6 Split   402.6 203.0  203.0 nm  2.195 s
+Step   479: OL  730.4  209.0  OA  127.3  20.1 CL  452.2 252.4 Split   402.0 207.0  207.0 nm  2.227 s
+Step   480: OL  727.5  200.4  OA  130.5  34.8 CL  454.9 256.4 Split   402.4 212.2  212.2 nm  2.249 s
+Step   481: OL  724.9  192.2  OA  134.5  48.2 CL  461.0 266.0 Split   402.9 224.0  224.0 nm  2.231 s
+Step   482: OL  722.4  184.4  OA  134.8  46.7 CL  460.0 264.3 Split   402.8 222.0  222.0 nm  2.159 s
+Step   483: OL  720.2  177.1  OA  129.3  32.4 CL  456.4 260.5 Split   401.3 217.4  217.4 nm  2.121 s
+Step   484: OL  718.3  170.5  OA  125.7  23.7 CL  455.1 259.2 Split   400.6 215.9  215.9 nm  2.195 s
+Step   485: OL  716.5  164.6  OA  123.0  11.0 CL  449.3 249.4 Split   400.5 203.7  203.7 nm  2.148 s
+Step   486: OL  715.1  159.5  OA  124.4   8.6 CL  443.3 239.3 Split   399.9 191.1  191.1 nm  2.218 s
+Step   487: OL  713.8  155.1  OA  125.2   8.7 CL  447.2 247.2 Split   399.2 201.5  201.5 nm  2.105 s
+Step   488: OL  712.7  151.4  OA  126.5  21.1 CL  452.0 255.6 Split   398.9 212.4  212.4 nm  2.105 s
+Step   489: OL  711.9  148.5  OA  129.8  32.4 CL  457.7 264.3 Split   399.8 222.9  222.9 nm  2.219 s
+Step   490: OL  711.2  146.3  OA  127.0  26.1 CL  454.2 257.7 Split   400.1 215.1  215.1 nm  2.343 s
+Step   491: OL  710.7  144.7  OA  124.5  12.2 CL  440.7 232.1 Split   400.7 183.5  183.5 nm  2.172 s
+Step   492: OL  710.3  143.7  OA  124.1  16.6 CL  438.1 227.7 Split   400.2 178.1  178.1 nm  2.190 s
+Step   493: OL  710.0  143.2  OA  124.7  20.8 CL  438.9 228.5 Split   400.5 179.5  179.5 nm  2.187 s
+Step   494: OL  709.9  143.2  OA  125.2   8.7 CL  444.9 240.1 Split   400.2 194.2  194.2 nm  2.066 s
+Step   495: OL  709.9  143.8  OA  124.3  11.3 CL  442.6 235.1 Split   400.5 188.3  188.3 nm  2.145 s
+Step   496: OL  710.1  144.9  OA  124.2   4.1 CL  441.9 235.0 Split   399.8 188.3  188.3 nm  2.158 s
+Step   497: OL  710.4  146.5  OA  125.0  15.6 CL  438.3 231.9 Split   397.6 184.5  184.5 nm  2.107 s
+Step   498: OL  710.8  148.7  OA  126.2  26.8 CL  437.4 231.6 Split   396.8 184.1  184.1 nm  2.091 s
+Step   499: OL  711.4  151.5  OA  126.4  23.0 CL  434.8 226.4 Split   396.8 177.7  177.7 nm  2.097 s
+Step   500: OL  712.2  155.1  OA  129.9  35.6 CL  431.0 222.1 Split   395.0 172.3  172.3 nm  2.003 s
+Step   501: OL  713.2  159.4  OA  130.5  41.1 CL  428.2 219.4 Split   393.5 168.8  168.8 nm  2.084 s
+Step   502: OL  714.4  164.5  OA  128.3  34.4 CL  431.7 226.3 Split   393.5 177.7  177.7 nm  2.109 s
+Step   503: OL  715.9  170.4  OA  128.6  31.5 CL  427.2 219.1 Split   392.6 168.5  168.5 nm  2.098 s
+Step   504: OL  717.7  177.2  OA  127.5  22.6 CL  429.9 225.3 Split   391.9 176.6  176.6 nm  2.096 s
+Step   505: OL  719.8  184.9  OA  127.8  22.6 CL  432.5 228.7 Split   392.8 181.0  181.0 nm  2.148 s
+Step   506: OL  722.2  193.3  OA  126.0  13.5 CL  435.4 234.3 Split   392.8 187.9  187.9 nm  2.178 s
+Step   507: OL  724.9  202.5  OA  125.0   6.2 CL  436.3 236.6 Split   392.2 191.2  191.2 nm  2.104 s
+Step   508: OL  727.9  212.3  OA  125.8   7.7 CL  433.1 231.9 Split   391.5 185.4  185.4 nm  2.130 s
+Step   509: OL  731.3  222.6  OA  126.8  20.1 CL  428.4 222.6 Split   391.8 173.3  173.3 nm  2.128 s
+Step   510: OL  734.9  233.4  OA  129.2  29.9 CL  430.3 227.2 Split   391.3 179.0  179.0 nm  2.216 s
+Step   511: OL  738.8  244.3  OA  129.9  32.0 CL  427.6 223.2 Split   390.6 174.0  174.0 nm  2.179 s
+Step   511 updated high order loop gain: 0.389
+Step   511 updated low order loop gain : 0.475
+Step   512: OL  742.8  255.4  OA  129.8  27.2 CL  430.4 228.1 Split   391.0 180.0  180.0 nm  2.243 s
+Step   513: OL  747.1  266.3  OA  129.9  15.2 CL  435.0 236.3 Split   391.3 190.2  190.2 nm  2.216 s
+Step   514: OL  751.3  277.0  OA  129.7  14.4 CL  434.8 236.5 Split   390.9 190.3  190.3 nm  2.115 s
+Step   515: OL  755.5  287.2  OA  133.2  34.2 CL  425.7 219.2 Split   391.1 167.9  167.9 nm  2.152 s
+Step   516: OL  759.7  296.8  OA  134.3  39.2 CL  420.5 210.3 Split   390.5 155.7  155.7 nm  2.257 s
+Step   517: OL  763.6  305.5  OA  135.6  44.1 CL  419.6 211.9 Split   388.8 157.7  157.7 nm  2.048 s
+Step   518: OL  767.2  313.3  OA  139.5  48.4 CL  420.7 214.9 Split   388.4 161.6  161.6 nm  2.209 s
+Step   519: OL  770.4  319.9  OA  135.5  32.1 CL  424.9 225.3 Split   386.9 175.7  175.7 nm  2.227 s
+Step   520: OL  773.2  325.3  OA  133.7  27.8 CL  426.4 228.5 Split   386.5 180.1  180.1 nm  2.161 s
+Step   521: OL  775.5  329.3  OA  132.7  19.1 CL  425.0 225.1 Split   386.9 175.9  175.9 nm  2.212 s
+Step   522: OL  777.1  331.9  OA  134.0  26.1 CL  423.6 221.5 Split   387.5 171.0  171.0 nm  2.167 s
+Step   523: OL  778.2  332.9  OA  132.2  21.6 CL  427.2 227.0 Split   388.3 178.0  178.0 nm  2.074 s
+Step   524: OL  778.6  332.4  OA  129.1   8.7 CL  432.7 237.7 Split   388.0 191.5  191.5 nm  2.116 s
+Step   525: OL  778.4  330.4  OA  129.4  19.5 CL  429.7 234.3 Split   386.8 187.1  187.1 nm  2.117 s
+Step   526: OL  777.6  326.9  OA  130.8  28.9 CL  426.7 228.5 Split   387.0 179.6  179.6 nm  2.223 s
+Step   527: OL  776.2  322.0  OA  131.5  26.9 CL  426.1 226.2 Split   387.9 176.5  176.5 nm  2.185 s
+Step   528: OL  774.3  315.8  OA  132.1  16.8 CL  434.3 241.4 Split   387.8 195.5  195.5 nm  2.122 s
+Step   529: OL  772.1  308.3  OA  132.5  16.4 CL  440.9 255.3 Split   386.0 212.9  212.9 nm  2.211 s
+Step   530: OL  769.5  299.9  OA  135.0  30.8 CL  446.9 266.0 Split   385.5 226.0  226.0 nm  2.127 s
+Step   531: OL  766.7  290.6  OA  136.9  29.4 CL  447.4 264.5 Split   387.1 224.2  224.2 nm  2.106 s
+Step   532: OL  763.8  280.6  OA  136.5  23.2 CL  440.2 252.8 Split   386.7 210.3  210.3 nm  2.200 s
+Step   533: OL  760.9  270.3  OA  137.3  32.4 CL  439.7 252.6 Split   386.2 210.2  210.2 nm  2.151 s
+Step   534: OL  758.1  259.7  OA  139.4  39.2 CL  442.5 258.0 Split   385.6 217.0  217.0 nm  2.188 s
+Step   535: OL  755.4  249.2  OA  136.8  32.1 CL  443.4 260.3 Split   385.1 219.8  219.8 nm  2.253 s
+Step   536: OL  753.0  239.0  OA  138.1  34.1 CL  444.8 263.5 Split   384.4 223.8  223.8 nm  2.260 s
+Step   537: OL  750.9  229.2  OA  136.4  26.3 CL  442.4 260.2 Split   384.0 219.7  219.7 nm  2.211 s
+Step   538: OL  749.2  220.1  OA  135.5  11.3 CL  434.2 245.0 Split   384.9 200.9  200.9 nm  2.054 s
+Step   539: OL  747.8  211.8  OA  136.0  10.4 CL  432.5 241.5 Split   385.4 196.3  196.3 nm  2.129 s
+Step   540: OL  746.8  204.5  OA  137.1   6.2 CL  433.6 242.2 Split   386.4 196.9  196.9 nm  2.210 s
+Step   541: OL  746.1  198.2  OA  138.4  10.3 CL  435.8 246.7 Split   386.1 202.2  202.2 nm  2.176 s
+Step   542: OL  745.8  193.0  OA  138.7  15.5 CL  440.8 256.2 Split   385.2 214.3  214.3 nm  2.239 s
+Step   543: OL  745.8  188.9  OA  141.1  26.5 CL  445.6 265.1 Split   384.5 225.1  225.1 nm  2.212 s
+Step   544: OL  746.2  185.8  OA  141.6  29.1 CL  444.3 265.0 Split   383.0 225.2  225.2 nm  2.170 s
+Step   545: OL  746.8  183.8  OA  142.5  27.2 CL  439.0 257.9 Split   381.8 216.6  216.6 nm  2.162 s
+Step   546: OL  747.7  182.8  OA  140.0   8.0 CL  427.7 239.1 Split   381.4 193.5  193.5 nm  2.121 s
+Step   547: OL  748.8  182.7  OA  140.5  25.8 CL  419.4 223.8 Split   381.6 174.0  174.0 nm  2.121 s
+Step   548: OL  750.2  183.5  OA  141.6  32.4 CL  420.3 225.2 Split   381.8 175.6  175.6 nm  2.176 s
+Step   549: OL  751.8  185.3  OA  141.4  24.8 CL  426.2 234.3 Split   383.0 187.0  187.0 nm  2.200 s
+Step   550: OL  753.7  187.9  OA  138.9   2.7 CL  430.4 243.1 Split   382.1 198.1  198.1 nm  2.180 s
+Step   551: OL  755.8  191.4  OA  143.8  34.2 CL  436.6 254.7 Split   381.4 212.4  212.4 nm  2.129 s
+Step   552: OL  758.1  195.7  OA  144.1  29.8 CL  433.5 248.3 Split   382.2 204.4  204.4 nm  2.221 s
+Step   553: OL  760.7  200.9  OA  143.4  14.6 CL  432.9 245.8 Split   383.4 201.2  201.2 nm  2.134 s
+Step   554: OL  763.6  206.9  OA  142.6   9.3 CL  430.9 241.9 Split   383.6 196.3  196.3 nm  1.974 s
+Step   555: OL  766.7  213.5  OA  143.0  22.8 CL  423.7 229.8 Split   383.1 181.1  181.1 nm  2.064 s
+Step   556: OL  770.0  220.7  OA  144.5  28.8 CL  421.5 224.4 Split   383.9 174.1  174.1 nm  2.254 s
+Step   557: OL  773.5  228.4  OA  144.7  28.7 CL  422.0 226.1 Split   383.2 176.7  176.7 nm  2.182 s
+Step   558: OL  777.2  236.4  OA  145.3  29.5 CL  423.3 228.4 Split   383.2 179.8  179.8 nm  2.305 s
+Step   559: OL  781.1  244.6  OA  145.7  27.0 CL  422.6 228.4 Split   382.6 179.6  179.6 nm  2.104 s
+Step   560: OL  785.0  252.9  OA  145.7  30.5 CL  420.4 225.9 Split   381.6 176.3  176.3 nm  2.093 s
+Step   561: OL  789.0  261.0  OA  147.7  36.2 CL  419.8 222.5 Split   383.1 171.7  171.7 nm  2.266 s
+Step   562: OL  792.9  268.8  OA  147.3  36.5 CL  418.9 219.0 Split   384.1 167.3  167.3 nm  2.339 s
+Step   563: OL  796.8  276.2  OA  153.7  48.6 CL  415.9 211.7 Split   384.8 157.7  157.7 nm  2.193 s
+Step   564: OL  800.5  283.1  OA  150.2  36.5 CL  421.4 220.5 Split   385.8 169.4  169.4 nm  2.133 s
+Step   565: OL  804.1  289.4  OA  147.3  29.2 CL  423.4 223.9 Split   386.1 173.7  173.7 nm  2.031 s
+Step   566: OL  807.4  294.9  OA  146.0  28.1 CL  424.9 226.2 Split   386.7 176.1  176.1 nm  2.232 s
+Step   567: OL  810.5  299.7  OA  145.3  24.3 CL  429.3 234.1 Split   386.8 186.3  186.3 nm  2.093 s
+Step   568: OL  813.3  303.6  OA  148.5  36.7 CL  440.5 254.0 Split   386.6 211.1  211.1 nm  2.090 s
+Step   569: OL  815.8  306.6  OA  146.1  28.4 CL  440.4 254.7 Split   386.1 211.9  211.9 nm  2.181 s
+Step   570: OL  817.9  308.7  OA  143.7  13.3 CL  433.3 243.7 Split   385.2 198.6  198.6 nm  2.234 s
+Step   571: OL  819.8  310.0  OA  144.1  19.8 CL  427.3 234.4 Split   384.1 187.1  187.1 nm  2.191 s
+Step   572: OL  821.3  310.4  OA  143.6  23.2 CL  425.4 230.5 Split   384.4 182.2  182.2 nm  2.270 s
+Step   573: OL  822.5  310.0  OA  144.8  25.9 CL  424.6 228.0 Split   384.9 179.1  179.1 nm  2.194 s
+Step   574: OL  823.5  308.9  OA  146.3  27.6 CL  424.2 227.3 Split   385.0 177.9  177.9 nm  2.163 s
+Step   575: OL  824.2  307.1  OA  146.8  18.2 CL  434.2 245.2 Split   385.3 200.1  200.1 nm  2.202 s
+Step   576: OL  824.7  304.7  OA  148.7  25.5 CL  433.0 244.3 Split   384.6 199.0  199.0 nm  2.174 s
+Step   577: OL  825.0  301.7  OA  149.2  22.0 CL  440.4 257.1 Split   384.7 214.3  214.3 nm  2.118 s
+Step   578: OL  825.2  298.3  OA  149.0  12.3 CL  439.3 255.2 Split   384.7 212.0  212.0 nm  2.118 s
+Step   579: OL  825.2  294.6  OA  150.2  15.3 CL  439.5 255.4 Split   384.9 212.0  212.0 nm  2.180 s
+Step   580: OL  825.2  290.6  OA  152.3  26.1 CL  445.1 264.8 Split   385.1 223.2  223.2 nm  2.122 s
+Step   581: OL  825.2  286.5  OA  153.4  26.5 CL  437.1 248.6 Split   386.7 203.6  203.6 nm  2.080 s
+Step   582: OL  825.1  282.2  OA  151.7  27.6 CL  431.6 237.1 Split   388.0 189.1  189.1 nm  1.933 s
+Step   583: OL  825.1  277.9  OA  149.8  19.8 CL  430.8 236.1 Split   387.7 187.8  187.8 nm  2.154 s
+Step   584: OL  825.1  273.7  OA  149.8  20.2 CL  435.2 245.1 Split   387.0 199.0  199.0 nm  2.188 s
+Step   585: OL  825.2  269.5  OA  149.7  12.2 CL  442.2 257.4 Split   387.0 213.9  213.9 nm  2.166 s
+Step   586: OL  825.4  265.6  OA  150.5  15.3 CL  446.2 265.5 Split   386.3 223.3  223.3 nm  2.204 s
+Step   587: OL  825.7  261.8  OA  153.0  19.7 CL  448.8 268.8 Split   387.2 226.9  226.9 nm  2.156 s
+Step   588: OL  826.0  258.3  OA  153.7  21.5 CL  450.3 269.5 Split   388.4 227.8  227.8 nm  2.104 s
+Step   589: OL  826.5  255.1  OA  151.9  12.4 CL  447.8 265.0 Split   388.7 222.5  222.5 nm  2.145 s
+Step   590: OL  827.1  252.1  OA  152.5   9.0 CL  447.5 262.9 Split   389.8 219.9  219.9 nm  2.096 s
+Step   591: OL  827.7  249.4  OA  154.1   7.7 CL  445.2 258.3 Split   390.4 214.1  214.1 nm  2.161 s
+Step   592: OL  828.5  247.1  OA  154.7  14.0 CL  437.8 246.3 Split   389.9 199.2  199.2 nm  2.216 s
+Step   593: OL  829.3  245.0  OA  153.7  12.8 CL  442.8 257.9 Split   388.1 213.4  213.4 nm  2.171 s
+Step   594: OL  830.3  243.1  OA  154.5  29.1 CL  444.2 263.4 Split   386.1 219.7  219.7 nm  2.247 s
+Step   595: OL  831.3  241.6  OA  153.5  21.2 CL  439.3 253.8 Split   387.1 207.8  207.8 nm  2.091 s
+Step   596: OL  832.4  240.2  OA  154.1  20.2 CL  432.6 240.8 Split   387.9 191.6  191.6 nm  2.147 s
+Step   597: OL  833.6  239.1  OA  155.7  28.6 CL  429.9 234.4 Split   388.7 183.5  183.5 nm  2.264 s
+Step   598: OL  834.8  238.1  OA  155.2  22.9 CL  432.2 238.2 Split   388.8 188.7  188.7 nm  2.238 s
+Step   599: OL  836.0  237.3  OA  155.1  21.9 CL  433.0 239.9 Split   388.7 190.8  190.8 nm  2.211 s
+Step   600: OL  837.3  236.6  OA  152.0   2.3 CL  442.1 255.8 Split   388.8 210.3  210.3 nm  2.173 s
+Step   601: OL  838.6  236.0  OA  151.9   8.6 CL  447.5 264.1 Split   389.5 220.2  220.2 nm  2.331 s
+Step   602: OL  839.9  235.5  OA  154.0  15.8 CL  447.1 261.7 Split   390.8 217.3  217.3 nm  2.234 s
+Step   603: OL  841.3  234.9  OA  153.7  12.9 CL  438.6 246.9 Split   390.7 199.2  199.2 nm  2.149 s
+Step   604: OL  842.6  234.4  OA  154.8  24.6 CL  434.1 240.7 Split   389.6 191.5  191.5 nm  2.112 s
+Step   605: OL  843.9  233.8  OA  154.4  18.3 CL  438.9 250.2 Split   389.1 203.2  203.2 nm  2.136 s
+Step   606: OL  845.2  233.2  OA  153.9  15.1 CL  443.5 259.5 Split   388.3 214.4  214.4 nm  2.262 s
+Step   607: OL  846.5  232.5  OA  151.4   8.3 CL  442.3 259.8 Split   386.7 214.8  214.8 nm  2.311 s
+Step   608: OL  847.7  231.7  OA  152.3  22.0 CL  438.1 252.4 Split   386.9 205.6  205.6 nm  2.170 s
+Step   609: OL  849.0  230.8  OA  153.2  25.9 CL  434.9 246.3 Split   387.3 197.8  197.8 nm  2.181 s
+Step   610: OL  850.2  229.9  OA  155.6  29.5 CL  429.9 236.2 Split   388.1 184.9  184.9 nm  2.204 s
+Step   611: OL  851.4  228.8  OA  156.9  30.2 CL  429.6 234.5 Split   388.9 182.6  182.6 nm  2.237 s
+Step   612: OL  852.5  227.7  OA  154.9  17.2 CL  437.2 249.8 Split   387.8 201.8  201.8 nm  2.212 s
+Step   613: OL  853.6  226.5  OA  152.3   9.4 CL  437.1 252.0 Split   386.3 204.5  204.5 nm  2.211 s
+Step   614: OL  854.8  225.2  OA  152.5   7.0 CL  440.5 259.2 Split   385.4 213.3  213.3 nm  2.115 s
+Step   615: OL  855.9  223.9  OA  154.8  16.8 CL  436.7 253.1 Split   385.3 205.5  205.5 nm  2.149 s
+Step   616: OL  857.0  222.6  OA  153.0  11.1 CL  439.4 259.5 Split   384.1 213.4  213.4 nm  2.205 s
+Step   617: OL  858.1  221.3  OA  152.0   9.0 CL  443.3 266.6 Split   383.6 222.1  222.1 nm  2.237 s
+Step   618: OL  859.2  220.0  OA  152.4  12.1 CL  445.2 270.3 Split   383.5 226.2  226.2 nm  2.279 s
+Step   619: OL  860.3  218.8  OA  153.2   6.7 CL  437.5 257.8 Split   383.4 210.6  210.6 nm  2.191 s
+Step   620: OL  861.4  217.6  OA  157.0  21.9 CL  432.9 250.2 Split   383.4 201.0  201.0 nm  2.124 s
+Step   621: OL  862.6  216.6  OA  159.2  26.4 CL  433.6 251.3 Split   383.5 202.5  202.5 nm  2.105 s
+Step   622: OL  863.8  215.7  OA  156.7  21.7 CL  443.3 268.9 Split   382.4 224.3  224.3 nm  2.153 s
+Step   623: OL  865.0  214.9  OA  157.2  21.6 CL  449.9 278.6 Split   383.1 235.9  235.9 nm  2.175 s
+Step   624: OL  866.2  214.2  OA  161.8  39.0 CL  454.9 285.3 Split   384.2 243.6  243.6 nm  2.147 s
+Step   625: OL  867.5  213.7  OA  161.0  38.2 CL  453.4 281.8 Split   385.1 239.4  239.4 nm  2.081 s
+Step   626: OL  868.8  213.3  OA  155.8   9.7 CL  444.3 268.1 Split   384.4 222.8  222.8 nm  2.162 s
+Step   627: OL  870.1  213.1  OA  154.1   9.4 CL  439.8 261.8 Split   383.7 215.0  215.0 nm  2.143 s
+Step   628: OL  871.5  213.1  OA  153.9  23.3 CL  439.8 263.3 Split   382.6 216.9  216.9 nm  2.076 s
+Step   629: OL  872.9  213.2  OA  154.7  18.9 CL  442.0 266.7 Split   383.0 220.7  220.7 nm  2.099 s
+Step   630: OL  874.3  213.5  OA  154.8  20.4 CL  436.4 258.4 Split   382.3 210.5  210.5 nm  2.122 s
+Step   631: OL  875.7  213.9  OA  152.1   2.6 CL  437.0 262.0 Split   380.2 215.5  215.5 nm  2.124 s
+Step   632: OL  877.2  214.5  OA  150.9   2.3 CL  436.7 262.5 Split   379.4 216.3  216.3 nm  2.153 s
+Step   633: OL  878.7  215.2  OA  150.9   4.6 CL  438.2 264.7 Split   379.6 218.7  218.7 nm  2.154 s
+Step   634: OL  880.3  216.0  OA  151.9   5.3 CL  439.3 265.6 Split   380.6 219.4  219.4 nm  2.167 s
+Step   635: OL  881.8  216.9  OA  153.2  10.5 CL  442.8 271.2 Split   380.7 226.2  226.2 nm  2.279 s
+Step   636: OL  883.3  217.9  OA  153.4   3.1 CL  438.1 263.0 Split   381.0 216.3  216.3 nm  2.103 s
+Step   637: OL  884.9  219.0  OA  154.5  14.0 CL  432.3 253.0 Split   381.0 204.2  204.2 nm  2.114 s
+Step   638: OL  886.5  220.2  OA  156.1  17.9 CL  434.1 255.8 Split   381.1 207.9  207.9 nm  2.197 s
+Step   639: OL  888.0  221.4  OA  154.5  12.2 CL  434.9 257.4 Split   380.9 209.7  209.7 nm  2.174 s
+Step   640: OL  889.6  222.6  OA  154.5  11.2 CL  432.3 254.9 Split   379.8 206.6  206.6 nm  2.240 s
+Step   641: OL  891.1  223.9  OA  153.9   9.2 CL  432.9 258.5 Split   378.1 210.8  210.8 nm  2.136 s
+Step   642: OL  892.7  225.2  OA  153.4   6.4 CL  431.7 258.5 Split   376.9 210.6  210.6 nm  2.218 s
+Step   643: OL  894.2  226.4  OA  154.8  10.9 CL  435.1 263.3 Split   377.4 216.6  216.6 nm  2.260 s
+Step   644: OL  895.7  227.7  OA  157.7  16.2 CL  443.4 273.5 Split   379.9 228.7  228.7 nm  2.308 s
+Step   645: OL  897.1  228.9  OA  160.0  25.8 CL  450.0 282.4 Split   381.3 239.0  239.0 nm  2.171 s
+Step   646: OL  898.6  230.0  OA  157.8  15.2 CL  438.8 263.2 Split   382.1 215.8  215.8 nm  2.311 s
+Step   647: OL  900.0  231.1  OA  160.1  28.7 CL  427.3 242.6 Split   382.8 189.8  189.8 nm  2.244 s
+Step   648: OL  901.4  232.2  OA  159.0  32.1 CL  425.2 241.2 Split   381.4 187.9  187.9 nm  2.157 s
+Step   649: OL  902.8  233.1  OA  156.0  19.5 CL  429.4 251.0 Split   379.7 200.4  200.4 nm  2.162 s
+Step   650: OL  904.1  234.0  OA  156.6   9.8 CL  432.8 257.9 Split   379.1 208.8  208.8 nm  2.165 s
+Step   651: OL  905.4  234.9  OA  157.5  24.1 CL  429.0 253.5 Split   377.8 203.3  203.3 nm  2.127 s
+Step   652: OL  906.6  235.6  OA  157.9  21.5 CL  429.7 255.6 Split   377.0 206.2  206.2 nm  2.144 s
+Step   653: OL  907.8  236.2  OA  155.0  15.1 CL  430.8 260.0 Split   375.2 211.8  211.8 nm  2.085 s
+Step   654: OL  909.0  236.7  OA  154.3  15.0 CL  428.9 257.6 Split   374.7 208.8  208.8 nm  2.113 s
+Step   655: OL  910.1  237.1  OA  158.3  32.7 CL  420.5 242.2 Split   375.5 189.3  189.3 nm  2.135 s
+Step   656: OL  911.1  237.4  OA  157.5  25.9 CL  423.6 246.4 Split   376.3 194.4  194.4 nm  2.110 s
+Step   657: OL  912.1  237.5  OA  157.8  22.1 CL  426.0 250.5 Split   376.4 199.4  199.4 nm  2.078 s
+Step   658: OL  913.1  237.5  OA  159.1  27.8 CL  434.3 264.3 Split   376.4 216.6  216.6 nm  2.256 s
+Step   659: OL  914.0  237.3  OA  155.5   6.6 CL  438.8 272.0 Split   376.2 225.9  225.9 nm  2.171 s
+Step   660: OL  914.8  236.9  OA  154.1  11.1 CL  440.9 275.4 Split   376.1 230.0  230.0 nm  2.178 s
+Step   661: OL  915.6  236.4  OA  153.5   6.5 CL  438.8 271.8 Split   376.4 225.6  225.6 nm  2.219 s
+Step   662: OL  916.3  235.7  OA  153.2   8.3 CL  435.8 267.9 Split   375.6 220.9  220.9 nm  2.151 s
+Step   663: OL  917.0  234.7  OA  152.5   8.5 CL  432.2 263.6 Split   374.6 215.5  215.5 nm  2.147 s
+Step   664: OL  917.5  233.6  OA  155.0  21.3 CL  425.1 250.8 Split   375.5 199.2  199.2 nm  2.061 s
+Step   665: OL  918.1  232.3  OA  155.8  13.8 CL  429.2 257.6 Split   375.6 207.6  207.6 nm  2.261 s
+Step   666: OL  918.5  230.8  OA  156.7   4.5 CL  435.8 268.7 Split   375.3 221.6  221.6 nm  2.140 s
+Step   667: OL  918.9  229.2  OA  157.4  11.7 CL  438.9 275.8 Split   373.6 230.3  230.3 nm  2.195 s
+Step   668: OL  919.3  227.4  OA  159.0  29.6 CL  441.5 283.8 Split   370.5 240.1  240.1 nm  2.257 s
+Step   669: OL  919.6  225.5  OA  157.4  23.4 CL  439.6 282.6 Split   368.9 239.1  239.1 nm  2.288 s
+Step   670: OL  919.9  223.5  OA  155.7  10.3 CL  429.9 265.8 Split   370.2 218.7  218.7 nm  2.275 s
+Step   671: OL  920.2  221.5  OA  155.9   9.1 CL  430.8 266.5 Split   370.8 219.2  219.2 nm  2.186 s
+Step   672: OL  920.5  219.6  OA  155.9  11.9 CL  430.0 265.9 Split   370.3 218.6  218.6 nm  2.168 s
+Step   673: OL  920.7  217.7  OA  158.1  17.1 CL  433.2 272.4 Split   369.5 226.2  226.2 nm  2.192 s
+Step   674: OL  921.0  215.9  OA  159.2  11.0 CL  428.1 264.1 Split   369.7 215.8  215.8 nm  2.282 s
+Step   675: OL  921.4  214.3  OA  158.6   3.8 CL  432.5 270.6 Split   370.3 223.6  223.6 nm  2.161 s
+Step   676: OL  921.7  212.9  OA  159.1  10.3 CL  436.2 275.5 Split   371.0 229.4  229.4 nm  2.138 s
+Step   677: OL  922.1  211.7  OA  160.2  17.0 CL  437.5 277.8 Split   370.9 232.0  232.0 nm  2.153 s
+Step   678: OL  922.5  210.7  OA  160.6  18.6 CL  439.3 281.6 Split   370.2 236.5  236.5 nm  2.404 s
+Step   679: OL  923.0  210.0  OA  161.7  16.9 CL  438.7 281.8 Split   369.3 236.8  236.8 nm  2.164 s
+Step   680: OL  923.5  209.5  OA  160.6  12.7 CL  435.8 279.1 Split   367.9 233.5  233.5 nm  2.153 s
+Step   681: OL  924.0  209.2  OA  158.8   7.4 CL  424.1 263.4 Split   365.9 214.4  214.4 nm  2.151 s
+Step   682: OL  924.6  209.1  OA  158.9  17.2 CL  418.1 255.6 Split   364.4 205.0  205.0 nm  2.267 s
+Step   683: OL  925.2  209.2  OA  158.1  19.0 CL  418.6 256.7 Split   364.1 206.5  206.5 nm  2.148 s
+Step   684: OL  925.8  209.4  OA  156.4   9.0 CL  426.5 270.1 Split   363.5 223.0  223.0 nm  2.270 s
+Step   685: OL  926.5  209.7  OA  156.2  11.4 CL  430.2 275.6 Split   363.8 229.6  229.6 nm  2.180 s
+Step   686: OL  927.1  210.2  OA  156.9   4.3 CL  428.0 272.0 Split   363.8 225.5  225.5 nm  2.158 s
+Step   687: OL  927.8  210.8  OA  157.2   1.8 CL  424.6 267.1 Split   363.5 219.5  219.5 nm  2.137 s
+Step   688: OL  928.4  211.5  OA  159.0   6.4 CL  422.3 263.7 Split   363.2 215.4  215.4 nm  2.194 s
+Step   689: OL  929.1  212.4  OA  159.2   6.4 CL  425.9 269.8 Split   363.1 222.6  222.6 nm  2.163 s
+Step   690: OL  929.9  213.6  OA  161.4  28.2 CL  415.7 253.0 Split   363.7 201.4  201.4 nm  2.099 s
+Step   691: OL  930.7  215.0  OA  164.2  43.0 CL  406.5 238.1 Split   363.5 182.0  182.0 nm  2.189 s
+Step   692: OL  931.6  216.8  OA  167.4  47.9 CL  403.8 233.2 Split   363.7 175.4  175.4 nm  2.171 s
+Step   693: OL  932.5  219.0  OA  164.2  29.5 CL  413.9 249.8 Split   364.0 196.9  196.9 nm  2.177 s
+Step   694: OL  933.5  221.6  OA  162.4  12.8 CL  421.7 262.4 Split   364.0 212.9  212.9 nm  2.101 s
+Step   695: OL  934.7  224.7  OA  161.4  10.5 CL  421.2 262.2 Split   363.4 213.0  213.0 nm  2.149 s
+Step   696: OL  935.9  228.2  OA  160.8  22.8 CL  412.9 251.6 Split   361.1 200.2  200.2 nm  2.081 s
+Step   697: OL  937.3  232.3  OA  160.5  26.5 CL  410.3 248.4 Split   360.4 196.1  196.1 nm  2.265 s
+Step   698: OL  938.8  236.7  OA  159.5  15.1 CL  417.1 259.6 Split   360.3 210.1  210.1 nm  2.205 s
+Step   699: OL  940.3  241.4  OA  159.2  16.0 CL  424.3 269.4 Split   361.5 222.1  222.1 nm  2.092 s
+Step   700: OL  942.0  246.4  OA  159.3   3.0 CL  424.2 268.4 Split   362.2 220.7  220.7 nm  2.126 s
+Step   701: OL  943.6  251.4  OA  161.4  18.3 CL  416.8 256.7 Split   362.0 206.5  206.5 nm  2.106 s
+Step   702: OL  945.3  256.4  OA  162.5  17.3 CL  420.7 263.4 Split   361.6 214.9  214.9 nm  2.232 s
+Step   703: OL  946.9  261.2  OA  162.7  19.2 CL  420.6 265.2 Split   360.3 217.0  217.0 nm  2.168 s
+Step   704: OL  948.4  265.6  OA  161.1  11.5 CL  416.8 261.2 Split   358.9 212.0  212.0 nm  2.343 s
+Step   705: OL  949.8  269.5  OA  161.6  22.2 CL  411.4 253.8 Split   358.0 202.7  202.7 nm  2.259 s
+Step   706: OL  951.0  272.9  OA  162.0  20.8 CL  411.0 254.5 Split   357.1 203.5  203.5 nm  2.206 s
+Step   707: OL  952.0  275.5  OA  162.3  17.2 CL  412.3 257.2 Split   356.7 206.7  206.7 nm  2.222 s
+Step   708: OL  952.8  277.3  OA  163.2  12.3 CL  415.5 262.0 Split   357.1 212.4  212.4 nm  2.202 s
+Step   709: OL  953.3  278.3  OA  162.0  22.0 CL  415.2 262.6 Split   356.2 213.4  213.4 nm  2.225 s
+Step   710: OL  953.6  278.4  OA  162.7  21.5 CL  419.4 268.8 Split   356.4 221.1  221.1 nm  2.086 s
+Step   711: OL  953.5  277.5  OA  161.8   5.6 CL  423.7 276.0 Split   356.0 229.8  229.8 nm  2.211 s
+Step   712: OL  953.2  275.8  OA  162.8  21.3 CL  424.7 277.9 Split   355.7 232.0  232.0 nm  2.267 s
+Step   713: OL  952.7  273.3  OA  164.2  33.4 CL  423.0 276.7 Split   354.8 230.4  230.4 nm  2.090 s
+Step   714: OL  951.9  270.1  OA  162.6  24.8 CL  423.7 278.1 Split   354.5 232.0  232.0 nm  2.121 s
+Step   715: OL  951.0  266.2  OA  162.5  20.5 CL  429.9 287.7 Split   354.5 243.2  243.2 nm  2.207 s
+Step   716: OL  949.9  261.9  OA  167.6  40.0 CL  439.6 302.7 Split   353.9 260.7  260.7 nm  2.203 s
+Step   717: OL  948.8  257.3  OA  167.6  43.9 CL  443.7 310.0 Split   352.7 269.3  269.3 nm  2.122 s
+Step   718: OL  947.6  252.5  OA  164.6  33.9 CL  437.0 300.3 Split   352.5 258.2  258.2 nm  2.078 s
+Step   719: OL  946.5  247.7  OA  163.8  29.3 CL  427.0 285.1 Split   353.1 240.1  240.1 nm  2.012 s
+Step   720: OL  945.4  243.2  OA  164.4  35.9 CL  430.0 289.6 Split   353.1 245.5  245.5 nm  2.018 s
+Step   721: OL  944.4  239.1  OA  167.4  37.0 CL  430.8 287.9 Split   355.6 243.3  243.3 nm  2.111 s
+Step   722: OL  943.5  235.4  OA  164.8  18.1 CL  428.5 284.1 Split   355.8 238.8  238.8 nm  2.082 s
+Step   723: OL  942.9  232.4  OA  164.7  11.5 CL  421.2 274.1 Split   354.9 226.9  226.9 nm  2.128 s
+Step   724: OL  942.3  230.1  OA  162.8  10.4 CL  420.6 276.6 Split   352.0 230.2  230.2 nm  2.198 s
+Step   725: OL  942.0  228.6  OA  160.8  12.6 CL  421.7 279.2 Split   351.2 233.5  233.5 nm  2.152 s
+Step   726: OL  941.8  227.7  OA  160.3  16.5 CL  422.3 279.9 Split   351.2 234.5  234.5 nm  2.277 s
+Step   727: OL  941.7  227.4  OA  163.3  33.2 CL  432.2 295.7 Split   350.1 253.3  253.3 nm  2.150 s
+Step   728: OL  941.8  227.7  OA  167.9  48.0 CL  439.0 306.1 Split   349.7 265.3  265.3 nm  2.209 s
+Step   729: OL  941.9  228.3  OA  165.7  42.2 CL  430.2 294.6 Split   348.7 252.0  252.0 nm  2.230 s
+Step   730: OL  942.1  229.3  OA  163.3  30.4 CL  413.9 270.8 Split   348.4 223.5  223.5 nm  2.181 s
+Step   731: OL  942.3  230.3  OA  161.4   9.9 CL  414.8 273.3 Split   347.6 226.4  226.4 nm  2.204 s
+Step   732: OL  942.5  231.3  OA  160.8   7.2 CL  415.8 274.8 Split   347.5 228.4  228.4 nm  2.293 s
+Step   733: OL  942.7  232.2  OA  161.3  22.9 CL  416.0 274.8 Split   347.8 228.2  228.2 nm  2.203 s
+Step   734: OL  942.8  233.0  OA  159.7  25.1 CL  414.7 274.0 Split   346.9 227.3  227.3 nm  2.137 s
+Step   735: OL  942.9  233.5  OA  159.6  17.6 CL  408.6 264.4 Split   347.2 215.5  215.5 nm  2.080 s
+Step   736: OL  942.8  233.7  OA  160.7  21.7 CL  404.7 258.6 Split   347.1 208.2  208.2 nm  2.152 s
+Step   737: OL  942.7  233.8  OA  160.4  17.0 CL  408.1 264.5 Split   346.5 215.7  215.7 nm  2.152 s
+Step   738: OL  942.6  233.7  OA  159.3  13.0 CL  406.9 263.1 Split   346.1 214.0  214.0 nm  2.080 s
+Step   739: OL  942.4  233.6  OA  158.9  21.8 CL  403.7 257.7 Split   346.3 207.4  207.4 nm  2.121 s
+Step   740: OL  942.3  233.5  OA  159.7  29.8 CL  402.1 254.7 Split   346.6 203.9  203.9 nm  2.168 s
+Step   741: OL  942.2  233.6  OA  163.4  44.9 CL  402.7 255.2 Split   347.0 204.5  204.5 nm  2.173 s
+Step   742: OL  942.2  234.2  OA  164.8  55.7 CL  400.1 252.4 Split   345.8 201.1  201.1 nm  2.112 s
+Step   743: OL  942.3  235.2  OA  162.8  48.6 CL  400.0 252.8 Split   345.6 201.4  201.4 nm  2.171 s
+Step   744: OL  942.5  236.9  OA  165.9  50.0 CL  397.7 248.2 Split   346.4 195.4  195.4 nm  2.220 s
+Step   745: OL  943.0  239.4  OA  164.2  42.8 CL  394.2 242.5 Split   346.4 188.1  188.1 nm  2.158 s
+Step   746: OL  943.6  242.6  OA  163.3  37.4 CL  395.7 244.3 Split   346.9 190.3  190.3 nm  2.298 s
+Step   747: OL  944.4  246.5  OA  160.6  22.7 CL  403.3 256.2 Split   347.2 205.2  205.2 nm  2.201 s
+Step   748: OL  945.5  251.2  OA  160.3  28.8 CL  399.8 251.7 Split   346.6 199.3  199.3 nm  2.271 s
+Step   749: OL  946.7  256.5  OA  160.0  31.3 CL  397.8 249.9 Split   345.5 197.0  197.0 nm  2.374 s
+Step   750: OL  948.0  262.2  OA  164.6  51.6 CL  390.1 237.6 Split   345.5 181.1  181.1 nm  2.240 s
+Step   751: OL  949.5  268.2  OA  163.9  51.8 CL  390.1 237.4 Split   345.5 181.1  181.1 nm  2.275 s
+Step   752: OL  951.0  274.2  OA  159.9  42.1 CL  398.4 250.1 Split   345.8 197.8  197.8 nm  2.164 s
+Step   753: OL  952.4  280.1  OA  156.0  22.9 CL  408.0 265.0 Split   345.8 216.7  216.7 nm  2.104 s
+Step   754: OL  953.8  285.6  OA  153.4   8.9 CL  415.5 276.5 Split   345.6 230.7  230.7 nm  2.091 s
+Step   755: OL  955.1  290.6  OA  153.9   8.5 CL  410.5 268.9 Split   345.7 221.4  221.4 nm  2.392 s
+Step   756: OL  956.1  294.8  OA  154.1  14.7 CL  406.1 262.3 Split   345.5 213.4  213.4 nm  2.268 s
+Step   757: OL  956.8  298.1  OA  153.0   5.0 CL  410.9 270.8 Split   344.6 223.9  223.9 nm  2.053 s
+Step   758: OL  957.3  300.4  OA  150.4  11.3 CL  416.4 282.1 Split   341.7 238.1  238.1 nm  2.166 s
+Step   759: OL  957.4  301.7  OA  148.9   2.8 CL  407.6 271.1 Split   339.9 225.0  225.0 nm  2.313 s
+Step   760: OL  957.1  301.8  OA  151.6  19.8 CL  398.9 257.5 Split   340.2 208.3  208.3 nm  2.300 s
+Step   761: OL  956.5  300.8  OA  154.1  23.7 CL  398.9 257.2 Split   340.5 207.7  207.7 nm  2.123 s
+Step   762: OL  955.5  298.8  OA  153.2  17.6 CL  401.6 261.6 Split   340.4 213.1  213.1 nm  2.278 s
+Step   763: OL  954.3  295.7  OA  153.5   2.7 CL  410.1 272.5 Split   342.1 226.2  226.2 nm  2.173 s
+Step   764: OL  952.7  291.9  OA  154.2  15.5 CL  420.5 286.6 Split   343.0 243.2  243.2 nm  2.141 s
+Step   765: OL  951.0  287.3  OA  154.9  28.5 CL  428.0 297.1 Split   343.1 255.9  255.9 nm  2.114 s
+Step   766: OL  949.1  282.2  OA  152.8  23.0 CL  424.6 292.2 Split   343.1 250.2  250.2 nm  2.121 s
+Step   767: OL  947.2  276.9  OA  150.4   1.8 CL  411.4 272.5 Split   343.5 226.4  226.4 nm  2.181 s
+Step   767 updated high order loop gain: 0.380
+Step   767 updated low order loop gain : 0.448
+Step   768: OL  945.3  271.5  OA  152.4   7.4 CL  408.9 267.8 Split   344.3 220.6  220.6 nm  2.115 s
+Step   769: OL  943.5  266.3  OA  154.2  20.7 CL  406.0 262.9 Split   344.8 214.2  214.2 nm  2.192 s
+Step   770: OL  941.7  261.6  OA  159.5  45.0 CL  417.3 278.4 Split   346.2 232.9  232.9 nm  2.342 s
+Step   771: OL  940.2  257.4  OA  162.2  57.7 CL  435.0 304.0 Split   346.2 263.4  263.4 nm  2.115 s
+Step   772: OL  938.9  253.9  OA  158.0  48.4 CL  435.5 303.9 Split   346.7 263.5  263.5 nm  2.325 s
+Step   773: OL  937.8  251.3  OA  154.1  33.4 CL  432.7 299.0 Split   347.6 257.6  257.6 nm  2.156 s
+Step   774: OL  936.9  249.5  OA  153.6  24.0 CL  430.2 294.8 Split   348.1 252.8  252.8 nm  2.272 s
+Step   775: OL  936.3  248.6  OA  156.0  29.9 CL  433.1 298.0 Split   348.9 256.6  256.6 nm  2.118 s
+Step   776: OL  935.8  248.4  OA  153.4  26.9 CL  431.0 296.7 Split   347.4 255.1  255.1 nm  2.231 s
+Step   777: OL  935.5  248.7  OA  153.8  34.7 CL  436.4 304.1 Split   347.9 263.5  263.5 nm  2.210 s
+Step   778: OL  935.2  249.4  OA  150.2  23.4 CL  428.1 291.8 Split   348.1 249.1  249.1 nm  2.227 s
+Step   779: OL  935.1  250.4  OA  151.6  29.9 CL  430.6 295.0 Split   348.4 253.0  253.0 nm  2.236 s
+Step   780: OL  934.9  251.5  OA  151.6  29.2 CL  434.1 299.7 Split   348.8 258.5  258.5 nm  2.198 s
+Step   781: OL  934.8  252.4  OA  153.1  35.3 CL  439.1 306.0 Split   349.7 265.5  265.5 nm  2.058 s
+Step   782: OL  934.5  253.2  OA  152.8  20.5 CL  432.1 294.1 Split   351.4 251.4  251.4 nm  2.055 s
+Step   783: OL  934.2  253.7  OA  151.7  12.6 CL  428.1 286.9 Split   352.5 243.0  243.0 nm  2.170 s
+Step   784: OL  933.9  253.9  OA  150.9   4.7 CL  424.0 279.8 Split   353.0 234.8  234.8 nm  2.129 s
+Step   785: OL  933.4  253.8  OA  151.9  16.8 CL  413.4 262.0 Split   354.1 213.3  213.3 nm  2.097 s
+Step   786: OL  932.9  253.6  OA  155.5  31.9 CL  406.2 250.3 Split   354.3 198.8  198.8 nm  2.162 s
+Step   787: OL  932.3  253.2  OA  153.7  25.6 CL  407.6 254.6 Split   352.7 204.4  204.4 nm  2.136 s
+Step   788: OL  931.8  252.8  OA  151.7  22.0 CL  410.5 261.4 Split   351.0 212.9  212.9 nm  2.131 s
+Step   789: OL  931.3  252.7  OA  149.1  13.3 CL  418.5 275.1 Split   349.8 229.8  229.8 nm  2.280 s
+Step   790: OL  930.9  252.8  OA  148.3   9.9 CL  414.5 267.7 Split   350.7 221.0  221.0 nm  2.105 s
+Step   791: OL  930.6  253.5  OA  148.8  10.2 CL  415.0 267.0 Split   351.9 219.9  219.9 nm  2.118 s
+Step   792: OL  930.4  254.7  OA  149.4  18.2 CL  414.2 264.6 Split   352.9 216.9  216.9 nm  2.235 s
+Step   793: OL  930.5  256.7  OA  150.8  20.6 CL  413.6 261.9 Split   354.3 213.5  213.5 nm  2.103 s
+Step   794: OL  930.8  259.3  OA  150.5  17.9 CL  414.5 261.7 Split   355.4 213.4  213.4 nm  2.175 s
+Step   795: OL  931.2  262.6  OA  152.4  25.6 CL  411.7 255.3 Split   356.7 205.4  205.4 nm  2.103 s
+Step   796: OL  931.9  266.5  OA  152.9  35.8 CL  405.8 245.7 Split   356.6 193.7  193.7 nm  2.158 s
+Step   797: OL  932.7  270.9  OA  154.2  42.8 CL  404.8 243.2 Split   356.8 191.1  191.1 nm  2.215 s
+Step   798: OL  933.6  275.6  OA  153.4  40.0 CL  406.4 247.1 Split   355.9 196.2  196.2 nm  2.208 s
+Step   799: OL  934.6  280.5  OA  158.6  51.6 CL  405.9 245.9 Split   356.2 194.7  194.7 nm  2.118 s
+Step   800: OL  935.6  285.2  OA  157.9  48.1 CL  407.3 248.3 Split   356.1 197.8  197.8 nm  2.113 s
+Step   801: OL  936.5  289.6  OA  155.5  36.6 CL  413.9 258.7 Split   356.3 210.8  210.8 nm  2.257 s
+Step   802: OL  937.3  293.6  OA  150.7  20.5 CL  413.4 260.0 Split   354.7 212.3  212.3 nm  2.234 s
+Step   803: OL  937.9  296.9  OA  147.7  18.8 CL  413.5 261.8 Split   353.2 215.0  215.0 nm  2.137 s
+Step   804: OL  938.2  299.3  OA  144.1   4.6 CL  419.4 271.4 Split   352.7 227.1  227.1 nm  2.122 s
+Step   805: OL  938.3  300.9  OA  143.4   4.6 CL  422.6 274.2 Split   354.2 230.5  230.5 nm  2.023 s
+Step   806: OL  938.1  301.5  OA  146.0  13.2 CL  416.7 263.6 Split   355.3 217.7  217.7 nm  2.157 s
+Step   807: OL  937.5  301.2  OA  148.6  30.0 CL  414.0 259.5 Split   355.2 212.7  212.7 nm  2.187 s
+Step   808: OL  936.6  299.8  OA  147.7  21.6 CL  423.0 272.4 Split   356.1 228.3  228.3 nm  2.147 s
+Step   809: OL  935.5  297.5  OA  148.5  24.4 CL  435.4 290.7 Split   356.4 250.1  250.1 nm  2.124 s
+Step   810: OL  934.1  294.4  OA  149.5  20.2 CL  431.3 283.5 Split   357.3 241.7  241.7 nm  2.170 s
+Step   811: OL  932.5  290.7  OA  148.7  18.2 CL  423.5 271.1 Split   357.6 226.8  226.8 nm  2.092 s
+Step   812: OL  930.7  286.5  OA  147.8  25.5 CL  423.7 271.5 Split   357.5 227.5  227.5 nm  2.139 s
+Step   813: OL  928.9  281.9  OA  149.0  32.4 CL  431.7 283.9 Split   357.4 242.2  242.2 nm  2.083 s
+Step   814: OL  927.1  277.4  OA  148.9  38.0 CL  439.8 297.9 Split   355.6 258.8  258.8 nm  2.131 s
+Step   815: OL  925.4  273.0  OA  147.8  37.7 CL  440.1 298.9 Split   354.8 260.4  260.4 nm  2.125 s
+Step   816: OL  923.8  268.9  OA  145.6  32.8 CL  436.1 294.1 Split   353.8 255.0  255.0 nm  2.035 s
+Step   817: OL  922.4  265.5  OA  144.7  28.0 CL  433.1 289.7 Split   353.4 250.3  250.3 nm  2.110 s
+Step   818: OL  921.2  262.8  OA  144.6  15.2 CL  426.7 278.4 Split   354.7 237.2  237.2 nm  2.073 s
+Step   819: OL  920.2  260.8  OA  147.5  10.8 CL  419.4 264.1 Split   357.1 220.0  220.0 nm  2.166 s
+Step   820: OL  919.5  259.7  OA  148.8  16.2 CL  420.7 265.5 Split   357.4 221.9  221.9 nm  2.206 s
+Step   821: OL  919.0  259.3  OA  148.2  21.4 CL  424.5 272.3 Split   356.9 229.9  229.9 nm  2.135 s
+Step   822: OL  918.6  259.6  OA  148.9  33.9 CL  431.7 283.9 Split   356.5 243.5  243.5 nm  2.095 s
+Step   823: OL  918.4  260.4  OA  147.3  31.9 CL  434.9 288.9 Split   356.3 249.4  249.4 nm  2.037 s
+Step   824: OL  918.3  261.4  OA  145.6  26.2 CL  429.7 279.8 Split   357.3 238.7  238.7 nm  1.967 s
+Step   825: OL  918.3  262.6  OA  143.5  13.7 CL  427.0 275.0 Split   357.6 233.3  233.3 nm  2.134 s
+Step   826: OL  918.1  263.6  OA  144.9  16.3 CL  429.1 276.0 Split   359.2 234.6  234.6 nm  2.104 s
+Step   827: OL  918.0  264.4  OA  146.1  20.9 CL  426.3 270.0 Split   360.6 227.5  227.5 nm  2.066 s
+Step   828: OL  917.7  264.8  OA  146.0  22.0 CL  419.6 258.6 Split   361.2 213.6  213.6 nm  2.181 s
+Step   829: OL  917.3  264.8  OA  145.6  16.8 CL  419.2 256.7 Split   362.2 211.0  211.0 nm  2.115 s
+Step   830: OL  916.8  264.4  OA  143.1   8.1 CL  420.6 259.2 Split   362.0 214.2  214.2 nm  2.093 s
+Step   831: OL  916.2  263.6  OA  142.3  15.4 CL  418.4 256.5 Split   361.4 210.8  210.8 nm  2.129 s
+Step   832: OL  915.5  262.7  OA  142.2  17.1 CL  422.4 262.8 Split   361.5 218.6  218.6 nm  2.133 s
+Step   833: OL  914.9  261.7  OA  141.0   8.3 CL  423.5 264.8 Split   361.2 221.1  221.1 nm  2.275 s
+Step   834: OL  914.3  261.0  OA  140.3   8.4 CL  420.2 260.5 Split   360.3 216.1  216.1 nm  2.039 s
+Step   835: OL  913.9  260.8  OA  141.5  26.4 CL  410.2 245.6 Split   359.2 198.1  198.1 nm  2.383 s
+Step   836: OL  913.7  261.4  OA  145.3  43.5 CL  401.6 230.4 Split   359.4 179.2  179.2 nm  2.084 s
+Step   837: OL  913.8  263.0  OA  151.9  59.9 CL  397.4 221.7 Split   360.2 168.1  168.1 nm  2.144 s
+Step   838: OL  914.2  265.7  OA  153.6  66.2 CL  396.0 219.0 Split   360.2 164.5  164.5 nm  2.048 s
+Step   839: OL  915.0  269.6  OA  152.3  62.5 CL  397.0 221.5 Split   359.7 167.9  167.9 nm  2.180 s
+Step   840: OL  916.1  274.7  OA  151.0  55.8 CL  398.7 223.1 Split   360.7 169.8  169.8 nm  2.157 s
+Step   841: OL  917.6  280.7  OA  147.1  45.2 CL  402.6 229.0 Split   361.4 177.4  177.4 nm  2.042 s
+Step   842: OL  919.4  287.5  OA  143.3  33.9 CL  410.3 241.5 Split   361.9 193.3  193.3 nm  2.099 s
+Step   843: OL  921.3  294.7  OA  143.8  33.5 CL  414.9 246.9 Split   363.5 200.2  200.2 nm  2.060 s
+Step   844: OL  923.3  301.9  OA  144.3  35.4 CL  414.9 246.7 Split   363.4 200.2  200.2 nm  2.201 s
+Step   845: OL  925.2  308.7  OA  148.6  45.5 CL  417.9 252.6 Split   362.6 207.6  207.6 nm  2.074 s
+Step   846: OL  926.9  314.8  OA  149.4  49.7 CL  412.1 245.7 Split   360.6 199.4  199.4 nm  2.177 s
+Step   847: OL  928.3  319.8  OA  145.0  39.8 CL  406.1 237.5 Split   359.2 189.5  189.5 nm  2.141 s
+Step   848: OL  929.3  323.5  OA  143.3  36.3 CL  402.5 231.6 Split   358.9 182.2  182.2 nm  2.101 s
+Step   849: OL  929.7  325.7  OA  142.4  32.3 CL  407.0 237.0 Split   360.3 189.3  189.3 nm  2.116 s
+Step   850: OL  929.5  326.2  OA  143.0  25.4 CL  415.3 249.6 Split   361.3 204.8  204.8 nm  2.126 s
+Step   851: OL  928.8  324.9  OA  141.9  15.4 CL  427.4 271.1 Split   359.6 230.9  230.9 nm  2.056 s
+Step   852: OL  927.4  321.9  OA  140.0  14.7 CL  425.8 268.3 Split   359.6 227.9  227.9 nm  2.083 s
+Step   853: OL  925.5  317.3  OA  139.9  22.3 CL  427.3 271.0 Split   359.4 231.2  231.2 nm  2.131 s
+Step   854: OL  923.2  311.4  OA  141.8  34.5 CL  429.6 273.9 Split   359.8 234.7  234.7 nm  2.151 s
+Step   855: OL  920.5  304.4  OA  144.4  45.9 CL  432.6 278.7 Split   359.6 240.4  240.4 nm  2.258 s
+Step   856: OL  917.7  296.7  OA  141.9  38.2 CL  432.6 278.1 Split   359.8 240.1  240.1 nm  2.211 s
+Step   857: OL  914.9  288.8  OA  139.9  32.6 CL  433.6 279.2 Split   360.0 241.7  241.7 nm  2.278 s
+Step   858: OL  912.2  281.2  OA  141.2  36.3 CL  438.6 286.0 Split   360.5 249.8  249.8 nm  2.317 s
+Step   859: OL  909.7  274.3  OA  140.3  35.2 CL  437.2 282.8 Split   361.2 246.3  246.3 nm  2.311 s
+Step   860: OL  907.7  268.6  OA  141.7  41.3 CL  432.8 274.9 Split   361.8 237.4  237.4 nm  2.211 s
+Step   861: OL  906.2  264.4  OA  143.1  47.6 CL  433.3 275.5 Split   361.7 238.6  238.6 nm  2.179 s
+Step   862: OL  905.1  261.9  OA  141.2  39.5 CL  433.3 274.9 Split   362.0 238.2  238.2 nm  2.222 s
+Step   863: OL  904.5  261.0  OA  141.8  37.8 CL  435.4 276.5 Split   363.0 240.4  240.4 nm  2.223 s
+Step   864: OL  904.4  261.7  OA  139.5  26.9 CL  434.7 272.9 Split   364.8 236.3  236.3 nm  2.200 s
+Step   865: OL  904.6  263.6  OA  137.1  18.6 CL  432.3 266.7 Split   366.5 229.2  229.2 nm  2.177 s
+Step   866: OL  905.1  266.2  OA  136.9  25.1 CL  435.1 270.6 Split   366.7 234.1  234.1 nm  2.114 s
+Step   867: OL  905.6  269.1  OA  137.4  28.4 CL  437.5 273.6 Split   367.3 237.7  237.7 nm  2.225 s
+Step   868: OL  906.1  271.8  OA  135.7  19.8 CL  432.0 263.7 Split   367.7 226.7  226.7 nm  2.220 s
+Step   869: OL  906.4  274.0  OA  135.0  16.8 CL  431.8 262.4 Split   368.1 225.6  225.6 nm  2.162 s
+Step   870: OL  906.5  275.3  OA  134.8  21.3 CL  433.6 264.6 Split   368.6 228.3  228.3 nm  2.267 s
+Step   871: OL  906.2  275.5  OA  133.6  10.2 CL  428.3 255.4 Split   368.9 217.5  217.5 nm  2.247 s
+Step   872: OL  905.6  274.5  OA  133.1   4.6 CL  425.7 251.5 Split   368.6 213.0  213.0 nm  2.078 s
+Step   873: OL  904.7  272.6  OA  135.8  24.2 CL  423.0 246.2 Split   368.8 207.0  207.0 nm  2.200 s
+Step   874: OL  903.5  269.8  OA  138.9  36.3 CL  423.3 247.1 Split   368.5 208.3  208.3 nm  2.200 s
+Step   875: OL  902.2  266.6  OA  139.0  34.3 CL  424.5 247.2 Split   369.9 208.3  208.3 nm  2.152 s
+Step   876: OL  901.0  263.5  OA  143.8  49.1 CL  418.8 235.3 Split   371.1 194.1  194.1 nm  2.162 s
+Step   877: OL  899.9  261.0  OA  147.6  57.6 CL  412.3 220.7 Split   372.8 176.0  176.0 nm  2.164 s
+Step   878: OL  899.2  259.7  OA  151.9  67.2 CL  405.2 204.8 Split   374.1 155.8  155.8 nm  2.209 s
+Step   879: OL  899.0  260.2  OA  156.2  78.7 CL  404.2 202.2 Split   374.3 152.7  152.7 nm  2.218 s
+Step   880: OL  899.4  262.9  OA  155.9  77.6 CL  411.4 214.2 Split   375.3 168.4  168.4 nm  2.157 s
+Step   881: OL  900.5  267.9  OA  153.6  74.7 CL  417.0 224.8 Split   375.1 182.0  182.0 nm  2.190 s
+Step   882: OL  902.4  275.4  OA  147.0  61.9 CL  423.7 236.7 Split   375.1 197.0  197.0 nm  2.193 s
+Step   883: OL  905.0  284.9  OA  143.8  50.7 CL  420.1 228.7 Split   375.9 187.6  187.6 nm  2.050 s
+Step   884: OL  908.2  296.1  OA  143.9  49.7 CL  416.8 223.9 Split   374.9 182.0  182.0 nm  1.989 s
+Step   885: OL  911.9  308.3  OA  148.8  62.8 CL  411.9 216.1 Split   374.0 172.6  172.6 nm  2.156 s
+Step   886: OL  915.9  320.9  OA  147.0  60.9 CL  406.6 207.6 Split   372.9 162.1  162.1 nm  2.175 s
+Step   887: OL  919.9  333.2  OA  145.7  58.2 CL  406.9 209.8 Split   371.7 165.5  165.5 nm  2.173 s
+Step   888: OL  923.8  344.7  OA  144.3  53.8 CL  408.0 214.4 Split   370.0 171.9  171.9 nm  2.213 s
+Step   889: OL  927.2  354.8  OA  143.6  52.8 CL  409.0 216.5 Split   369.7 174.8  174.8 nm  2.264 s
+Step   890: OL  930.0  363.0  OA  141.8  48.7 CL  406.9 210.4 Split   370.9 167.2  167.2 nm  2.285 s
+Step   891: OL  932.0  369.0  OA  139.8  46.8 CL  411.9 219.3 Split   371.1 178.6  178.6 nm  2.193 s
+Step   892: OL  933.0  372.6  OA  142.1  54.2 CL  414.2 220.7 Split   373.0 180.1  180.1 nm  2.220 s
+Step   893: OL  933.0  373.5  OA  138.5  42.2 CL  416.3 223.9 Split   373.3 184.3  184.3 nm  2.192 s
+Step   894: OL  931.9  371.7  OA  132.0   9.4 CL  422.4 235.7 Split   372.7 198.8  198.8 nm  2.171 s
+Step   895: OL  929.8  367.3  OA  133.5  19.8 CL  429.7 246.4 Split   374.0 211.7  211.7 nm  2.206 s
+Step   896: OL  926.7  360.5  OA  133.9  24.5 CL  429.1 244.9 Split   374.0 210.2  210.2 nm  2.158 s
+Step   897: OL  922.9  351.4  OA  132.6  15.3 CL  429.1 244.0 Split   374.5 209.5  209.5 nm  2.167 s
+Step   898: OL  918.4  340.6  OA  134.6  15.0 CL  427.0 240.1 Split   374.6 205.0  205.0 nm  2.111 s
+Step   899: OL  913.5  328.4  OA  136.8  23.6 CL  424.0 235.8 Split   373.9 200.0  200.0 nm  2.161 s
+Step   900: OL  908.6  315.3  OA  139.2  35.4 CL  430.2 247.4 Split   373.2 213.9  213.9 nm  2.171 s
+Step   901: OL  903.6  302.1  OA  143.1  51.3 CL  443.6 270.0 Split   373.0 240.1  240.1 nm  2.257 s
+Step   902: OL  899.1  289.3  OA  144.5  57.3 CL  449.3 277.9 Split   373.9 249.1  249.1 nm  2.243 s
+Step   903: OL  895.0  277.8  OA  142.3  56.8 CL  450.3 279.7 Split   373.6 251.3  251.3 nm  2.268 s
+Step   904: OL  891.6  267.9  OA  141.1  52.3 CL  446.3 273.4 Split   373.4 244.5  244.5 nm  2.166 s
+Step   905: OL  888.9  260.4  OA  142.7  54.0 CL  443.7 267.9 Split   374.1 238.6  238.6 nm  2.174 s
+Step   906: OL  887.1  255.4  OA  144.3  59.2 CL  447.6 274.1 Split   374.1 245.8  245.8 nm  2.074 s
+Step   907: OL  886.0  253.1  OA  142.0  55.5 CL  446.5 272.3 Split   374.0 244.0  244.0 nm  2.156 s
+Step   908: OL  885.6  253.1  OA  141.4  52.9 CL  444.5 270.6 Split   372.7 242.2  242.2 nm  2.210 s
+Step   909: OL  885.7  255.1  OA  138.9  39.2 CL  438.8 260.0 Split   373.5 230.4  230.4 nm  2.288 s
+Step   910: OL  886.3  258.4  OA  134.7  23.8 CL  431.0 245.4 Split   374.2 213.8  213.8 nm  2.214 s
+Step   911: OL  887.0  262.4  OA  133.5  18.2 CL  426.0 235.6 Split   374.6 202.8  202.8 nm  2.184 s
+Step   912: OL  887.8  266.5  OA  134.0  23.2 CL  427.1 237.6 Split   374.4 205.5  205.5 nm  2.251 s
+Step   913: OL  888.5  270.0  OA  133.9  25.9 CL  427.8 240.3 Split   373.4 208.7  208.7 nm  2.133 s
+Step   914: OL  888.9  272.5  OA  133.4  21.5 CL  427.8 240.3 Split   373.2 209.1  209.1 nm  2.014 s
+Step   915: OL  888.9  273.8  OA  131.6  13.0 CL  424.2 233.6 Split   373.2 201.7  201.7 nm  2.166 s
+Step   916: OL  888.4  273.6  OA  133.5  23.6 CL  427.5 237.5 Split   374.3 206.5  206.5 nm  2.141 s
+Step   917: OL  887.5  272.0  OA  133.6  16.8 CL  422.2 226.9 Split   374.8 194.3  194.3 nm  2.136 s
+Step   918: OL  886.2  269.0  OA  134.0  20.0 CL  412.8 208.9 Split   374.7 173.2  173.2 nm  2.079 s
+Step   919: OL  884.6  264.9  OA  137.4  34.5 CL  405.5 194.2 Split   374.6 155.2  155.2 nm  2.230 s
+Step   920: OL  882.8  260.1  OA  140.1  46.7 CL  400.0 184.0 Split   373.7 142.6  142.6 nm  2.097 s
+Step   921: OL  880.9  255.2  OA  142.8  55.2 CL  397.4 179.4 Split   373.1 136.6  136.6 nm  2.124 s
+Step   922: OL  879.3  250.9  OA  142.4  55.7 CL  400.5 184.4 Split   373.8 143.8  143.8 nm  2.019 s
+Step   923: OL  878.0  247.7  OA  141.5  54.3 CL  407.7 195.1 Split   375.9 157.8  157.8 nm  2.184 s
+Step   924: OL  877.3  246.5  OA  147.5  67.1 CL  411.3 199.4 Split   377.6 163.1  163.1 nm  2.090 s
+Step   925: OL  877.3  247.7  OA  153.8  82.2 CL  410.5 195.9 Split   378.5 158.9  158.9 nm  2.312 s
+Step   926: OL  878.1  251.8  OA  156.3  84.1 CL  406.7 185.7 Split   379.6 146.1  146.1 nm  2.245 s
+Step   927: OL  879.7  258.7  OA  152.9  74.8 CL  408.0 187.6 Split   379.8 148.9  148.9 nm  2.206 s
+Step   928: OL  882.2  268.3  OA  147.6  64.8 CL  410.1 191.3 Split   380.2 153.6  153.6 nm  2.075 s
+Step   929: OL  885.5  280.1  OA  153.4  79.1 CL  403.4 178.3 Split   379.3 137.4  137.4 nm  2.161 s
+Step   930: OL  889.5  293.5  OA  153.6  80.8 CL  402.1 175.6 Split   379.1 134.2  134.2 nm  2.007 s
+Step   931: OL  893.9  307.7  OA  143.1  59.5 CL  404.0 180.2 Split   378.6 140.9  140.9 nm  2.020 s
+Step   932: OL  898.7  322.2  OA  140.9  55.5 CL  400.2 173.5 Split   377.6 132.7  132.7 nm  2.261 s
+Step   933: OL  903.4  336.1  OA  141.5  54.3 CL  399.5 168.8 Split   378.8 126.9  126.9 nm  2.212 s
+Step   934: OL  907.9  349.0  OA  140.7  50.2 CL  403.5 175.5 Split   379.9 136.1  136.1 nm  2.193 s
+Step   935: OL  912.0  360.2  OA  139.8  47.7 CL  412.7 193.5 Split   380.9 158.9  158.9 nm  2.315 s
+Step   936: OL  915.3  369.3  OA  137.7  41.7 CL  417.8 202.2 Split   381.9 169.5  169.5 nm  2.174 s
+Step   937: OL  917.7  376.1  OA  135.3  33.4 CL  422.4 209.9 Split   382.6 178.8  178.8 nm  2.207 s
+Step   938: OL  919.1  380.1  OA  131.9  10.9 CL  421.4 207.0 Split   383.1 175.5  175.5 nm  2.151 s
+Step   939: OL  919.3  381.4  OA  132.2  14.4 CL  427.9 218.2 Split   383.9 189.0  189.0 nm  2.116 s
+Step   940: OL  918.3  379.7  OA  133.0  11.3 CL  427.6 216.2 Split   384.6 186.8  186.8 nm  2.110 s
+Step   941: OL  916.2  375.3  OA  134.6  21.3 CL  432.6 223.5 Split   386.0 195.3  195.3 nm  2.148 s
+Step   942: OL  912.9  368.1  OA  135.7  21.2 CL  434.7 225.0 Split   387.4 197.2  197.2 nm  1.983 s
+Step   943: OL  908.8  358.4  OA  136.1  28.3 CL  434.9 224.7 Split   387.7 197.0  197.0 nm  2.053 s
+Step   944: OL  903.9  346.5  OA  136.4  33.0 CL  432.7 222.0 Split   386.8 193.9  193.9 nm  2.120 s
+Step   945: OL  898.4  332.9  OA  139.8  42.9 CL  433.5 225.3 Split   385.8 197.7  197.7 nm  2.211 s
+Step   946: OL  892.7  318.0  OA  138.9  38.9 CL  432.2 222.2 Split   386.0 194.4  194.4 nm  2.091 s
+Step   947: OL  887.0  302.5  OA  135.9  30.5 CL  433.1 222.3 Split   386.7 194.9  194.9 nm  2.164 s
+Step   948: OL  881.6  287.0  OA  141.0  50.0 CL  443.3 239.0 Split   388.3 214.0  214.0 nm  2.169 s
+Step   949: OL  876.6  272.2  OA  147.3  66.0 CL  454.6 255.2 Split   390.7 232.4  232.4 nm  2.141 s
+Step   950: OL  872.3  258.9  OA  149.6  69.4 CL  455.4 254.4 Split   392.2 231.6  231.6 nm  2.106 s
+Step   951: OL  868.8  247.7  OA  146.2  61.4 CL  452.5 246.6 Split   393.7 223.1  223.1 nm  2.126 s
+Step   952: OL  866.1  239.2  OA  146.5  61.6 CL  453.5 248.2 Split   393.7 225.1  225.1 nm  2.059 s
+Step   953: OL  864.3  233.6  OA  146.2  59.3 CL  453.7 249.9 Split   392.8 227.1  227.1 nm  2.140 s
+Step   954: OL  863.3  231.0  OA  145.7  57.1 CL  452.2 249.0 Split   391.5 226.3  226.3 nm  2.315 s
+Step   955: OL  863.1  230.9  OA  138.3  34.8 CL  441.4 230.4 Split   390.6 205.5  205.5 nm  2.114 s
+Step   956: OL  863.3  232.8  OA  134.2  15.4 CL  432.3 213.4 Split   390.2 186.1  186.1 nm  2.210 s
+Step   957: OL  864.0  236.1  OA  134.7  21.2 CL  432.8 213.5 Split   390.6 186.4  186.4 nm  2.244 s
+Step   958: OL  864.8  239.9  OA  137.0  32.9 CL  435.8 221.4 Split   389.3 195.8  195.8 nm  2.167 s
+Step   959: OL  865.6  243.5  OA  138.6  39.8 CL  436.1 223.0 Split   388.7 197.9  197.9 nm  2.011 s
+Step   960: OL  866.2  246.5  OA  138.3  40.5 CL  430.9 214.7 Split   387.5 188.5  188.5 nm  2.158 s
+Step   961: OL  866.5  248.3  OA  136.8  39.4 CL  426.7 207.3 Split   386.8 180.2  180.2 nm  2.130 s
+Step   962: OL  866.5  248.7  OA  131.1  24.1 CL  423.7 201.6 Split   386.5 173.7  173.7 nm  2.123 s
+Step   963: OL  865.9  247.6  OA  129.0   5.4 CL  422.7 198.7 Split   386.8 170.6  170.6 nm  2.183 s
+Step   964: OL  865.0  245.1  OA  131.1  22.4 CL  426.1 204.5 Split   387.3 177.7  177.7 nm  2.181 s
+Step   965: OL  863.8  241.3  OA  131.0  17.5 CL  421.4 192.5 Split   388.1 164.1  164.1 nm  2.206 s
+Step   966: OL  862.3  236.6  OA  136.4  35.2 CL  417.4 177.5 Split   390.9 146.3  146.3 nm  2.080 s
+Step   967: OL  860.8  231.5  OA  138.3  43.3 CL  414.5 168.9 Split   391.6 136.0  136.0 nm  2.139 s
+Step   968: OL  859.3  226.7  OA  141.0  50.9 CL  415.1 169.5 Split   391.7 137.3  137.3 nm  2.178 s
+Step   969: OL  858.1  222.8  OA  139.3  48.3 CL  413.6 165.6 Split   391.8 132.6  132.6 nm  1.947 s
+Step   970: OL  857.4  220.7  OA  135.5  33.3 CL  417.1 172.0 Split   392.6 140.8  140.8 nm  2.062 s
+Step   971: OL  857.3  220.7  OA  135.9  37.8 CL  413.0 162.2 Split   392.4 128.8  128.8 nm  2.220 s
+Step   972: OL  857.9  223.5  OA  145.5  62.1 CL  408.1 147.9 Split   392.9 110.3  110.3 nm  2.055 s
+Step   973: OL  859.2  229.0  OA  150.5  70.9 CL  409.4 150.1 Split   393.4 113.5  113.5 nm  2.196 s
+Step   974: OL  861.2  237.2  OA  152.2  73.6 CL  411.6 157.2 Split   392.8 122.9  122.9 nm  1.973 s
+Step   975: OL  864.0  247.5  OA  149.5  66.4 CL  413.4 160.5 Split   393.3 127.2  127.2 nm  2.205 s
+Step   976: OL  867.4  259.5  OA  148.0  65.1 CL  411.7 157.7 Split   392.6 123.9  123.9 nm  2.197 s
+Step   977: OL  871.2  272.3  OA  147.4  66.9 CL  410.1 155.1 Split   391.9 121.0  121.0 nm  2.149 s
+Step   978: OL  875.2  285.4  OA  143.5  58.4 CL  411.8 160.6 Split   391.3 128.5  128.5 nm  2.232 s
+Step   979: OL  879.3  298.0  OA  140.9  51.1 CL  414.6 166.4 Split   391.7 135.8  135.8 nm  2.227 s
+Step   980: OL  883.2  309.7  OA  138.5  43.6 CL  413.7 165.9 Split   390.8 135.6  135.6 nm  2.155 s
+Step   981: OL  886.8  320.0  OA  142.1  54.5 CL  407.5 149.6 Split   390.8 115.5  115.5 nm  2.180 s
+Step   982: OL  889.7  328.4  OA  144.2  61.3 CL  406.5 148.5 Split   390.1 114.3  114.3 nm  2.194 s
+Step   983: OL  892.0  334.7  OA  136.8  40.6 CL  408.4 153.7 Split   390.1 120.9  120.9 nm  2.212 s
+Step   984: OL  893.4  338.7  OA  135.8  31.2 CL  413.1 163.8 Split   390.9 133.7  133.7 nm  2.216 s
+Step   985: OL  893.9  340.2  OA  134.6  24.9 CL  415.2 167.6 Split   391.4 138.5  138.5 nm  2.248 s
+Step   986: OL  893.4  339.3  OA  134.2  23.2 CL  419.6 177.2 Split   391.9 150.0  150.0 nm  2.293 s
+Step   987: OL  892.1  336.0  OA  134.7  19.4 CL  426.3 193.6 Split   391.3 169.2  169.2 nm  2.260 s
+Step   988: OL  889.9  330.4  OA  136.0  22.0 CL  429.4 201.0 Split   390.9 177.8  177.8 nm  2.205 s
+Step   989: OL  887.1  322.8  OA  137.3  24.7 CL  429.1 201.5 Split   390.2 178.6  178.6 nm  2.243 s
+Step   990: OL  883.6  313.4  OA  134.4   6.9 CL  421.9 187.6 Split   389.3 162.7  162.7 nm  2.269 s
+Step   991: OL  879.7  302.4  OA  132.7  20.4 CL  422.1 191.3 Split   387.6 167.1  167.1 nm  2.256 s
+Step   992: OL  875.6  290.4  OA  136.6  40.0 CL  425.4 199.5 Split   387.0 176.5  176.5 nm  2.077 s
+Step   993: OL  871.4  277.7  OA  140.3  52.2 CL  428.8 207.2 Split   386.6 185.6  185.6 nm  2.099 s
+Step   994: OL  867.3  264.8  OA  140.1  50.0 CL  432.5 213.0 Split   387.4 192.3  192.3 nm  2.174 s
+Step   995: OL  863.5  252.1  OA  138.1  45.6 CL  429.4 206.3 Split   387.6 184.9  184.9 nm  2.108 s
+Step   996: OL  860.0  240.2  OA  135.5  34.8 CL  425.9 200.4 Split   386.8 178.3  178.3 nm  2.083 s
+Step   997: OL  856.9  229.3  OA  135.1  34.0 CL  427.6 203.2 Split   387.1 181.6  181.6 nm  2.152 s
+Step   998: OL  854.4  219.8  OA  134.9  29.7 CL  426.4 201.9 Split   386.4 180.3  180.3 nm  2.238 s
+Step 999: Output PSF (cumulative average).
+Step   999: OL  852.4  212.0  OA  134.3  31.5 CL  426.3 203.6 Split   385.3 182.4  182.4 nm  2.349 s
+Mean: 452.50 270.23 362.95  nm.
+
+*** Simulation Finished at 2024/06/15 01:37:48 in dragon. ***
+
