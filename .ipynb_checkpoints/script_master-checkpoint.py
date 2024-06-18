@@ -9,171 +9,89 @@ import os
 
 import script_lgs
 
-output_file_lgs00 = "30km60asR_15as0S_lgs_study1A"
-master_file_lgs00 = "A_hybrid.conf"
-n_sodium = 0
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs00 = True
-
-script_lgs.main(output_file=output_file_lgs00, master_file=master_file_lgs00, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs00)
-
-
-
-output_file_lgs11 = "30km60asR_15as1S_lgs_study1A"
-master_file_lgs11 = "A_hybrid.conf"
-n_sodium = 1
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs11 = True
-
-script_lgs.main(output_file=output_file_lgs11, master_file=master_file_lgs11, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs11)
-
-
-
-output_file_lgs22 = "30km60asR_15as2S_lgs_study1A"
-master_file_lgs22 = "A_hybrid.conf"
+output_file_lgs2 = "15as2S_30km60asR_lgs_mcao_study1A"
+master_file_lgs2 = "A_mcao_hybrid.conf"
 n_sodium = 2
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [1, 3, 5]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs22 = True
+run_simulation_lgs2 = True
 
-script_lgs.main(output_file=output_file_lgs22, master_file=master_file_lgs22, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs22)
-
-
-
-output_file_lgs33 = "30km60asR_15as3S_lgs_study1A"
-master_file_lgs33 = "A_hybrid.conf"
-n_sodium = 3
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs33 = True
-
-script_lgs.main(output_file=output_file_lgs33, master_file=master_file_lgs33, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs33)
+script_lgs.main(output_file=output_file_lgs2, master_file=master_file_lgs2, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs2)
 
 
 
-output_file_lgs44 = "30km60asR_15as4S_lgs_study1A"
-master_file_lgs44 = "A_hybrid.conf"
-n_sodium = 4
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs44 = True
-
-script_lgs.main(output_file=output_file_lgs44, master_file=master_file_lgs44, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs44)
-
-
-
-output_file_lgs55 = "30km60asR_15as5S_lgs_study1A"
-master_file_lgs55 = "A_hybrid.conf"
+output_file_lgs5 = "15as5S_30km60asR_lgs_mcao_study1A"
+master_file_lgs5 = "A_mcao_hybrid.conf"
 n_sodium = 5
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [3, 4, 5, 6, 7, 8, 9, 10 ]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs55 = True
+run_simulation_lgs5 = True
 
-script_lgs.main(output_file=output_file_lgs55, master_file=master_file_lgs55, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs55)
+script_lgs.main(output_file=output_file_lgs5, master_file=master_file_lgs5, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs5)
 
 
 
-output_file_lgs66 = "30km60asR_15as6S_lgs_study1A"
-master_file_lgs66 = "A_hybrid.conf"
+output_file_lgs6 = "15as6S_30km60asR_lgs_mcao_study1A"
+master_file_lgs6 = "A_mcao_hybrid.conf"
 n_sodium = 6
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs66 = True
+run_simulation_lgs6 = True
 
-script_lgs.main(output_file=output_file_lgs66, master_file=master_file_lgs66, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs66)
+script_lgs.main(output_file=output_file_lgs6, master_file=master_file_lgs6, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs6)
 
 
 
-output_file_lgs77 = "30km60asR_15as7S_lgs_study1A"
-master_file_lgs77 = "A_hybrid.conf"
+output_file_lgs7 = "15as7S_30km60asR_lgs_mcao_study1A"
+master_file_lgs7 = "A_mcao_hybrid.conf"
 n_sodium = 7
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs77 = True
+run_simulation_lgs7 = True
 
-script_lgs.main(output_file=output_file_lgs77, master_file=master_file_lgs77, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs77)
+script_lgs.main(output_file=output_file_lgs7, master_file=master_file_lgs7, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs7)
 
 
 
-output_file_lgs88 = "30km60asR_15as8S_lgs_study1A"
-master_file_lgs88 = "A_hybrid.conf"
+output_file_lgs8 = "15as8S_30km60asR_lgs_mcao_study1A"
+master_file_lgs8 = "A_mcao_hybrid.conf"
 n_sodium = 8
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs88 = True
+run_simulation_lgs8 = True
 
-script_lgs.main(output_file=output_file_lgs88, master_file=master_file_lgs88, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs88)
+script_lgs.main(output_file=output_file_lgs8, master_file=master_file_lgs8, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs8)
 
 
 
-output_file_lgs99 = "30km60asR_15as9S_lgs_study1A"
-master_file_lgs99 = "A_hybrid.conf"
+output_file_lgs9 = "15as9S_30km60asR_lgs_mcao_study1A"
+master_file_lgs9 = "A_mcao_hybrid.conf"
 n_sodium = 9
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs99 = True
+run_simulation_lgs9 = True
 
-script_lgs.main(output_file=output_file_lgs99, master_file=master_file_lgs99, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs99)
+script_lgs.main(output_file=output_file_lgs9, master_file=master_file_lgs9, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs9)
 
 
 
-output_file_lgs100 = "30km60asR_15as10S_lgs_study1A"
-master_file_lgs100 = "A_hybrid.conf"
+output_file_lgs10 = "15as10S_30km60asR_lgs_mcao_study1A"
+master_file_lgs10 = "A_mcao_hybrid.conf"
 n_sodium = 10
-n_rayleigh = [1, 3, 5, 7, 9]
+n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 r_sodium = 15
 r_rayleigh = 60
-run_simulation_lgs100 = True
+run_simulation_lgs10 = True
 
-script_lgs.main(output_file=output_file_lgs100, master_file=master_file_lgs100, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs100)
-
-
-
-output_file_lgs111 = "30km60asR_15as11S_lgs_study1A"
-master_file_lgs111 = "A_hybrid.conf"
-n_sodium = 11
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs111 = True
-
-script_lgs.main(output_file=output_file_lgs111, master_file=master_file_lgs111, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs111)
+script_lgs.main(output_file=output_file_lgs10, master_file=master_file_lgs10, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs10)
 
 
-
-output_file_lgs122 = "30km60asR_15as12S_lgs_study1A"
-master_file_lgs122 = "A_hybrid.conf"
-n_sodium = 12
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs122 = True
-
-script_lgs.main(output_file=output_file_lgs122, master_file=master_file_lgs122, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs122)
-
-
-
-output_file_lgs133 = "30km60asR_15as13S_lgs_study1A"
-master_file_lgs133 = "A_hybrid.conf"
-n_sodium = 13
-n_rayleigh = [1, 3, 5, 7, 9]
-r_sodium = 15
-r_rayleigh = 60
-run_simulation_lgs133 = True
-
-script_lgs.main(output_file=output_file_lgs133, master_file=master_file_lgs133, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, run_simulation=run_simulation_lgs133)
 
 #import script_height
 
