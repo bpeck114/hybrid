@@ -1,0 +1,148 @@
+/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/maos -o test/400W-c A_mcao_hybrid.conf plot.all=1 plot.setup=1 -O powfs.siglev=[32.835 563.45 128116.746 41.558] 
+Output folder is 'test/400W-c'.
+SRC: /u/bpeck/code/maos v2.9 2.9
+BUILT: /u/bpeck/code/maos/build by CLANG (v14.0.0) on 2024/03/22 14:52:24 CPU(F64,+O3) w/o CUDA
+Launched at 2024/06/26 18:16:49 in dragon with PID 15998.
+The web based job monitor can be accessed at http://localhost:10300
+Main config file is default.conf
+loaded 142 (142 new) records from '/u/bpeck/code/maos/config/maos/sim.conf'
+loaded   2 (  2 new) records from '/u/bpeck/code/maos/config/maos/dm_dual.conf'
+loaded   6 (  6 new) records from '/u/bpeck/code/maos/config/maos/atm/atm_mk13n50p.conf'
+loaded   4 (  4 new) records from '/u/bpeck/code/maos/config/maos/evl_sq34.conf'
+loaded   4 (  4 new) records from '/u/bpeck/code/maos/config/maos/fit_sq34.conf'
+loaded   0 (  0 new) records from '/u/bpeck/code/maos/config/maos/fov_sq34.conf'
+loaded  71 ( 71 new) records from '/u/bpeck/code/maos/config/maos/recon.conf'
+loaded  80 ( 80 new) records from '/u/bpeck/code/maos/config/maos/dbg.conf'
+loaded   0 (  0 new) records from '/u/bpeck/code/maos/config/maos/mcao_base.conf'
+loaded  69 ( 69 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./powfs_common.conf'
+loaded  44 ( 38 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./powfs_none.conf'
+loaded  38 (  0 new) records from '/u/bpeck/code/maos/config/maos/powfs_shlgs.conf'
+loaded  38 (  0 new) records from '/u/bpeck/code/maos/config/maos/powfs_shngs.conf'
+loaded  34 (  0 new) records from '/u/bpeck/code/maos/config/maos/powfs_shtt.conf'
+loaded   8 (  0 new) records from '/u/bpeck/code/maos/config/maos/powfs_shttf.conf'
+loaded  38 (  0 new) records from '/u/bpeck/code/maos/config/maos/powfs_shngs.conf'
+loaded  34 (  0 new) records from '/u/bpeck/code/maos/config/maos/powfs_shtt.conf'
+loaded   0 (  0 new) records from '/u/bpeck/code/maos/config/maos/wfs_lgs_ttf_tt.conf'
+loaded   0 (  0 new) records from '/u/bpeck/code/maos/config/maos/mcao_lgs.conf'
+loaded   0 (  0 new) records from '/u/bpeck/code/maos/config/maos/default.conf'
+Replacing all existing input
+Warning(readcfg.c:399): atm.zadeg has been renamed to sim.zadeg.
+Warning(readcfg.c:399): sim.frozenflow has been renamed to atm.frozenflow.
+Warning(readcfg.c:399): powfs.msa has been renamed to powfs.order.
+Warning(readcfg.c:399): tomo.tik_cstr has been renamed to tomo.tikcr.
+Warning(readcfg.c:399): tomo.split_wt has been renamed to tomo.ahst_wt.
+Warning(readcfg.c:399): tomo.split_idealngs has been renamed to tomo.ahst_idealngs.
+Warning(readcfg.c:399): tomo.split_rtt has been renamed to tomo.ahst_rtt.
+Warning(readcfg.c:399): fit.tik_cstr has been renamed to fit.tikcr.
+Warning(readcfg.c:399): cn2.nhtrecon has been renamed to cn2.nhtomo.
+Warning(readcfg.c:399): powfs.bkgrndrm has been renamed to powfs.bkgrndfnc.
+Warning(readcfg.c:399): sim.fitonly has been renamed to sim.idealfit.
+Warning(readcfg.c:399): sim.wfsideal has been renamed to sim.idealwfs.
+Warning(readcfg.c:399): sim.evlideal has been renamed to sim.idealevl.
+Warning(readcfg.c:399): dbg.clemp_all has been renamed to (removed).
+Warning(readcfg.c:399): dbg.parallel has been renamed to sim.parallel.
+Warning(readcfg.c:399): powfs.neaspeckle has been renamed to powfs.neaextra.
+Warning(readcfg.c:399): dbg.ncpa_nouncorr has been renamed to dbg.ncpa_rmsci.
+Warning(readcfg.c:399): sim.apdm has been renamed to sim.aphi.
+Warning(readcfg.c:399): sim.epdm has been renamed to sim.ephi.
+Warning(readcfg.c:399): sim.psddtrat has been renamed to sim.psddtrat_hi.
+Warning(readcfg.c:399): load.i0 has been renamed to powfs.i0load.
+Warning(readcfg.c:399): sim.apfsm has been renamed to powfs.apfsm.
+Warning(readcfg.c:399): sim.epfsm has been renamed to powfs.epfsm.
+Warning(readcfg.c:399): sim.alfsm has been renamed to powfs.alfsm.
+Warning(readcfg.c:399): sim.zetafsm has been renamed to powfs.zetafsm.
+Warning(readcfg.c:399): sim.f0fsm has been renamed to powfs.f0fsm.
+Warning(readcfg.c:399): sim.idealfsm has been renamed to powfs.idealfsm.
+Warning(readcfg.c:399): sim.commonfsm has been renamed to powfs.commonfsm.
+Warning(readcfg.c:399): sim.ncpa_calib has been renamed to ncpa.calib.
+Warning(readcfg.c:399): sim.ncpa_ttr has been renamed to ncpa.ttr.
+Warning(readcfg.c:399): sim.ncpa_thetax has been renamed to ncpa.thetax.
+Warning(readcfg.c:399): sim.ncpa_thetay has been renamed to ncpa.thetay.
+Warning(readcfg.c:399): sim.ncpa_wt has been renamed to ncpa.wt.
+Warning(readcfg.c:399): sim.ncpa_hs has been renamed to ncpa.hs.
+Warning(readcfg.c:399): surf has been renamed to ncpa.surf.
+Warning(readcfg.c:399): tsurf has been renamed to ncpa.tsurf.
+Warning(readcfg.c:399): dbg.ncpa_preload has been renamed to ncpa.preload.
+Warning(readcfg.c:399): dbg.ncpa_rmsci has been renamed to dbg.ncpa_rmsci.
+Warning(readcfg.c:399): dbg.draw_opdmax has been renamed to plot.opdmax.
+Warning(readcfg.c:399): dbg.draw_gmax has been renamed to plot.gmax.
+Warning(readcfg.c:399): dbg.na_smooth has been renamed to powfs0_llt.na_smooth.
+Warning(readcfg.c:399): dbg.na_interp has been renamed to powfs0_llt.na_interp.
+Warning(readcfg.c:399): dbg.na_thres has been renamed to powfs0_llt.na_thres.
+Warning(readcfg.c:399): dbg.na_fit_maxit has been renamed to powfs0_llt.na_fit_maxit.
+Warning(readcfg.c:399): dbg.na_fit_svdthres has been renamed to powfs0_llt.na_fit_svdthres.
+Warning(readcfg.c:399): dbg.na_fit_dh has been renamed to powfs0_llt.na_fit_dh.
+Warning(path.c:48): Path not found: path=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./bin; abspath=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./bin; Ignored.
+Warning(path.c:48): Path not found: path=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./atm; abspath=/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./atm; Ignored.
+Warning(readcfg.c:399): sim.zadeg has been renamed to sim.zadeg.
+Warning(readcfg.c:399): sim.aphi has been renamed to sim.aphi.
+Warning(readcfg.c:399): sim.ephi has been renamed to sim.ephi.
+Warning(readcfg.c:399): sim.apfsm has been renamed to powfs.apfsm.
+Warning(readcfg.c:399): sim.epfsm has been renamed to powfs.epfsm.
+Warning(readcfg.c:399): sim.alfsm has been renamed to powfs.alfsm.
+Warning(readcfg.c:399): sim.commonfsm has been renamed to powfs.commonfsm.
+Warning(readcfg.c:399): sim.idealfsm has been renamed to powfs.idealfsm.
+Warning(readcfg.c:399): sim.zetafsm has been renamed to powfs.zetafsm.
+Warning(readcfg.c:399): sim.f0fsm has been renamed to powfs.f0fsm.
+Warning(readcfg.c:399): ncpa.calib has been renamed to ncpa.calib.
+Warning(readcfg.c:399): ncpa.ttr has been renamed to ncpa.ttr.
+Warning(readcfg.c:399): ncpa.thetax has been renamed to ncpa.thetax.
+Warning(readcfg.c:399): ncpa.thetay has been renamed to ncpa.thetay.
+Warning(readcfg.c:399): ncpa.wt has been renamed to ncpa.wt.
+Warning(readcfg.c:399): ncpa.hs has been renamed to ncpa.hs.
+Warning(readcfg.c:399): ncpa.preload has been renamed to ncpa.preload.
+Warning(readcfg.c:399): sim.idealfit has been renamed to sim.idealfit.
+Warning(readcfg.c:399): sim.idealwfs has been renamed to sim.idealwfs.
+Warning(readcfg.c:399): sim.idealevl has been renamed to sim.idealevl.
+Warning(readcfg.c:399): atm.frozenflow has been renamed to atm.frozenflow.
+Warning(readcfg.c:399): cn2.nhtomo has been renamed to cn2.nhtomo.
+Warning(readcfg.c:399): surf has been renamed to ncpa.surf.
+Warning(readcfg.c:399): tsurf has been renamed to ncpa.tsurf.
+Warning(readcfg.c:399): sim.ncpa_calib has been renamed to ncpa.calib.
+Warning(readcfg.c:399): sim.ncpa_ttr has been renamed to ncpa.ttr.
+Warning(readcfg.c:399): sim.ncpa_thetax has been renamed to ncpa.thetax.
+Warning(readcfg.c:399): sim.ncpa_thetay has been renamed to ncpa.thetay.
+Warning(readcfg.c:399): sim.ncpa_wt has been renamed to ncpa.wt.
+Warning(readcfg.c:399): sim.ncpa_hs has been renamed to ncpa.hs.
+loaded 139 (109 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_sim.conf'
+loaded  19 ( 19 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./dm_none.conf'
+loaded  19 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_DM1.conf'
+loaded  19 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_DM2.conf'
+loaded  19 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_DM3.conf'
+loaded   0 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_dm_multiple.conf'
+loaded   7 (  5 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./atm_mk13n50p_ground_detail.conf'
+Warning(readcfg.c:399): powfs.neaextra has been renamed to powfs.neaextra.
+Warning(readcfg.c:399): powfs.i0load has been renamed to powfs.i0load.
+Warning(readcfg.c:399): powfs.bkgrndfnc has been renamed to powfs.bkgrndfnc.
+loaded  69 ( 66 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./powfs_common.conf'
+loaded  44 ( 38 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./powfs_none.conf'
+loaded  45 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_lgs.conf'
+loaded  46 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_lgs_R20.conf'
+loaded  45 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_ttf_strap.conf'
+loaded  44 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_shwfs_twfs_lbwfs.conf'
+loaded   0 (  0 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_wfs_hybrid_strap_lbwfs.conf'
+Warning(readcfg.c:399): tomo.ahst_wt has been renamed to tomo.ahst_wt.
+Warning(readcfg.c:399): tomo.ahst_idealngs has been renamed to tomo.ahst_idealngs.
+Warning(readcfg.c:399): tomo.tikcr has been renamed to tomo.tikcr.
+Warning(readcfg.c:399): fit.tikcr has been renamed to fit.tikcr.
+loaded  71 ( 67 new) records from '/u/bpeck/code/maos/config/maos/recon.conf'
+Warning(readcfg.c:399): plot.opdmax has been renamed to plot.opdmax.
+Warning(readcfg.c:399): plot.gmax has been renamed to plot.gmax.
+loaded  80 ( 78 new) records from '/u/bpeck/code/maos/config/maos/dbg.conf'
+loaded   4 (  4 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_fit.conf'
+loaded  43 ( 10 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./A_mcao_hybrid.conf'
+Overriding plot.all            	0 --> 1
+Overriding plot.setup          	0 --> 1
+Overriding powfs.siglev        	[32.835 28.17 128116.746 41.558] --> [32.835 563.45 128116.746 41.558]
+loaded   3 (  0 new) records from 'command line'
+Warning(readcfg.c:399): powfs0_llt.na_smooth has been renamed to powfs0_llt.na_smooth.
+Warning(readcfg.c:399): powfs0_llt.na_interp has been renamed to powfs0_llt.na_interp.
+Warning(readcfg.c:399): powfs0_llt.na_thres has been renamed to powfs0_llt.na_thres.
+Warning(readcfg.c:399): powfs0_llt.na_fit_maxit has been renamed to powfs0_llt.na_fit_maxit.
+Warning(readcfg.c:399): powfs0_llt.na_fit_svdthres has been renamed to powfs0_llt.na_fit_svdthres.
+Warning(readcfg.c:399): powfs0_llt.na_fit_dh has been renamed to powfs0_llt.na_fit_dh.
+loaded  23 ( 17 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_llt_CL.conf'
+loaded  23 ( 23 new) records from '/System/Volumes/Data/mnt/g2/scratch/bpeck/mcao/hybrid/./keck_llt_CL.conf'
+Error(parms.c:591): parms->nwfs=6 and sum(parms->powfs[*].nwfs)=5 mismatch
+
+Signal caught: User defined signal 2: 31 (31)

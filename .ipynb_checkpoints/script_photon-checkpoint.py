@@ -14,12 +14,12 @@ from paarti.utils import maos_utils
 # Set parameters for photometric hybrid study
 output_file = "0S_8mag_mcao_study1A"               # Name of output file for a batch of simulations 
 master_file = "A_mcao_hybrid.conf"                 # Name of selected master file for hybrid simulations
-n_sodium = 3                                       # Number of Sodium laser guide stars 
+n_sodium = 0                                       # Number of Sodium laser guide stars 
 n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    # Number of Rayleigh laser guide stars (creates sub-directories inside "output_file" directory)
 r_sodium = 15                                      # Radius of Sodium laser guide star asterism
 r_rayleigh = 60                                    # Radius of Rayleigh laser guide star asterism
 m_sodium = 8                                       # Magnitude of Sodium laser guide star
-m_rayleigh = 8                                     # Magnitude of Rayleigh laser guide star 
+siglev_rayleigh = 28.17                            # powfs.siglev of Rayleigh laser guide star 
 integration_time = 1/1500                          # Integration time for entire simulation (sim.dt and sim.dtref, set in master file, NOT set here)
 run_simulation = False                             # Set to True to run simulations, otherwise just prints command
 
@@ -39,13 +39,13 @@ def calculate_circle_coordinates(n, radius):
 
 
 
-def main(output_file, master_file, n_sodium, n_rayleigh, r_sodium, r_rayleigh, m_sodium, m_rayleigh, integration_time, run_simulation=False):
+def main(output_file, master_file, n_sodium, n_rayleigh, r_sodium, r_rayleigh, m_sodium, siglev_rayleigh, integration_time, run_simulation=False):
     # For running photometric hybrid simulations
     # Function assumes one sodium beacon and splits the one beacon into multiple spots when prompted
     # Function assumes that each additional Rayleigh spot is a new beacon
 
     # Setting photometric values for sodium beacon 
-    sodium_siglev_full_all, sodium_bkgrnd_all, sodium_snr_all, sodium_nearecon_all = maos_utils.keck_nea_photons_any_config(wfs='LGSWFS',
+    sodium_snr_all, sodium_nearecon_all, sodium_siglev_full_all, sodium_bkgrnd_all = maos_utils.keck_nea_photons_any_config(wfs='LGSWFS',
                                        side=0.154, # Needs to match dm.dx (actuator count), 0.154 is 4000 actuators for Keck primary
                                        throughput=0.36 * 0.88,
                                        ps = 3.0,
@@ -67,8 +67,8 @@ def main(output_file, master_file, n_sodium, n_rayleigh, r_sodium, r_rayleigh, m
         sodium_siglev = sodium_siglev_full / n_sodium
 
     # Setting photometric values for tip-tilt stars and truth (low-bandwidth) wavefront sensor
-    tt_siglev_all, tt_bkgrnd_all, tt_bkgrnd_all, tt_nearecon_all = maos_utils.keck_nea_photons(m=8, wfs='STRAP', wfs_int_time=integration_time)
-    truth_siglev_all, truth_bkgrnd_all, truth_snr_all, truth_nearecon_all = maos_utils.keck_nea_photons(m=8, wfs='LBWFS', wfs_int_time=integration_time)
+    tt_snr_all, tt_nearecon_all, tt_siglev_all, tt_bkgrnd_all = maos_utils.keck_nea_photons(m=8.8, wfs='STRAP', wfs_int_time=integration_time)
+    truth_snr_all, truth_nearecon_all, truth_siglev_all, truth_bkgrnd_all = maos_utils.keck_nea_photons(m=8.8, wfs='LBWFS', wfs_int_time=integration_time)
 
     # Round the values that PAARTI gives for tip-tilt and truth
     tt_siglev = np.round(tt_siglev_all, 2)
@@ -96,22 +96,7 @@ def main(output_file, master_file, n_sodium, n_rayleigh, r_sodium, r_rayleigh, m
 
     # Run MAOS simulations for on-axis hybrid study
     for rayleigh in n_rayleigh:
-        # Setting photometric values for Rayleigh beacon 
-        rayleigh_siglev_all, rayleigh_bkgrnd_all, rayleigh_snr_all, rayleigh_nearecon_all = maos_utils.keck_nea_photons_any_config(wfs='RLGSWFS',
-                                       side=0.154, # Needs to match dm.dx (actuator count), 0.154 is 4000 actuators for Keck primary
-                                       throughput=0.36 * 0.88,
-                                       ps = 3.0,
-                                       theta_beta = 1.5 * ( math.pi/180.0 ) / ( 60.0*60.0 ),
-                                       band = "R",
-                                       sigma_e = 0.5,
-                                       pix_per_ap = 4,
-                                       time = integration_time,
-                                       m = m_rayleigh)
-
-        # Round the values that PAARTI gives for Rayleigh beacons
-        rayleigh_siglev = np.round(rayleigh_siglev_all, 2)
-        rayleigh_nearecon = np.round(rayleigh_bkgrnd_all, 2)
-
+        
         # Calculate positions of Rayleigh wave-front sensors and laser launch telescopes
         wfs_rayleigh_xx, wfs_rayleigh_yy = calculate_circle_coordinates(rayleigh, r_rayleigh)
         llt_rayleigh_xx, llt_rayleigh_yy = calculate_circle_coordinates(rayleigh, radius=1)
@@ -123,7 +108,7 @@ def main(output_file, master_file, n_sodium, n_rayleigh, r_sodium, r_rayleigh, m
         llt_rayleigh_y = ' '.join(map(str, llt_rayleigh_yy))
 
         # MAOS command
-        command = f"maos -o {output_file}/{rayleigh}rayleigh -c {master_file} plot.all=1 plot.setup=1 -O powfs.nwfs=[{n_sodium} {rayleigh} 3 1] wfs.thetax=[{wfs_sodium_x} {wfs_rayleigh_x} 5 -2.5 -2.5 0] wfs.thetay=[{wfs_sodium_y} {wfs_rayleigh_y} 0 4.33 -4.33 0] powfs0_llt.ox = [{llt_sodium_x}]*6.5 powfs0_llt.oy=[{llt_sodium_y}]*6.5 powfs1_llt.ox = [{llt_rayleigh_x}]*6.5 powfs1_llt.oy=[{llt_rayleigh_y}]*6.5 powfs.siglev=[{sodium_siglev} {rayleigh_siglev} {tt_siglev} {truth_siglev}] powfs.bkgrnd=[0.1 0.1 {tt_bkgrnd} {truth_bkgrnd}] powfs.nearecon=[{sodium_nearecon} {rayleigh_nearecon} {tt_nearecon} {truth_nearecon}]"
+        command = f"maos -o {output_file}/{rayleigh}rayleigh -c {master_file} plot.all=1 plot.setup=1 -O 'powfs.nwfs=[{n_sodium} {rayleigh} 3 1]' 'wfs.thetax=[{wfs_sodium_x} {wfs_rayleigh_x} 5 -2.5 -2.5 0]' 'wfs.thetay=[{wfs_sodium_y} {wfs_rayleigh_y} 0 4.33 -4.33 0]' 'powfs0_llt.ox = [{llt_sodium_x}]*6.5' 'powfs0_llt.oy=[{llt_sodium_y}]*6.5' 'powfs1_llt.ox = [{llt_rayleigh_x}]*6.5' 'powfs1_llt.oy=[{llt_rayleigh_y}]*6.5' 'powfs.siglev=[{sodium_siglev} {siglev_rayleigh} {tt_siglev} {truth_siglev}]' 'powfs.bkgrnd=[0.1 0.1 {tt_bkgrnd} {truth_bkgrnd}]' 'powfs.nearecon=[{sodium_nearecon} {sodium_nearecon} {tt_nearecon} {truth_nearecon}]'"
         
         print("---------------------------------------")
         print("SIM:", rayleigh)
