@@ -8,183 +8,40 @@ import subprocess
 import time
 import os
 
-import script_photon
+import script_sodium
+import script_rayleigh
 
 # Set parameters for photometric hybrid study
-output_file = "0S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 0
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
+output_file = "1S_0R_mcao_study1A"   
+master_file = "A_mcao_hybrid.conf"     
+s_sodium = [438.852, 1102.347, 2768.970, 6955.338]
+n_file = [8, 7, 6, 5]
+integration_time = 1/1500  
+run_simulation = True        
 
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
+script_sodium.main(output_file=output_file, master_file=master_file, s_sodium=s_sodium, n_file=n_file, integration_time=integration_time, run_simulation=run_simulation)
 
 
 
-output_file = "1S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 1
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
+output_file = "0S_1R_mcao_study1A"   
+master_file = "A_mcao_hybrid.conf"     
+s_rayleigh = [35.22, 140.86, 563.45, 1126.90]
+n_file = [25, 100, 400, 800]
+integration_time = 1/1500  
+run_simulation = True
 
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
+script_rayleigh.main(output_file=output_file, master_file=master_file, s_rayleigh=s_rayleigh, n_file=n_file, integration_time=integration_time, run_simulation=run_simulation)
 
 
 
-output_file = "2S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 2
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
+output_file = "1S_0R_rwatts_mcao_study1A"   
+master_file = "A_mcao_hybrid.conf"     
+s_sodium = [35.22, 140.86, 563.45, 1126.90]
+n_file = [25, 100, 400, 800]
+integration_time = 1/1500  
+run_simulation = True       
 
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "3S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 3
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "4S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 4
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True   
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "5S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 5
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "6S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 6
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "7S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 7
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "8S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 8
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "9S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 9
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
-
-
-output_file = "10S_8mag_20W_mcao_study1A" 
-master_file = "A_mcao_hybrid.conf" 
-n_sodium = 10
-n_rayleigh = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-r_sodium = 15 
-r_rayleigh = 60    
-m_sodium = 8  
-siglev_rayleigh = 28.17 # 20W Rayleigh beacon
-integration_time = 1/1500   
-run_simulation = True    
-
-
-script_photon.main(output_file=output_file, master_file=master_file, n_sodium=n_sodium, n_rayleigh=n_rayleigh, r_sodium=r_sodium, r_rayleigh=r_rayleigh, m_sodium=m_sodium, siglev_rayleigh=siglev_rayleigh, integration_time=integration_time, run_simulation=run_simulation)
-
+script_sodium.main(output_file=output_file, master_file=master_file, s_sodium=s_sodium, n_file=n_file, integration_time=integration_time, run_simulation=run_simulation)
 
 
 #import script_photon

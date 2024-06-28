@@ -16,14 +16,14 @@ output_file = "0S_rayleigh_mag_study1C"            # Name of output file for a b
 master_file = "A_mcao_hybrid.conf"                 # Name of selected master file for hybrid simulations
 s_rayleigh = [8.80, 17.61, 35.22, 70.43, 140.86, 281.73, 563.45]
                                                    # powfs.siglev of Rayleigh laser guide star 
-w_rayleigh = [6.25, 12.5, 25, 50, 100, 200, 400]
+n_file = [6.25, 12.5, 25, 50, 100, 200, 400]
 integration_time = 1/1500                          # Integration time for entire simulation (sim.dt and sim.dtref, set in master file, NOT set here)
 run_simulation = False                             # Set to True to run simulations, otherwise just prints command
 
 
 
 
-def main(output_file, master_file, s_rayleigh, w_rayleigh, integration_time, run_simulation=False):
+def main(output_file, master_file, s_rayleigh, n_file, integration_time, run_simulation=False):
     # For running photometric Rayleigh simulations
 
     # Setting photometric values for tip-tilt stars and truth (low-bandwidth) wavefront sensor
@@ -45,13 +45,12 @@ def main(output_file, master_file, s_rayleigh, w_rayleigh, integration_time, run
     print(f"Running {output_file} Rayleigh study:\n")
 
     # Run MAOS simulations for on-axis Rayleigh study
-    for i, rayleigh in enumerate(w_rayleigh):
+    for i, rayleigh in enumerate(n_file):
 
         rayleigh_siglev = s_rayleigh[i]
-        print(rayleigh_siglev)
 
         # MAOS command
-        command = f"maos -o {output_file}/{rayleigh}W -c {master_file} plot.all=1 plot.setup=1 -O 'powfs.siglev=[0 {rayleigh_siglev} 64.52903 147933.02]'"
+        command = f"maos -o {output_file}/{rayleigh}W -c {master_file} plot.all=1 plot.setup=1 -O 'powfs.siglev=[1270 {rayleigh_siglev} 64529.03 147933.02]'"
         
         print("---------------------------------------")
         print("SIM:", rayleigh)
